@@ -2,7 +2,7 @@
 #
 #   MATH 5530
 #   
-#   Dylan Denner
+#   Dylan Denner & Jackson Tucker
 #   03/23/2021
 #   dd575213@ohio.edu
 #   
