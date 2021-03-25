@@ -3,12 +3,12 @@
 #   MATH 5530
 #   
 #   Dylan Denner & Jackson Tucker
-#   03/23/2021
-#   dd575213@ohio.edu
+#   dd575213@ohio.edu & jt070017@ohio.edu
+#   03/24/2021
 #   
 #   Overview:
-#   ...
-#   Hi Jackson! Now we don't have to send files via teams
+#   Getting first dataset from ACS. 
+#   Poverty by sex by edu attainment
 #   
 ###################################################################
 # Working directory
@@ -63,16 +63,38 @@ poverty_by_sex_edu_attainment <- get_acs(
 
 poverty_by_sex_edu_attainment <- select(
   poverty_by_sex_edu_attainment,
-  #-"moe",
+  -"moe",
   -"GEOID"
 )
 
-poverty_by_sex_edu_attainment <- spread(poverty_by_sex_edu_attainment, variable, c(estimate, moe))
+poverty_by_sex_edu_attainment <- spread(poverty_by_sex_edu_attainment, variable, estimate)
+
+mod_poverty_by_sex_edu_attainment <- poverty_by_sex_edu_attainment %>% mutate(
+  "tot_less_than_HS" = W_below_poverty_less_than_HS + M_below_poverty_less_than_HS + W_above_poverty_less_than_HS + M_above_poverty_less_than_HS,
+  "tot_HS" = W_below_poverty_HS + M_below_poverty_HS + W_above_poverty_HS + M_above_poverty_HS,
+  "tot_some_college" = W_below_poverty_some_college + M_below_poverty_some_college + W_above_poverty_some_college + M_above_poverty_some_college,
+  "tot_bachelor_plus" = W_below_poverty_bachelor_plus + M_below_poverty_bachelor_plus + W_above_poverty_bachelor_plus + M_above_poverty_bachelor_plus,
+  "tot_HS_PLUS" = tot_HS + tot_some_college + tot_bachelor_plus,
+  "poverty_percentage" = below_poverty_num/total_population,
+  "HS_PLUS_percentage" = tot_HS_PLUS/total_population)
 
 
-poverty_by_sex_edu_attainment %>%
-  pivot_wider(names_from = variable, values_from = c(estimate, moe))
+mod_poverty_by_sex_edu_attainment <- select(
+  mod_poverty_by_sex_edu_attainment,
+  NAME,
+  total_population,
+  below_poverty_num,
+  above_poverty_num,
+  poverty_percentage,
+  tot_less_than_HS,
+  tot_HS,
+  tot_some_college,
+  tot_bachelor_plus,
+  HS_PLUS_percentage
+)
 
+file_path_and_name = "../DATA/mod_poverty_by_sex_edu_attainment.csv"
+write.csv(mod_poverty_by_sex_edu_attainment, file_path_and_name)
 
 #####################################################################
 end.time <- Sys.time()
