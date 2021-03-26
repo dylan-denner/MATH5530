@@ -1,0 +1,51 @@
+,NAME,District_Name.1,total_population,below_poverty_num,above_poverty_num,poverty_percentage,tot_less_than_HS,tot_HS,tot_some_college,tot_bachelor_plus,HS_PLUS_percentage
+70,"Buckeye Local School District (Ashtabula County), Ohio",Buckeye Local,7288,878,6410,0.120472009,729,3146,2192,1221,0.899972558
+71,"Buckeye Local School District (Belmont, Harrison, and Jefferson Counties); Ohio",Buckeye Local,10614,1311,9303,0.123516111,996,5393,3091,1134,0.906161673
+72,"Buckeye Local School District (Lorain and Medina Counties), Ohio",Buckeye Local,10257,536,9721,0.052256995,558,3638,2842,3219,0.945598128
+127,"Crestview Local School District (Ashland and Richland Counties), Ohio",Crestview Local,4709,508,4201,0.10787853,732,1688,1353,936,0.844552984
+128,"Crestview Local School District (Columbiana County), Ohio",Crestview Local,4074,274,3800,0.067255768,429,1763,1195,687,0.894698085
+129,"Crestview Local School District (Van Wert County), Ohio",Crestview Local,3137,154,2983,0.049091489,279,1264,1016,578,0.911061524
+153,"Eastern Local School District (Adams, Brown, and Highland Counties); Ohio",Eastern Local,5739,927,4812,0.161526398,733,2412,1523,1071,0.8722774
+154,"Eastern Local School District (Jackson, Pike, and Scioto Counties); Ohio",Eastern Local,3340,588,2752,0.176047904,521,1573,841,405,0.844011976
+155,"Eastern Local School District (Meigs County), Ohio",Eastern Local,3913,469,3444,0.119856887,479,1816,1138,480,0.877587529
+160,"Edison Local (formerly Berlin-Milan) School District, Ohio",Edison Local (formerly Berlin-Milan),6212,427,5785,0.068737927,380,2643,1771,1418,0.938828075
+214,"Green Local School District (Scioto County), Ohio",Green Local,2564,346,2218,0.134945398,278,932,776,578,0.891575663
+215,"Green Local School District (Summit County), Ohio",Green Local,17506,1294,16212,0.073917514,657,4835,5471,6543,0.96247001
+216,"Green Local School District (Wayne County), Ohio",Green Local,4846,362,4484,0.074700784,402,2005,1268,1171,0.917044986
+229,"Highland Local School District (Delaware and Morrow Counties), Ohio",Highland Local,7024,472,6552,0.067198178,800,3073,2228,923,0.886104784
+230,"Highland Local School District (Medina and Summit Counties), Ohio",Highland Local,13041,553,12488,0.042404724,498,2880,3944,5719,0.961812744
+270,"Lake Local School District (Ottawa and Wood Counties), Ohio",Lake Local,8162,672,7490,0.082332762,663,3338,2368,1793,0.918769909
+271,"Lake Local School District (Portage and Stark Counties), Ohio",Lake Local,13940,649,13291,0.046556671,817,4288,4440,4395,0.941391679
+275,"Lakota Local School District (Butler County), Ohio",Lakota Local,65162,3047,62115,0.046760382,3231,11960,15996,33975,0.950415887
+276,"Lakota Local School District (Sandusky, Seneca, and Wood Counties); Ohio",Lakota Local,4372,318,4054,0.07273559,273,2172,1425,502,0.937557182
+307,"Madison Local School District (Butler County), Ohio",Madison Local,5958,426,5532,0.071500504,471,2697,1805,985,0.920946626
+308,"Madison Local School District (Geauga and Lake Counties), Ohio",Madison Local,12605,1021,11584,0.080999603,1149,4660,4529,2267,0.908845696
+309,"Madison Local School District (Richland County), Ohio",Madison Local,15005,2019,12986,0.134555148,1789,6964,4285,1967,0.880773076
+310,"Manchester Local School District (Adams County), Ohio",Manchester Local,3306,694,2612,0.209921355,834,1329,705,438,0.747731397
+311,"Manchester Local School District (Summit County), Ohio",Manchester Local,6611,221,6390,0.033429133,417,2228,2304,1662,0.93692331
+391,"Northeastern Local School District (Champaign and Clark Counties), Ohio",Northeastern Local,16235,905,15330,0.055743763,1024,5834,5412,3965,0.936926394
+392,"Northeastern Local School District (Defiance County), Ohio",Northeastern Local,4531,223,4308,0.049216508,249,1840,1561,881,0.945045244
+396,"Northridge Local School District (Delaware, Knox, and Licking Counties); Ohio",Northridge Local,6809,204,6605,0.029960347,500,2289,2292,1728,0.926567778
+397,"Northridge Local School District (Montgomery County), Ohio",Northridge Local,6672,1522,5150,0.228117506,1403,2698,2038,533,0.789718225
+398,"Northwest Local School District (Butler and Hamilton Counties), Ohio",Northwest Local,51927,3039,48888,0.058524467,3672,17209,16272,14774,0.929285343
+399,"Northwest Local School District (Scioto County), Ohio",Northwest Local,6111,969,5142,0.158566519,1103,3008,1415,585,0.819505809
+400,"Northwest Local School District (Stark, Summit, and Wayne Counties); Ohio",Northwest Local,9709,482,9227,0.04964466,456,3165,3620,2468,0.953033268
+401,"Northwestern Local School District (Ashland and Wayne Counties), Ohio",Northwestern Local,5310,436,4874,0.082109228,571,2396,1603,740,0.892467043
+402,"Northwestern Local School District (Champaign and Clark Counties), Ohio",Northwestern Local,7547,383,7164,0.050748642,541,2928,2214,1864,0.928315887
+432,"Perry Local School District (Allen County), Ohio",Perry Local,2688,340,2348,0.126488095,517,1198,812,161,0.80766369
+433,"Perry Local School District (Lake County), Ohio",Perry Local,6321,370,5951,0.058535042,499,2321,2028,1473,0.921056795
+434,"Perry Local School District (Stark County), Ohio",Perry Local,21494,1409,20085,0.065553178,1626,9141,6876,3851,0.924350982
+463,"Riverside Local School District (Geauga and Lake Counties), Ohio",Riverside Local,26186,1515,24671,0.057855343,1280,7962,8812,8132,0.951118919
+464,"Riverside Local School District (Logan County), Ohio",Riverside Local,2425,197,2228,0.081237113,292,1264,608,261,0.879587629
+491,"Southeast Local School District (Holmes, Stark, and Wayne Counties); Ohio",Southeast Local,9657,892,8765,0.09236823,4703,2853,1173,928,0.512995754
+492,"Southeast Local School District (Portage County), Ohio",Southeast Local,8043,447,7596,0.055576278,635,3860,2313,1235,0.92104936
+493,"Southeastern Local School District (Clark and Greene Counties), Ohio",Southeastern Local,3239,217,3022,0.066995986,250,1250,1117,622,0.922815684
+494,"Southeastern Local School District (Ross County), Ohio",Southeastern Local,4442,585,3857,0.131697434,511,2396,891,644,0.884961729
+495,"Southern Local School District (Columbiana and Jefferson Counties), Ohio",Southern Local,3876,518,3358,0.133642931,478,1996,971,431,0.876676987
+496,"Southern Local School District (Hocking and Perry Counties), Ohio",Southern Local,2581,472,2109,0.182874855,380,1188,765,248,0.852770244
+497,"Southern Local School District (Meigs County), Ohio",Southern Local,3426,475,2951,0.138645651,664,1383,934,445,0.806187974
+504,"Springfield Local School District (Lucas County), Ohio",Springfield Local,20604,1744,18860,0.084643758,1478,4588,6563,7975,0.928266356
+505,"Springfield Local School District (Mahoning County), Ohio",Springfield Local,5566,514,5052,0.092346389,224,2429,1550,1363,0.959755659
+506,"Springfield Local School District (Portage and Summit Counties), Ohio",Springfield Local,13734,1334,12400,0.097131207,1491,5976,4015,2252,0.891437309
+588,"Western Reserve Local School District (Erie and Huron Counties), Ohio",Western Reserve Local,4354,133,4221,0.030546624,488,2051,1189,626,0.887919155
+589,"Western Reserve Local School District (Mahoning County), Ohio",Western Reserve Local,3165,116,3049,0.036650869,269,1372,926,598,0.915007899

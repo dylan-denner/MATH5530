@@ -1,0 +1,614 @@
+,GEOID,District_Name,District_Name,population_number,school_no_poverty_num,school_poverty_num,less_than_10k,one_hunna_and_up,ten_to_19k,thirtyfive_to_49k,twenty_to_35k
+1,3900094,"Monroe Local School District, Ohio",Monroe Local ,13344,3934,161,0,1780,82,454,252
+2,3900537,"Manchester Local School District (Adams County), Ohio",Manchester Local ,4640,830,131,83,295,140,212,278
+3,3904348,"Akron City School District, Ohio",Akron City ,176604,28580,15494,1835,6951,3684,6464,7088
+4,3904349,"Alliance City School District, Ohio",Alliance City ,18615,2997,1534,304,680,451,559,868
+5,3904350,"Ashland City School District, Ohio",Ashland City ,23319,5033,859,236,1625,594,950,962
+6,3904351,"Ashtabula Area City School District, Ohio",Ashtabula Area City ,25200,3589,1623,438,1190,530,1083,1070
+7,3904352,"Athens City School District, Ohio",Athens City ,26655,4438,6980,172,1720,281,532,588
+8,3904353,"Barberton City School District, Ohio",Barberton City ,24780,3974,1041,256,1019,632,1167,1042
+9,3904354,"Bay Village City School District, Ohio",Bay Village City ,14618,3898,90,111,3047,144,371,338
+10,3904355,"Beachwood City School District, Ohio",Beachwood City ,10340,2395,55,109,1584,125,124,147
+11,3904357,"Bellaire Local School District, Ohio",Bellaire Local ,9125,1544,367,106,604,400,339,457
+12,3904358,"Bellefontaine City School District, Ohio",Bellefontaine City ,14252,2807,647,205,1021,146,534,416
+13,3904359,"Bellevue City School District, Ohio",Bellevue City ,11747,2279,198,118,866,110,530,347
+14,3904360,"Berea City School District, Ohio",Berea City ,48476,8848,1445,469,4540,1005,2151,1968
+15,3904361,"Belpre City School District, Ohio",Belpre City ,7802,962,228,60,383,230,394,439
+16,3904362,"Bexley City School District, Ohio",Bexley City ,11945,3162,458,25,2367,138,133,184
+17,3904363,"Bowling Green City School District, Ohio",Bowling Green City ,30671,6132,6578,132,2025,346,730,601
+18,3904364,"Brecksville-Broadview Heights City School District, Ohio",Brecksville-Broadview Heights City ,25481,6251,134,141,4712,180,723,578
+19,3904365,"Brooklyn City School District, Ohio",Brooklyn City ,10489,2082,578,118,540,110,414,311
+20,3904366,"Brunswick City School District, Ohio",Brunswick City ,45060,10336,822,371,5877,393,1406,1195
+21,3904367,"Bryan City School District, Ohio",Bryan City ,11647,2167,335,122,730,234,576,690
+22,3904368,"Bucyrus City School District, Ohio",Bucyrus City ,10139,1746,260,200,382,299,499,390
+23,3904369,"Cambridge City School District, Ohio",Cambridge City ,14822,2234,1084,164,617,415,661,679
+24,3904370,"Campbell City School District, Ohio",Campbell City ,7539,1088,689,139,273,235,376,463
+25,3904371,"Canton City School District, Ohio",Canton City ,56750,7421,6255,531,1430,1435,2163,2651
+26,3904373,"Centerville City School District, Ohio",Centerville City ,53614,11960,1006,324,9263,548,1587,1216
+27,3904374,"Chillicothe City School District, Ohio",Chillicothe City ,20801,3257,972,219,1095,517,789,846
+28,3904375,"Cincinnati City School District, Ohio",Cincinnati City ,308726,51332,29959,2325,21966,3809,6916,6252
+29,3904376,"Circleville City School District, Ohio",Circleville City ,14338,1915,662,279,1028,187,535,547
+30,3904377,"Claymont City School District, Ohio",Claymont City ,10979,1711,593,205,481,236,426,439
+31,3904378,"Cleveland Municipal School District, Ohio",Cleveland Municipal ,362449,51201,39324,5158,11178,9618,11295,12604
+32,3904379,"Cleveland Heights-University Heights City School District, Ohio",Cleveland Heights-University Heights City ,51175,10837,4127,384,5526,493,1194,1165
+33,3904380,"Columbus City School District, Ohio",Columbus City ,512902,78349,52109,2917,25242,5903,13089,12187
+34,3904381,"Conneaut Area City School District, Ohio",Conneaut Area City ,12000,1710,557,197,662,255,679,721
+35,3904382,"Coshocton City School District, Ohio",Coshocton City ,10675,1954,664,78,429,224,478,552
+36,3904383,"Cuyahoga Falls City School District, Ohio",Cuyahoga Falls City ,38866,7529,1278,242,3103,651,1413,1266
+37,3904384,"Dayton City School District, Ohio",Dayton City ,131302,19342,13562,1926,3959,3138,5062,5055
+38,3904385,"Deer Park Community City School District, Ohio",Deer Park Community City ,11067,1931,168,117,1238,199,517,429
+39,3904386,"Defiance City School District, Ohio",Defiance City ,15443,2799,989,56,1204,218,642,542
+40,3904387,"Delaware City School District, Ohio",Delaware City ,36174,7891,941,206,3555,350,853,756
+41,3904388,"Delphos City School District, Ohio",Delphos City ,9439,1914,122,48,842,167,335,399
+42,3904389,"Dover City School District, Ohio",Dover City ,16022,3529,369,61,1307,220,715,611
+43,3904390,"East Cleveland City School District, Ohio",East Cleveland City ,18918,2289,1883,369,401,419,724,506
+44,3904391,"East Liverpool City School District, Ohio",East Liverpool City ,14872,2037,1059,145,559,348,522,849
+45,3904392,"East Palestine City School District, Ohio",East Palestine City ,7679,1652,246,109,401,171,464,442
+46,3904393,"Eaton Community City School District, Ohio",Eaton Community City ,13536,2878,315,144,1118,236,557,489
+47,3904394,"Elyria City School District, Ohio",Elyria City ,49162,8403,3768,556,2409,1042,2125,1756
+48,3904395,"Euclid City School District, Ohio",Euclid City ,44928,7597,3113,517,2064,981,1621,1470
+49,3904396,"Fairborn City School District, Ohio",Fairborn City ,38493,7752,3523,250,2870,433,1102,842
+50,3904397,"Fairview Park City School District, Ohio",Fairview Park City ,15286,3104,354,84,1939,176,644,469
+51,3904399,"Fostoria City School District, Ohio",Fostoria City ,13176,1890,1168,159,623,418,743,695
+52,3904400,"Franklin City School District, Ohio",Franklin City ,19937,3867,525,147,1528,204,804,597
+53,3904401,"Fremont City School District, Ohio",Fremont City ,27181,5405,1044,259,1677,376,1237,1294
+54,3904402,"Galion City School District, Ohio",Galion City ,12240,1949,729,114,493,245,642,757
+55,3904403,"Gallipolis City School District, Ohio",Gallipolis City ,13231,1806,838,188,936,400,599,599
+56,3904404,"Garfield Heights City School District, Ohio",Garfield Heights City ,24124,4566,1350,209,1354,492,1064,985
+57,3904405,"Geneva Area City School District, Ohio",Geneva Area City ,15719,2603,624,210,961,363,525,768
+58,3904406,"Girard City School District, Ohio",Girard City ,9949,1596,372,139,496,181,675,495
+59,3904407,"Grandview Heights City School District, Ohio",Grandview Heights City ,8097,1538,89,55,1479,16,113,74
+60,3904408,"Winton Woods City School District, Ohio",Winton Woods City ,24746,5171,1335,139,2081,152,943,683
+61,3904409,"Greenville City School District, Ohio",Greenville City ,20419,3447,951,108,1309,530,1074,1001
+62,3904410,"Hamilton City School District, Ohio",Hamilton City ,58163,10658,2836,459,2850,789,1938,2029
+63,3904411,"Heath City School District, Ohio",Heath City ,10181,2042,429,30,930,268,239,397
+64,3904412,"Hillsboro City School District, Ohio",Hillsboro City ,15203,2509,933,171,917,338,667,783
+65,3904413,"Huron City School District, Ohio",Huron City ,9683,1681,361,35,1212,251,483,351
+66,3904414,"Ironton City School District, Ohio",Ironton City ,9829,1532,596,109,329,271,352,505
+67,3904415,"Jackson City School District, Ohio",Jackson City ,15105,2291,969,284,789,370,630,462
+68,3904416,"Kent City School District, Ohio",Kent City ,28592,5680,4762,94,2277,280,518,515
+69,3904418,"Kettering City School District, Ohio",Kettering City ,53280,10950,2419,477,5002,650,1791,1640
+70,3904419,"Lakewood City School District, Ohio",Lakewood City ,48050,8323,1948,236,4646,500,957,943
+71,3904420,"Lancaster City School District, Ohio",Lancaster City ,44191,7624,1813,257,2854,857,1484,1763
+72,3904421,"Lebanon City School District, Ohio",Lebanon City ,31159,7250,653,117,3837,275,592,802
+73,3904422,"Lima City School District, Ohio",Lima City ,27135,5063,2318,312,540,603,1021,1172
+74,3904423,"Lockland Local School District, Ohio",Lockland Local ,4118,562,572,83,145,49,133,118
+75,3904424,"Logan-Hocking Local School District, Ohio",Logan-Hocking Local ,22968,4644,795,291,1615,509,981,845
+76,3904425,"London City School District, Ohio",London City ,13390,2528,358,82,1311,113,377,339
+77,3904426,"Lorain City School District, Ohio",Lorain City ,50154,7251,4527,495,1610,1011,2040,2031
+78,3904427,"Loveland City School District, Ohio",Loveland City ,26927,7543,622,94,4900,182,437,419
+79,3904428,"Madeira City School District, Ohio",Madeira City ,8596,2428,30,83,1840,66,170,99
+80,3904429,"Mansfield City School District, Ohio",Mansfield City ,29968,4494,2058,432,1051,665,1227,1393
+81,3904430,"Maple Heights City School District, Ohio",Maple Heights City ,21584,3668,1686,177,625,333,1011,1106
+82,3904431,"Mariemont City School District, Ohio",Mariemont City ,8204,2202,271,62,1438,33,219,173
+83,3904433,"Marion City School District, Ohio",Marion City ,27326,4616,1945,270,679,675,1207,1153
+84,3904434,"Martins Ferry City School District, Ohio",Martins Ferry City ,9947,1512,426,111,613,267,437,504
+85,3904435,"Massillon City School District, Ohio",Massillon City ,27074,4400,1374,328,1200,562,1351,1157
+86,3904436,"Maumee City School District, Ohio",Maumee City ,17165,3347,401,104,1852,206,467,452
+87,3904437,"Mayfield City School District, Ohio",Mayfield City ,31456,6815,423,219,4000,513,1009,955
+88,3904438,"Medina City School District, Ohio",Medina City ,42765,9775,761,181,6344,355,1229,771
+89,3904439,"Miamisburg City School District, Ohio",Miamisburg City ,37028,7383,1514,282,3692,457,1329,1258
+90,3904440,"Middletown City School District, Ohio",Middletown City ,46555,6513,4376,506,2170,920,1525,1475
+91,3904441,"Mount Healthy City School District, Ohio",Mount Healthy City ,23001,3691,1587,338,1399,387,861,941
+92,3904443,"Napoleon Area City School District, Ohio",Napoleon Area City ,13114,2599,598,63,1088,182,760,534
+93,3904444,"Nelsonville-York City School District, Ohio",Nelsonville-York City ,7910,1162,886,161,345,163,327,342
+94,3904445,"Newark City School District, Ohio",Newark City ,46322,8149,2653,399,2646,712,1680,1500
+95,3904446,"New Boston Local School District, Ohio",New Boston Local ,2184,265,251,24,13,26,92,46
+96,3904447,"New Lexington City School District, Ohio",New Lexington City ,10947,1741,727,187,521,187,383,512
+97,3904448,"New Philadelphia City School District, Ohio",New Philadelphia City ,21220,3604,827,208,1442,591,699,795
+98,3904449,"Niles City School District, Ohio",Niles City ,17291,2471,898,194,814,426,736,677
+99,3904450,"North Canton City School District, Ohio",North Canton City ,27675,6036,539,88,3907,299,783,871
+100,3904451,"North College Hill City School District, Ohio",North College Hill City ,10279,2316,721,20,346,242,318,398
+101,3904452,"North Olmsted City School District, Ohio",North Olmsted City ,30403,5896,1214,270,3225,592,1057,911
+102,3904453,"North Ridgeville City School District, Ohio",North Ridgeville City ,31822,7322,455,174,4322,471,1214,920
+103,3904454,"North Royalton City School District, Ohio",North Royalton City ,34987,8047,266,163,5523,390,1201,1059
+104,3904455,"Norton City School District, Ohio",Norton City ,13642,2930,157,85,1523,232,596,449
+105,3904456,"Norwalk City School District, Ohio",Norwalk City ,18092,3495,625,129,1276,287,855,619
+106,3904457,"Norwood City School District, Ohio",Norwood City ,18905,3010,1986,65,1316,183,430,422
+107,3904458,"Oakwood City School District, Ohio",Oakwood City ,8672,2432,241,26,1685,56,257,96
+108,3904459,"Oberlin City School District, Ohio",Oberlin City ,7812,1086,1119,68,540,136,219,236
+109,3904460,"Oregon City School District, Ohio",Oregon City ,22280,4454,384,208,2383,192,678,771
+110,3904461,"Orrville City School District, Ohio",Orrville City ,10107,1959,331,68,823,158,448,280
+111,3904463,"Parma City School District, Ohio",Parma City ,105887,19718,2463,1141,9006,1790,4352,3987
+112,3904464,"Piqua City School District, Ohio",Piqua City ,22470,4191,990,175,1329,345,824,1199
+113,3904465,"Port Clinton City School District, Ohio",Port Clinton City ,12887,2003,548,82,1348,250,808,703
+114,3904467,"Princeton City School District, Ohio",Princeton City ,39558,6327,1824,330,3915,463,1063,1330
+115,3904468,"Ravenna City School District, Ohio",Ravenna City ,20019,3430,869,185,979,460,1218,900
+116,3904469,"Reading Community City School District, Ohio",Reading Community City ,10102,1867,508,19,824,51,329,271
+117,3904470,"Rocky River City School District, Ohio",Rocky River City ,19625,4076,217,171,3323,210,605,532
+118,3904471,"St. Bernard-Elmwood Place City School District, Ohio",St. Bernard-Elmwood Place City ,6123,1257,317,31,421,113,190,179
+119,3904472,"St. Marys City School District, Ohio",St. Marys City ,11915,2481,246,73,1206,180,534,463
+120,3904474,"Sandusky City School District, Ohio",Sandusky City ,23493,3740,1651,288,868,376,971,1172
+121,3904475,"Shaker Heights City School District, Ohio",Shaker Heights City ,30020,7159,1360,158,4568,215,408,481
+122,3904476,"Sheffield-Sheffield Lake City School District, Ohio",Sheffield-Sheffield Lake City ,12961,2813,131,99,1110,160,669,241
+123,3904479,"South Euclid-Lyndhurst City School District, Ohio",South Euclid-Lyndhurst City ,32153,6191,1239,467,3797,553,1306,1423
+124,3904480,"South-Western City School District, Ohio",South-Western City ,135720,27950,5792,801,11689,1370,3070,3176
+125,3904481,"Springfield City School District, Ohio",Springfield City ,50948,8399,4065,437,1542,1198,1900,1970
+126,3904482,"Steubenville City School District, Ohio",Steubenville City ,13016,1800,1039,206,495,230,474,334
+127,3904483,"Stow-Munroe Falls City School District, Ohio",Stow-Munroe Falls City ,38499,7953,879,234,4840,429,1148,977
+128,3904484,"Strongsville City School District, Ohio",Strongsville City ,43231,9432,575,273,7327,370,1159,1289
+129,3904485,"Struthers City School District, Ohio",Struthers City ,10959,2045,649,216,518,394,593,677
+130,3904486,"Sycamore Community City School District, Ohio",Sycamore Community City ,32676,8181,377,176,6050,183,769,556
+131,3904487,"Sylvania City School District, Ohio",Sylvania City ,50232,12166,1119,312,8196,526,1527,1114
+132,3904488,"Tallmadge City School District, Ohio",Tallmadge City ,16870,3732,319,96,2356,211,690,419
+133,3904489,"Tiffin City School District, Ohio",Tiffin City ,19144,3459,890,197,1225,358,882,822
+134,3904490,"Toledo City School District, Ohio",Toledo City ,203312,33352,19600,3082,7614,4361,7153,8113
+135,3904491,"Toronto City School District, Ohio",Toronto City ,5073,839,257,43,317,175,295,274
+136,3904492,"Troy City School District, Ohio",Troy City ,29508,6938,797,194,2706,530,967,497
+137,3904493,"Upper Arlington City School District, Ohio",Upper Arlington City ,33717,8712,303,78,7558,195,617,459
+138,3904494,"Urbana City School District, Ohio",Urbana City ,13741,2201,637,54,771,321,690,478
+139,3904495,"Vandalia-Butler City School District, Ohio",Vandalia-Butler City ,23007,4427,403,23,2738,267,733,652
+140,3904498,"Wapakoneta City School District, Ohio",Wapakoneta City ,18281,3763,429,190,1682,263,808,669
+141,3904499,"Warren City School District, Ohio",Warren City ,32507,4166,3529,662,944,909,1542,1426
+142,3904500,"Warrensville Heights City School District, Ohio",Warrensville Heights City ,14063,2341,1370,121,422,221,530,410
+143,3904502,"Wellston City School District, Ohio",Wellston City ,8884,1771,598,91,408,451,335,303
+144,3904503,"Wellsville Local School District, Ohio",Wellsville Local ,4528,634,439,60,153,94,234,198
+145,3904504,"Westerville City School District, Ohio",Westerville City ,96357,23356,3542,463,13948,532,1945,1680
+146,3904505,"West Carrollton City School District, Ohio",West Carrollton City ,25808,4287,895,227,1460,532,1079,898
+147,3904506,"Westlake City School District, Ohio",Westlake City ,30683,6808,474,277,5086,266,699,799
+148,3904507,"Whitehall City School District, Ohio",Whitehall City ,17910,3514,1526,138,561,156,479,299
+149,3904508,"Wickliffe City School District, Ohio",Wickliffe City ,12063,2308,220,135,950,294,710,695
+150,3904509,"Willard City School District, Ohio",Willard City ,10325,1996,597,119,593,91,548,369
+151,3904510,"Willoughby-Eastlake City School District, Ohio",Willoughby-Eastlake City ,63311,12117,1374,423,5608,1119,2117,2401
+152,3904511,"Wilmington City School District, Ohio",Wilmington City ,18746,3255,825,159,1363,317,470,864
+153,3904513,"Worthington City School District, Ohio",Worthington City ,62666,14976,1379,203,9980,396,1045,664
+154,3904514,"Wyoming City School District, Ohio",Wyoming City ,8284,2424,117,58,1905,17,156,121
+155,3904515,"Xenia Community City School District, Ohio",Xenia Community City ,33689,6012,1736,353,2319,466,1289,1238
+156,3904516,"Youngstown City School District, Ohio",Youngstown City ,60560,7634,7049,1432,1571,2420,2794,3480
+157,3904517,"Zanesville City School District, Ohio",Zanesville City ,24556,3183,2349,266,772,719,816,814
+158,3904518,"Ada Exempted Village School District, Ohio",Ada Exempted Village ,5350,1051,336,61,338,63,190,99
+159,3904519,"Amherst Exempted Village School District, Ohio",Amherst Exempted Village ,22904,4853,429,102,2843,422,941,797
+160,3904520,"Barnesville Exempted Village School District, Ohio",Barnesville Exempted Village ,6716,1589,184,59,525,249,349,317
+161,3904521,"Bluffton Exempted Village School District, Ohio",Bluffton Exempted Village ,6131,1264,94,34,533,79,329,109
+162,3904522,"Bradford Exempted Village School District, Ohio",Bradford Exempted Village ,3398,634,88,20,253,53,148,122
+163,3904523,"Bridgeport Exempted Village School District, Ohio",Bridgeport Exempted Village ,5803,782,350,63,288,247,347,282
+164,3904524,"Harrison Hills City School District, Ohio",Harrison Hills City ,12315,1915,474,221,801,374,665,609
+165,3904525,"Caldwell Exempted Village School District, Ohio",Caldwell Exempted Village ,5866,745,265,52,262,155,327,454
+166,3904526,"Carey Exempted Village School District, Ohio",Carey Exempted Village ,5061,1200,134,52,331,93,221,100
+167,3904527,"Carrollton Exempted Village School District, Ohio",Carrollton Exempted Village ,14840,2596,418,168,980,318,664,606
+168,3904528,"Chagrin Falls Exempted Village School District, Ohio",Chagrin Falls Exempted Village ,9631,2454,31,45,2129,76,243,146
+169,3904529,"Chesapeake Union Exempted Village School District, Ohio",Chesapeake Union Exempted Village ,7193,1375,302,196,566,197,202,262
+170,3904531,"Coldwater Exempted Village School District, Ohio",Coldwater Exempted Village ,5897,1497,2,59,539,78,287,210
+171,3904532,"Columbiana Exempted Village School District, Ohio",Columbiana Exempted Village ,7376,1262,223,60,769,117,278,434
+172,3904533,"Covington Exempted Village School District, Ohio",Covington Exempted Village ,4635,984,193,25,333,159,230,188
+173,3904535,"Crooksville Exempted Village School District, Ohio",Crooksville Exempted Village ,5116,933,318,49,131,148,216,258
+174,3904536,"Fairport Harbor Exempted Village School District, Ohio",Fairport Harbor Exempted Village ,2960,493,28,82,161,47,119,125
+175,3904537,"Georgetown Exempted Village School District, Ohio",Georgetown Exempted Village ,6052,977,455,27,387,148,296,169
+176,3904538,"Gibsonburg Exempted Village School District, Ohio",Gibsonburg Exempted Village ,5012,1194,105,43,388,149,210,135
+177,3904539,"Granville Exempted Village School District, Ohio",Granville Exempted Village ,11679,3397,213,34,2209,96,141,90
+178,3904540,"Greenfield Exempted Village School District, Ohio",Greenfield Exempted Village ,12157,1637,691,181,586,297,445,529
+179,3904541,"Hicksville Exempted Village School District, Ohio",Hicksville Exempted Village ,5001,1064,91,26,329,95,240,191
+180,3904542,"Hubbard Exempted Village School District, Ohio",Hubbard Exempted Village ,12406,1970,437,151,990,277,709,734
+181,3904543,"Indian Hill Exempted Village School District, Ohio",Indian Hill Exempted Village ,12166,2982,153,110,2667,93,229,98
+182,3904545,"Lisbon Exempted Village School District, Ohio",Lisbon Exempted Village ,5298,804,279,30,388,143,332,264
+183,3904546,"Loudonville-Perrysville Exempted Village School District, Ohio",Loudonville-Perrysville Exempted Village ,7155,1164,296,55,445,209,364,331
+184,3904547,"Marysville Exempted Village School District, Ohio",Marysville Exempted Village ,29106,6896,699,156,4002,359,781,669
+185,3904548,"Mechanicsburg Exempted Village School District, Ohio",Mechanicsburg Exempted Village ,4126,688,69,13,307,94,160,110
+186,3904549,"Mentor Exempted Village School District, Ohio",Mentor Exempted Village ,57908,11749,825,584,7827,709,2432,2458
+187,3904550,"Milford Exempted Village School District, Ohio",Milford Exempted Village ,41449,9884,444,203,6224,382,1086,1180
+188,3904551,"Milton-Union Exempted Village School District, Ohio",Milton-Union Exempted Village ,10054,1952,138,22,741,162,409,501
+189,3904552,"Montpelier Exempted Village School District, Ohio",Montpelier Exempted Village ,5591,984,219,92,359,105,314,247
+190,3904553,"Mount Gilead Exempted Village School District, Ohio",Mount Gilead Exempted Village ,7010,1348,151,25,660,176,341,195
+191,3904554,"Newcomerstown Exempted Village School District, Ohio",Newcomerstown Exempted Village ,5754,986,193,201,221,235,248,488
+192,3904555,"New Richmond Exempted Village School District, Ohio",New Richmond Exempted Village ,14261,3027,565,141,1740,262,490,350
+193,3904556,"Newton Falls Exempted Village School District, Ohio",Newton Falls Exempted Village ,7872,1111,152,70,632,151,510,404
+194,3904557,"Paulding Exempted Village School District, Ohio",Paulding Exempted Village ,9241,1997,197,138,550,150,429,459
+195,3904558,"Perrysburg Exempted Village School District, Ohio",Perrysburg Exempted Village ,27601,7217,395,190,4513,160,505,377
+196,3904560,"Rossford Exempted Village School District, Ohio",Rossford Exempted Village ,12672,2289,393,146,1229,128,319,575
+197,3904561,"Tipp City Exempted Village School District, Ohio",Tipp City Exempted Village ,14338,3442,93,69,1970,127,563,302
+198,3904563,"Versailles Exempted Village School District, Ohio",Versailles Exempted Village ,6031,1679,27,76,604,54,213,166
+199,3904564,"Wauseon Exempted Village School District, Ohio",Wauseon Exempted Village ,9650,2188,193,59,728,108,347,417
+200,3904565,"Wellington Exempted Village School District, Ohio",Wellington Exempted Village ,8715,1780,130,14,804,200,307,348
+201,3904566,"Windham Exempted Village School District, Ohio",Windham Exempted Village ,3813,557,181,22,179,76,181,181
+202,3904567,"Yellow Springs Exempted Village School District, Ohio",Yellow Springs Exempted Village ,4227,752,133,72,613,122,248,67
+203,3904575,"Allen East Local School District, Ohio",Allen East Local ,5434,1185,134,45,492,40,216,261
+204,3904576,"Bath Local School District, Ohio",Bath Local ,10231,2335,325,139,951,159,513,345
+205,3904577,"Elida Local School District, Ohio",Elida Local ,17754,3497,1112,129,1171,223,849,635
+206,3904578,"Perry Local School District (Allen County), Ohio",Perry Local ,3549,714,116,32,144,108,64,187
+207,3904579,"Shawnee Local School District, Ohio",Shawnee Local ,15819,3424,435,45,1825,227,447,463
+208,3904580,"Spencerville Local School District, Ohio",Spencerville Local ,4575,966,173,19,314,88,184,197
+209,3904582,"Hillsdale Local School District, Ohio",Hillsdale Local ,6085,1134,119,61,528,74,226,173
+210,3904583,"Mapleton Local School District, Ohio",Mapleton Local ,6536,1194,220,77,451,97,318,298
+211,3904585,"Buckeye Local School District (Ashtabula County), Ohio",Buckeye Local ,10047,2171,287,149,785,233,425,554
+212,3904586,"Grand Valley Local School District, Ohio",Grand Valley Local ,9289,1463,388,119,640,127,444,307
+213,3904587,"Jefferson Area Local School District, Ohio",Jefferson Area Local ,10016,1512,563,207,760,222,357,372
+214,3904588,"Pymatuning Valley Local School District, Ohio",Pymatuning Valley Local ,8995,1527,679,104,348,152,417,507
+215,3904590,"Alexander Local School District, Ohio",Alexander Local ,10403,1725,330,143,724,184,429,486
+216,3904591,"Federal Hocking Local School District, Ohio",Federal Hocking Local ,7955,1210,475,221,637,223,335,413
+217,3904592,"Trimble Local School District, Ohio",Trimble Local ,4330,591,387,102,108,171,159,236
+218,3904594,"Minster Local School District, Ohio",Minster Local ,3949,960,8,4,612,56,83,125
+219,3904595,"New Bremen Local School District, Ohio",New Bremen Local ,4832,1354,63,24,770,35,118,110
+220,3904596,"New Knoxville Local School District, Ohio",New Knoxville Local ,1896,512,36,13,208,25,45,46
+221,3904597,"Waynesfield-Goshen Local School District, Ohio",Waynesfield-Goshen Local ,2883,562,92,49,370,45,74,143
+222,3904599,"St. Clairsville-Richland City School District, Ohio",St. Clairsville-Richland City ,12511,2121,241,82,1217,198,550,473
+223,3904600,"Shadyside Local School District, Ohio",Shadyside Local ,5127,971,47,37,421,87,272,304
+224,3904601,"Union Local School District, Ohio",Union Local ,8430,1638,122,142,680,111,392,387
+225,3904603,"Eastern Local School District (Adams, Brown, and Highland Counties); Ohio",Eastern Local ,8028,1386,395,56,669,223,405,294
+226,3904604,"Fayetteville-Perry Local School District, Ohio",Fayetteville-Perry Local ,4436,865,112,52,462,85,153,147
+227,3904606,"Western Brown Local School District, Ohio",Western Brown Local ,16288,2616,366,101,1248,424,794,527
+228,3904607,"Ripley-Union-Lewis-Huntington Local School District, Ohio",Ripley-Union-Lewis-Huntington Local ,6573,1243,290,75,396,111,250,319
+229,3904609,"Edgewood City School District, Ohio",Edgewood City ,19006,4627,585,138,1671,140,734,387
+230,3904610,"Fairfield City School District, Ohio",Fairfield City ,62414,13125,1830,368,6343,684,1807,1545
+231,3904611,"Lakota Local School District (Butler County), Ohio",Lakota Local ,95404,25432,1978,419,17180,757,1845,1265
+232,3904612,"Madison Local School District (Butler County), Ohio",Madison Local ,8180,1782,102,142,863,145,295,246
+233,3904613,"New Miami Local School District, Ohio",New Miami Local ,4509,839,128,22,194,95,218,207
+234,3904614,"Ross Local School District, Ohio",Ross Local ,17025,5034,168,124,2186,108,405,414
+235,3904615,"Talawanda City School District, Ohio",Talawanda City ,27695,4493,6610,158,2481,141,943,557
+236,3904617,"Brown Local School District, Ohio",Brown Local ,5031,864,137,67,508,102,321,296
+237,3904619,"Graham Local School District, Ohio",Graham Local ,10888,2334,224,62,1014,193,394,358
+238,3904620,"Triad Local School District, Ohio",Triad Local ,6042,1513,187,29,712,72,204,89
+239,3904621,"West Liberty-Salem Local School District, Ohio",West Liberty-Salem Local ,5143,1090,42,50,510,49,198,197
+240,3904623,"Greenon Local School District, Ohio",Greenon Local ,11596,2172,218,125,1172,154,500,532
+241,3904624,"Tecumseh Local School District, Ohio",Tecumseh Local ,17615,3739,464,244,956,393,917,819
+242,3904625,"Northeastern Local School District (Champaign and Clark Counties), Ohio",Northeastern Local ,20974,3923,456,198,2272,252,895,872
+243,3904626,"Northwestern Local School District (Champaign and Clark Counties), Ohio",Northwestern Local ,10221,2144,140,110,1165,185,382,426
+244,3904627,"Southeastern Local School District (Clark and Greene Counties), Ohio",Southeastern Local ,4431,937,88,13,399,29,146,147
+245,3904628,"Clark-Shawnee Local School District, Ohio",Clark-Shawnee Local ,11153,2411,252,34,1268,84,373,359
+246,3904630,"Batavia Local School District, Ohio",Batavia Local ,11808,2635,362,30,1689,121,372,223
+247,3904631,"Bethel-Tate Local School District, Ohio",Bethel-Tate Local ,9472,1989,281,59,758,96,349,341
+248,3904632,"Clermont Northeastern Local School District, Ohio",Clermont Northeastern Local ,12856,2431,227,158,1139,125,677,520
+249,3904633,"Felicity-Franklin Local School District, Ohio",Felicity-Franklin Local ,5240,974,167,9,268,123,165,159
+250,3904634,"Goshen Local School District, Ohio",Goshen Local ,15344,3174,309,89,1704,502,609,583
+251,3904635,"West Clermont Local School District, Ohio",West Clermont Local ,65477,13201,1540,497,5928,1028,2064,1456
+252,3904636,"Williamsburg Local School District, Ohio",Williamsburg Local ,6576,1148,210,90,648,86,167,208
+253,3904638,"Blanchester Local School District, Ohio",Blanchester Local ,8048,1180,484,93,602,168,348,309
+254,3904639,"Clinton-Massie Local School District, Ohio",Clinton-Massie Local ,10168,2209,177,61,1211,36,339,290
+255,3904640,"East Clinton Local School District, Ohio",East Clinton Local ,7826,1434,475,35,498,127,246,327
+256,3904642,"Beaver Local School District, Ohio",Beaver Local ,12642,2224,413,150,1048,152,605,847
+257,3904643,"Crestview Local School District (Columbiana County), Ohio",Crestview Local ,5509,784,198,55,516,133,276,264
+258,3904644,"Southern Local School District (Columbiana and Jefferson Counties), Ohio",Southern Local ,5294,919,169,109,337,118,351,341
+259,3904645,"United Local School District, Ohio",United Local ,6659,1268,59,36,461,134,373,434
+260,3904647,"Ridgewood Local School District, Ohio",Ridgewood Local ,8105,1366,387,72,410,219,310,520
+261,3904648,"River View Local School District, Ohio",River View Local ,14822,2504,506,195,967,561,773,955
+262,3904650,"Buckeye Central Local School District, Ohio",Buckeye Central Local ,4945,997,67,62,304,91,302,232
+263,3904651,"Colonel Crawford Local School District, Ohio",Colonel Crawford Local ,5384,1005,64,41,421,47,281,283
+264,3904652,"Wynford Local School District, Ohio",Wynford Local ,5730,957,199,119,506,114,213,211
+265,3904655,"Cuyahoga Heights Local School District, Ohio",Cuyahoga Heights Local ,4216,1010,54,17,594,90,155,116
+266,3904656,"Independence Local School District, Ohio",Independence Local ,6987,1752,0,38,1418,52,180,214
+267,3904657,"Olmsted Falls City School District, Ohio",Olmsted Falls City ,21649,5418,180,197,3064,403,924,653
+268,3904659,"Richmond Heights Local School District, Ohio",Richmond Heights Local ,8944,1422,579,77,782,124,343,303
+269,3904660,"Solon City School District, Ohio",Solon City ,22703,6175,401,155,4336,189,364,381
+270,3904662,"Ansonia Local School District, Ohio",Ansonia Local ,3581,816,133,9,205,84,185,140
+271,3904663,"Arcanum-Butler Local School District, Ohio",Arcanum-Butler Local ,5756,1287,113,21,529,80,267,146
+272,3904664,"Franklin Monroe Local School District, Ohio",Franklin Monroe Local ,2949,629,17,1,340,18,158,159
+273,3904667,"Mississinawa Valley Local School District, Ohio",Mississinawa Valley Local ,3480,616,184,62,189,83,75,115
+274,3904668,"Tri-Village Local School District, Ohio",Tri-Village Local ,4007,742,117,61,270,51,248,211
+275,3904670,"Ayersville Local School District, Ohio",Ayersville Local ,3499,752,16,20,180,59,192,195
+276,3904671,"Central Local School District, Ohio",Central Local ,5545,1106,294,38,427,106,218,255
+277,3904672,"Northeastern Local School District (Defiance County), Ohio",Northeastern Local ,6357,1284,162,38,903,82,256,286
+278,3904674,"Big Walnut Local School District, Ohio",Big Walnut Local ,21019,5101,372,82,3213,198,468,353
+279,3904675,"Buckeye Valley Local School District, Ohio",Buckeye Valley Local ,17105,3355,248,110,2793,43,611,401
+280,3904676,"Olentangy Local School District, Ohio",Olentangy Local ,83505,25777,838,257,17804,269,1180,932
+281,3904678,"Edison Local (formerly Berlin-Milan) School District, Ohio",Edison Local (formerly Berlin-Milan) ,8668,1698,178,18,924,121,310,274
+282,3904679,"Kelleys Island Local School District, Ohio",Kelleys Island Local ,234,8,0,1,26,6,19,14
+283,3904680,"Margaretta Local School District, Ohio",Margaretta Local ,7501,1694,160,118,744,69,421,289
+284,3904681,"Perkins Local School District, Ohio",Perkins Local ,12885,2585,206,111,1486,148,486,423
+285,3904682,"Vermilion Local School District, Ohio",Vermilion Local ,13504,2164,92,194,1328,99,707,454
+286,3904684,"Amanda-Clearcreek Local School District, Ohio",Amanda-Clearcreek Local ,8661,1734,88,53,651,97,362,339
+287,3904685,"Berne Union Local School District, Ohio",Berne Union Local ,5115,984,181,51,439,100,251,218
+288,3904686,"Bloom-Carroll Local School District, Ohio",Bloom-Carroll Local ,11581,2801,153,30,1744,68,290,349
+289,3904687,"Fairfield Union Local School District, Ohio",Fairfield Union Local ,10688,2174,300,104,1174,149,318,258
+290,3904688,"Liberty Union-Thurston Local School District, Ohio",Liberty Union-Thurston Local ,7033,1611,299,87,782,113,281,152
+291,3904689,"Pickerington Local School District, Ohio",Pickerington Local ,50134,14651,858,121,8006,236,877,805
+292,3904690,"Walnut Township Local School District, Ohio",Walnut Township Local ,4219,623,81,19,451,117,221,211
+293,3904694,"Canal Winchester Local School District, Ohio",Canal Winchester Local ,19262,5406,421,67,2508,35,574,396
+294,3904695,"Hamilton Local School District, Ohio",Hamilton Local ,14230,2859,479,100,836,149,462,461
+295,3904696,"Gahanna-Jefferson City School District, Ohio",Gahanna-Jefferson City ,46192,11042,1116,119,7597,506,851,850
+296,3904697,"Groveport Madison Local School District, Ohio",Groveport Madison Local ,46408,10165,1904,185,2778,618,1262,886
+297,3904699,"New Albany-Plain Local School District, Ohio",New Albany-Plain Local ,22633,7155,395,64,4509,97,263,118
+298,3904700,"Reynoldsburg City School District, Ohio",Reynoldsburg City ,38993,9334,1256,206,3828,262,1183,863
+299,3904701,"Hilliard City School District, Ohio",Hilliard City ,91248,23870,2433,276,14232,942,1989,1174
+300,3904702,"Dublin City School District, Ohio",Dublin City ,82734,22459,1534,225,13669,379,1011,713
+301,3904704,"Archbold Area Local School District, Ohio",Archbold Area Local ,6659,1598,67,24,585,91,306,171
+302,3904705,"Evergreen Local School District, Ohio",Evergreen Local ,7262,1414,73,53,802,86,339,255
+303,3904706,"Fayette Local School District, Ohio",Fayette Local ,2430,433,57,18,117,65,176,83
+304,3904707,"Pettisville Local School District, Ohio",Pettisville Local ,2186,551,17,15,206,23,104,77
+305,3904708,"Pike-Delta-York Local School District, Ohio",Pike-Delta-York Local ,7870,1867,80,31,797,150,386,267
+306,3904709,"Swanton Local School District, Ohio",Swanton Local ,8764,1815,137,52,997,56,456,348
+307,3904716,"Berkshire Local School District, Ohio",Berkshire Local ,12866,2535,210,126,1406,148,617,470
+308,3904717,"Cardinal Local School District, Ohio",Cardinal Local ,14278,2857,373,45,833,146,519,453
+309,3904718,"Chardon Local School District, Ohio",Chardon Local ,20691,4707,206,83,3287,220,752,538
+310,3904719,"Kenston Local School District, Ohio",Kenston Local ,16990,4046,105,161,3810,152,373,286
+311,3904721,"Newbury Local School District, Ohio",Newbury Local ,5340,975,40,17,815,64,454,117
+312,3904722,"West Geauga Local School District, Ohio",West Geauga Local ,15288,3015,82,122,2911,317,408,525
+313,3904724,"Beavercreek City School District, Ohio",Beavercreek City ,53127,13324,1413,213,8954,341,1198,941
+314,3904725,"Cedar Cliff Local School District, Ohio",Cedar Cliff Local ,3825,958,182,8,465,33,144,94
+315,3904726,"Greeneview Local School District, Ohio",Greeneview Local ,7928,1414,301,46,893,160,274,299
+316,3904727,"Bellbrook-Sugarcreek Local School District, Ohio",Bellbrook-Sugarcreek Local ,15481,3788,151,76,2944,188,298,203
+317,3904730,"Rolling Hills Local School District, Ohio",Rolling Hills Local ,10278,1664,698,139,673,271,481,587
+318,3904733,"Finneytown Local School District, Ohio",Finneytown Local ,10930,2503,217,103,1292,142,283,306
+319,3904734,"Forest Hills Local School District, Ohio",Forest Hills Local ,44654,11595,711,262,8231,280,982,1054
+320,3904736,"Northwest Local School District (Butler and Hamilton Counties), Ohio",Northwest Local ,71744,15126,2769,416,8171,1191,2653,2379
+321,3904737,"Oak Hills Local School District, Ohio",Oak Hills Local ,61613,14843,1237,433,8122,727,1859,2027
+322,3904738,"Southwest Local School District, Ohio",Southwest Local ,23081,4746,638,156,2322,476,889,1001
+323,3904739,"Three Rivers Local School District, Ohio",Three Rivers Local ,15527,3429,372,93,2606,88,605,461
+324,3904742,"Arlington Local School District, Ohio",Arlington Local ,3348,664,78,12,388,92,90,137
+325,3904743,"Cory-Rawson Local School District, Ohio",Cory-Rawson Local ,3854,735,156,31,535,67,124,94
+326,3904744,"Liberty-Benton Local School District, Ohio",Liberty-Benton Local ,6841,1675,169,15,1091,93,281,245
+327,3904745,"McComb Local School District, Ohio",McComb Local ,3694,820,40,21,348,99,145,146
+328,3904747,"Vanlue Local School District, Ohio",Vanlue Local ,1674,351,28,0,159,9,121,45
+329,3904749,"Hardin Northern Local School District, Ohio",Hardin Northern Local ,2456,402,91,22,210,54,164,115
+330,3904750,"Ridgemont Local School District, Ohio",Ridgemont Local ,3584,591,124,61,286,64,156,114
+331,3904751,"Riverdale Local School District, Ohio",Riverdale Local ,5793,1382,185,62,413,54,220,285
+332,3904752,"Upper Scioto Valley Local School District, Ohio",Upper Scioto Valley Local ,3565,592,36,37,201,93,169,154
+333,3904754,"Conotton Valley Union Local School District, Ohio",Conotton Valley Union Local ,3259,434,119,94,243,107,155,180
+334,3904757,"Holgate Local School District, Ohio",Holgate Local ,2157,447,46,10,175,43,135,111
+335,3904758,"Liberty Center Local School District, Ohio",Liberty Center Local ,5722,1206,155,25,530,75,291,223
+336,3904759,"Patrick Henry Local School District, Ohio",Patrick Henry Local ,4883,978,152,35,409,77,190,219
+337,3904761,"Bright Local School District, Ohio",Bright Local ,4868,669,236,44,277,116,231,349
+338,3904762,"Fairfield Local School District, Ohio",Fairfield Local ,4874,1177,100,53,373,75,196,176
+339,3904763,"Lynchburg-Clay Local School District, Ohio",Lynchburg-Clay Local ,5627,1125,382,94,299,211,305,159
+340,3904768,"East Holmes Local School District, Ohio",East Holmes Local ,19572,4041,274,47,1432,58,469,298
+341,3904769,"West Holmes Local School District, Ohio",West Holmes Local ,17950,3126,824,186,1101,252,692,593
+342,3904771,"Monroeville Local School District, Ohio",Monroeville Local ,3690,674,131,18,469,57,157,70
+343,3904772,"New London Local School District, Ohio",New London Local ,5546,924,326,80,404,187,250,298
+344,3904773,"South Central Local School District, Ohio",South Central Local ,5106,1081,213,43,237,65,199,244
+345,3904774,"Western Reserve Local School District (Erie and Huron Counties), Ohio",Western Reserve Local ,6138,1404,62,41,477,98,397,121
+346,3904776,"Oak Hill Union Local School District, Ohio",Oak Hill Union Local ,6416,1024,297,86,302,236,417,230
+347,3904778,"Buckeye Local School District (Belmont, Harrison, and Jefferson Counties); Ohio",Buckeye Local ,13682,2050,438,269,852,374,743,800
+348,3904779,"Edison Local School District, Ohio",Edison Local ,13764,2126,577,167,1088,372,678,737
+349,3904780,"Indian Creek Local School District, Ohio",Indian Creek Local ,18235,2666,970,137,1585,310,851,972
+350,3904782,"Centerburg Local School District, Ohio",Centerburg Local ,6231,1515,106,35,792,33,164,85
+351,3904783,"Danville Local School District, Ohio",Danville Local ,3550,843,130,6,259,57,154,122
+352,3904785,"Fredericktown Local School District, Ohio",Fredericktown Local ,6240,1403,271,88,446,59,477,265
+353,3904787,"Kirtland Local School District, Ohio",Kirtland Local ,7450,1684,210,54,1330,89,159,216
+354,3904788,"Madison Local School District (Geauga and Lake Counties), Ohio",Madison Local ,17818,3868,464,82,1554,396,877,671
+355,3904790,"Perry Local School District (Lake County), Ohio",Perry Local ,8711,1859,252,32,1164,85,375,299
+356,3904792,"Dawson-Bryant Local School District, Ohio",Dawson-Bryant Local ,5676,1080,150,118,299,194,291,373
+357,3904793,"Fairland Local School District, Ohio",Fairland Local ,10085,1811,320,182,568,157,329,565
+358,3904794,"Rock Hill Local School District, Ohio",Rock Hill Local ,9457,1481,710,257,452,258,422,553
+359,3904795,"South Point Local School District, Ohio",South Point Local ,11692,1855,801,192,557,350,296,482
+360,3904796,"Symmes Valley Local School District, Ohio",Symmes Valley Local ,4028,904,170,63,194,116,290,168
+361,3904798,"Johnstown-Monroe Local School District, Ohio",Johnstown-Monroe Local ,9781,2278,256,16,1169,82,390,314
+362,3904799,"Lakewood Local School District, Ohio",Lakewood Local ,13965,2315,580,46,1317,305,664,636
+363,3904800,"Licking Heights Local School District, Ohio",Licking Heights Local ,24118,5824,1060,101,3142,81,809,379
+364,3904801,"Licking Valley Local School District, Ohio",Licking Valley Local ,10944,2406,338,85,866,102,486,285
+365,3904802,"North Fork Local School District, Ohio",North Fork Local ,9732,1649,396,41,943,203,323,444
+366,3904803,"Northridge Local School District (Delaware, Knox, and Licking Counties); Ohio",Northridge Local ,8741,1461,84,44,1036,81,249,300
+367,3904804,"Southwest Licking Local School District, Ohio",Southwest Licking Local ,23753,5534,277,57,3163,198,765,490
+368,3904807,"Benjamin Logan Local School District, Ohio",Benjamin Logan Local ,10497,2190,210,113,1146,189,400,342
+369,3904808,"Indian Lake Local School District, Ohio",Indian Lake Local ,11256,1801,322,223,1120,350,497,725
+370,3904809,"Riverside Local School District (Logan County), Ohio",Riverside Local ,3666,719,115,46,303,90,97,180
+371,3904811,"Avon Local School District, Ohio",Avon Local ,21922,6732,257,54,4143,87,404,406
+372,3904812,"Avon Lake City School District, Ohio",Avon Lake City ,22937,5677,243,127,3817,398,787,511
+373,3904813,"Clearview Local School District, Ohio",Clearview Local ,5877,1005,308,46,222,212,258,201
+374,3904814,"Columbia Local School District, Ohio",Columbia Local ,6605,1140,107,36,953,84,267,241
+375,3904815,"Firelands Local School District, Ohio",Firelands Local ,12222,2685,114,39,1253,211,463,354
+376,3904816,"Keystone Local School District, Ohio",Keystone Local ,11003,2564,104,60,1223,97,335,361
+377,3904817,"Midview Local School District, Ohio",Midview Local ,19291,3687,505,123,2206,193,780,675
+378,3904820,"Anthony Wayne Local School District, Ohio",Anthony Wayne Local ,26967,6184,343,214,4935,311,823,953
+379,3904821,"Ottawa Hills Local School District, Ohio",Ottawa Hills Local ,4321,1363,11,0,1022,26,67,18
+380,3904822,"Springfield Local School District (Lucas County), Ohio",Springfield Local ,27981,5797,1055,60,3334,241,750,583
+381,3904823,"Washington Local School District, Ohio",Washington Local ,46921,8597,2177,417,3209,798,2094,1456
+382,3904825,"Jefferson Local School District, Ohio",Jefferson Local ,6762,1267,91,27,695,155,242,246
+383,3904826,"Jonathan Alder Local School District, Ohio",Jonathan Alder Local ,11430,2634,447,29,1533,148,390,194
+384,3904827,"Madison-Plains Local School District, Ohio",Madison-Plains Local ,8012,1797,187,44,804,74,248,278
+385,3904829,"Austintown Local School District, Ohio",Austintown Local ,33229,5629,1222,427,2328,666,1606,1515
+386,3904830,"Boardman Local School District, Ohio",Boardman Local ,33626,6592,895,264,3131,583,1224,1493
+387,3904831,"Canfield Local School District, Ohio",Canfield Local ,17711,4010,270,120,2727,210,565,401
+388,3904832,"Jackson-Milton Local School District, Ohio",Jackson-Milton Local ,5802,1057,58,51,488,129,346,258
+389,3904833,"Lowellville Local School District, Ohio",Lowellville Local ,2018,423,56,24,172,41,61,76
+390,3904834,"Poland Local School District, Ohio",Poland Local ,14312,3020,92,129,2279,148,470,401
+391,3904835,"Sebring Local School District, Ohio",Sebring Local ,3957,626,238,35,127,138,175,191
+392,3904836,"South Range Local School District, Ohio",South Range Local ,6354,1280,86,37,689,61,229,195
+393,3904837,"Springfield Local School District (Mahoning County), Ohio",Springfield Local ,7538,1435,261,89,799,133,547,375
+394,3904838,"West Branch Local School District, Ohio",West Branch Local ,12305,2391,367,146,1032,299,658,579
+395,3904839,"Western Reserve Local School District (Mahoning County), Ohio",Western Reserve Local ,3968,638,40,24,403,83,196,143
+396,3904841,"Elgin Local School District, Ohio",Elgin Local ,5784,973,68,52,407,161,397,204
+397,3904842,"Pleasant Local School District, Ohio",Pleasant Local ,8321,1555,283,44,1047,141,410,274
+398,3904843,"Ridgedale Local School District, Ohio",Ridgedale Local ,5047,861,239,147,525,52,254,137
+399,3904844,"River Valley Local School District, Ohio",River Valley Local ,11010,2181,107,82,1111,264,483,430
+400,3904846,"Black River Local School District, Ohio",Black River Local ,9694,1736,361,104,949,57,442,603
+401,3904847,"Buckeye Local School District (Lorain and Medina Counties), Ohio",Buckeye Local ,13940,2935,149,58,2163,135,482,495
+402,3904848,"Cloverleaf Local School District, Ohio",Cloverleaf Local ,19324,3624,306,149,2027,326,810,815
+403,3904849,"Highland Local School District (Medina and Summit Counties), Ohio",Highland Local ,18380,4903,156,147,3333,184,520,666
+404,3904851,"Eastern Local School District (Meigs County), Ohio",Eastern Local ,5260,888,238,19,377,148,337,292
+405,3904852,"Meigs Local School District, Ohio",Meigs Local ,11133,1703,629,318,587,397,463,649
+406,3904853,"Southern Local School District (Meigs County), Ohio",Southern Local ,4550,747,244,110,409,109,233,219
+407,3904857,"Parkway Local School District, Ohio",Parkway Local ,5490,1197,162,84,437,60,293,272
+408,3904858,"St. Henry Consolidated Local School District, Ohio",St. Henry Consolidated Local ,4019,1058,10,13,529,21,120,54
+409,3904859,"Fort Recovery Local School District, Ohio",Fort Recovery Local ,3725,1030,113,28,378,34,145,129
+410,3904861,"Bethel Local School District, Ohio",Bethel Local ,7489,1698,124,76,1112,36,309,246
+411,3904862,"Miami East Local School District, Ohio",Miami East Local ,6646,1500,217,23,888,92,157,158
+412,3904863,"Newton Local School District, Ohio",Newton Local ,3151,553,13,13,299,100,85,122
+413,3904865,"Switzerland of Ohio Local School District, Ohio",Switzerland of Ohio Local ,16937,2513,782,338,1006,438,928,1068
+414,3904867,"Brookville Local School District, Ohio",Brookville Local ,9622,2248,121,45,1038,141,397,251
+415,3904868,"Jefferson Township Local School District, Ohio",Jefferson Township Local ,6014,929,179,113,489,98,351,389
+416,3904869,"Trotwood-Madison City School District, Ohio",Trotwood-Madison City ,18880,2512,2017,160,785,282,837,786
+417,3904870,"Mad River Local School District, Ohio",Mad River Local ,20454,3838,1226,106,1047,328,926,670
+418,3904871,"New Lebanon Local School District, Ohio",New Lebanon Local ,6731,1076,451,17,351,144,221,245
+419,3904872,"Northmont City School District, Ohio",Northmont City ,32862,6828,741,235,3724,307,990,1078
+420,3904873,"Northridge Local School District (Montgomery County), Ohio",Northridge Local ,9454,988,1184,189,307,321,378,544
+421,3904874,"Valley View Local School District, Ohio",Valley View Local ,10170,2086,241,56,1167,160,453,404
+422,3904875,"Huber Heights City School District, Ohio",Huber Heights City ,40321,9775,1590,333,3237,455,1444,1239
+423,3904877,"Morgan Local School District, Ohio",Morgan Local ,13279,1637,732,272,650,504,938,764
+424,3904879,"Cardington-Lincoln Local School District, Ohio",Cardington-Lincoln Local ,6926,1531,135,30,450,80,263,221
+425,3904880,"Highland Local School District (Delaware and Morrow Counties), Ohio",Highland Local ,9862,1941,331,71,1016,130,317,238
+426,3904881,"Northmor Local School District, Ohio",Northmor Local ,8651,1612,220,71,650,200,411,283
+427,3904883,"East Muskingum Local School District, Ohio",East Muskingum Local ,11682,2652,504,63,949,181,566,482
+428,3904884,"Franklin Local School District, Ohio",Franklin Local ,12151,2358,483,182,788,325,702,417
+429,3904885,"Maysville Local School District, Ohio",Maysville Local ,10324,2010,153,160,511,319,579,641
+430,3904887,"Tri-Valley Local School District, Ohio",Tri-Valley Local ,16116,3398,578,97,1457,287,793,643
+431,3904888,"West Muskingum Local School District, Ohio",West Muskingum Local ,13020,2253,296,162,1247,192,513,503
+432,3904890,"Noble Local School District, Ohio",Noble Local ,5948,957,233,111,314,230,342,265
+433,3904892,"Benton-Carroll-Salem Local School District, Ohio",Benton-Carroll-Salem Local ,9932,1646,413,33,1097,212,408,469
+434,3904893,"Danbury Local School District, Ohio",Danbury Local ,4990,507,94,100,625,118,270,348
+435,3904894,"Genoa Area Local School District, Ohio",Genoa Area Local ,7833,1688,77,115,989,109,333,229
+436,3904895,"Middle Bass Local School District, Ohio",Middle Bass Local ,102,7,6,0,11,2,7,7
+437,3904896,"North Bass Local School District, Ohio",North Bass Local ,0,0,0,0,0,0,0,0
+438,3904897,"Put-in-Bay Local School District, Ohio",Put-in-Bay Local ,361,35,4,9,51,10,13,19
+439,3904899,"Antwerp Local School District, Ohio",Antwerp Local ,3537,556,83,26,371,142,200,181
+440,3904900,"Twin Valley Community Local School District, Ohio",Twin Valley Community Local ,5394,1187,46,25,439,68,250,205
+441,3904903,"Wayne Trace Local School District, Ohio",Wayne Trace Local ,5392,1112,130,88,417,86,214,214
+442,3904905,"Northern Local School District, Ohio",Northern Local ,13305,2719,264,132,1199,334,451,317
+443,3904906,"Southern Local School District (Hocking and Perry Counties), Ohio",Southern Local ,3504,488,185,78,185,145,150,165
+444,3904908,"Logan Elm Local School District, Ohio",Logan Elm Local ,12560,2119,448,96,1345,150,511,622
+445,3904909,"Teays Valley Local School District, Ohio",Teays Valley Local ,19082,4969,204,161,2258,107,599,374
+446,3904910,"Westfall Local School District, Ohio",Westfall Local ,8211,1396,328,60,880,117,298,187
+447,3904912,"Eastern Local School District (Jackson, Pike, and Scioto Counties); Ohio",Eastern Local ,4409,789,181,52,310,135,187,285
+448,3904913,"Scioto Valley Local School District, Ohio",Scioto Valley Local ,7659,1275,494,136,490,112,304,391
+449,3904914,"Waverly City School District, Ohio",Waverly City ,10953,2217,385,63,768,186,423,298
+450,3904915,"Western Local School District, Ohio",Western Local ,4930,986,295,130,243,27,262,236
+451,3904917,"Aurora City School District, Ohio",Aurora City ,15823,3816,231,73,2708,144,410,406
+452,3904918,"Crestwood Local School District, Ohio",Crestwood Local ,13354,2256,392,93,1420,308,498,351
+453,3904919,"Field Local School District, Ohio",Field Local ,16232,3170,674,76,1607,201,472,751
+454,3904920,"James A. Garfield Local School District, Ohio",James A. Garfield Local ,8707,1688,306,69,528,132,507,295
+455,3904921,"Rootstown Local School District, Ohio",Rootstown Local ,7882,1816,360,56,846,90,306,269
+456,3904922,"Southeast Local School District (Portage County), Ohio",Southeast Local ,11276,2426,275,46,982,186,499,444
+457,3904923,"Streetsboro City School District, Ohio",Streetsboro City ,15281,2919,512,34,1340,216,657,611
+458,3904924,"Waterloo Local School District, Ohio",Waterloo Local ,7901,1780,114,71,705,119,399,216
+459,3904926,"Tri-County North Local School District, Ohio",Tri-County North Local ,5344,918,197,23,471,87,347,246
+460,3904927,"National Trail Local School District, Ohio",National Trail Local ,6204,1001,325,75,353,167,333,274
+461,3904928,"Preble Shawnee Local School District, Ohio",Preble Shawnee Local ,8553,1669,194,77,699,126,518,357
+462,3904931,"Columbus Grove Local School District, Ohio",Columbus Grove Local ,4369,971,110,60,342,87,241,137
+463,3904932,"Continental Local School District, Ohio",Continental Local ,3487,638,145,117,400,51,163,179
+464,3904933,"Jennings Local School District, Ohio",Jennings Local ,1545,288,10,12,190,53,67,43
+465,3904934,"Kalida Local School District, Ohio",Kalida Local ,3490,882,51,10,514,23,143,59
+466,3904935,"Leipsic Local School District, Ohio",Leipsic Local ,3387,867,214,40,239,88,169,78
+467,3904936,"Miller City-New Cleveland Local School District, Ohio",Miller City-New Cleveland Local ,2104,568,0,7,251,13,61,68
+468,3904937,"Ottawa-Glandorf Local School District, Ohio",Ottawa-Glandorf Local ,8445,1976,104,23,1239,90,331,305
+469,3904938,"Ottoville Local School District, Ohio",Ottoville Local ,2435,589,0,3,351,26,93,96
+470,3904939,"Pandora-Gilboa Local School District, Ohio",Pandora-Gilboa Local ,3292,804,45,4,391,10,129,128
+471,3904941,"Clear Fork Valley Local School District, Ohio",Clear Fork Valley Local ,10128,2126,147,59,900,221,408,443
+472,3904942,"Crestview Local School District (Ashland and Richland Counties), Ohio",Crestview Local ,7448,1449,247,63,612,144,259,224
+473,3904943,"Lexington Local School District, Ohio",Lexington Local ,15765,3651,292,162,1491,174,785,432
+474,3904944,"Lucas Local School District, Ohio",Lucas Local ,3229,655,59,0,205,77,141,154
+475,3904945,"Madison Local School District (Richland County), Ohio",Madison Local ,20564,3413,909,255,730,477,1385,1174
+476,3904946,"Plymouth-Shiloh Local School District, Ohio",Plymouth-Shiloh Local ,4173,711,204,26,197,71,191,161
+477,3904947,"Ontario Local School District, Ohio",Ontario Local ,10414,2290,62,18,1153,133,391,537
+478,3904949,"Adena Local School District, Ohio",Adena Local ,6691,1493,313,51,664,138,292,298
+479,3904950,"Huntington Local School District, Ohio",Huntington Local ,6113,895,529,120,353,234,293,321
+480,3904951,"Paint Valley Local School District, Ohio",Paint Valley Local ,5154,719,352,52,397,141,275,297
+481,3904952,"Southeastern Local School District (Ross County), Ohio",Southeastern Local ,6138,1364,35,118,376,70,216,345
+482,3904953,"Union-Scioto Local School District, Ohio",Union-Scioto Local ,11166,2432,447,61,1280,276,278,359
+483,3904954,"Zane Trace Local School District, Ohio",Zane Trace Local ,9370,1659,285,76,835,81,420,350
+484,3904956,"Lakota Local School District (Sandusky, Seneca, and Wood Counties); Ohio",Lakota Local ,6149,1181,226,66,497,97,220,280
+485,3904957,"Woodmore Local School District, Ohio",Woodmore Local ,6541,1298,243,55,757,123,255,198
+486,3904959,"Bloom-Vernon Local School District, Ohio",Bloom-Vernon Local ,4961,1017,200,208,321,182,153,255
+487,3904961,"Green Local School District (Scioto County), Ohio",Green Local ,3459,583,163,72,256,77,147,206
+488,3904962,"Minford Local School District, Ohio",Minford Local ,7131,1548,237,46,662,230,302,293
+489,3904963,"Northwest Local School District (Scioto County), Ohio",Northwest Local ,8659,1479,415,121,385,260,698,423
+490,3904964,"Valley Local School District, Ohio",Valley Local ,4887,666,207,112,540,106,166,257
+491,3904965,"Washington-Nile Local School District, Ohio",Washington-Nile Local ,7335,1337,433,183,424,277,343,409
+492,3904966,"Wheelersburg Local School District, Ohio",Wheelersburg Local ,7920,1484,318,126,710,122,274,300
+493,3904968,"Seneca East Local School District, Ohio",Seneca East Local ,4724,1136,91,15,413,86,231,169
+494,3904970,"Hopewell-Loudon Local School District, Ohio",Hopewell-Loudon Local ,4084,981,17,24,404,82,210,106
+495,3904971,"New Riegel Local School District, Ohio",New Riegel Local ,1789,424,14,3,186,28,68,109
+496,3904976,"Botkins Local School District, Ohio",Botkins Local ,2361,660,15,7,263,39,111,41
+497,3904977,"Fairlawn Local School District, Ohio",Fairlawn Local ,2360,497,111,14,244,44,95,99
+498,3904978,"Fort Loramie Local School District, Ohio",Fort Loramie Local ,3488,891,11,12,415,66,193,93
+499,3904979,"Hardin-Houston Local School District, Ohio",Hardin-Houston Local ,4493,1046,117,11,432,24,190,237
+500,3904981,"Russia Local School District, Ohio",Russia Local ,1788,511,13,5,215,19,54,51
+501,3904983,"Canton Local School District, Ohio",Canton Local ,11680,2262,401,121,936,238,720,780
+502,3904984,"Fairless Local School District, Ohio",Fairless Local ,11095,2155,285,143,777,272,556,393
+503,3904985,"Jackson Local School District, Ohio",Jackson Local ,36031,7958,563,139,5355,218,1155,801
+504,3904986,"Lake Local School District (Portage and Stark Counties), Ohio",Lake Local ,19253,4544,180,135,2530,302,640,589
+505,3904987,"Louisville City School District, Ohio",Louisville City ,17460,3478,346,105,1696,274,720,583
+506,3904988,"Marlington Local School District, Ohio",Marlington Local ,15171,3110,565,126,1439,151,584,443
+507,3904989,"Minerva Local School District, Ohio",Minerva Local ,11140,1900,470,65,693,146,481,554
+508,3904990,"Northwest Local School District (Stark, Summit, and Wayne Counties); Ohio",Northwest Local ,12793,2561,124,58,1539,208,487,332
+509,3904991,"Osnaburg Local School District, Ohio",Osnaburg Local ,5259,1019,45,51,343,45,320,237
+510,3904992,"Perry Local School District (Stark County), Ohio",Perry Local ,28761,5617,724,200,2493,556,1746,1071
+511,3904993,"Plain Local School District, Ohio",Plain Local ,45581,7976,1606,445,4467,705,1936,1711
+512,3904994,"Sandy Valley Local School District, Ohio",Sandy Valley Local ,8236,1381,291,64,698,166,302,354
+513,3904995,"Tuslaw Local School District, Ohio",Tuslaw Local ,9204,2152,119,53,938,184,531,328
+514,3904997,"Woodridge Local School District, Ohio",Woodridge Local ,17470,3268,583,144,1835,142,578,376
+515,3904998,"Copley-Fairlawn City School District, Ohio",Copley-Fairlawn City ,20132,4315,348,163,2878,229,594,385
+516,3904999,"Coventry Local School District, Ohio",Coventry Local ,13213,2155,199,137,1185,307,499,483
+517,3905000,"Manchester Local School District (Summit County), Ohio",Manchester Local ,8857,2023,50,83,1036,119,278,302
+518,3905001,"Green Local School District (Summit County), Ohio",Green Local ,24685,5663,1189,181,3234,342,570,545
+519,3905002,"Hudson City School District, Ohio",Hudson City ,23145,6129,141,45,5353,125,339,289
+520,3905003,"Mogadore Local School District, Ohio",Mogadore Local ,3517,748,34,0,264,71,94,138
+521,3905004,"Nordonia Hills City School District, Ohio",Nordonia Hills City ,31435,7121,206,144,5266,352,743,1058
+522,3905005,"Revere Local School District, Ohio",Revere Local ,19591,4850,193,203,4023,155,400,405
+523,3905006,"Springfield Local School District (Portage and Summit Counties), Ohio",Springfield Local ,18285,2986,242,211,1221,776,1114,801
+524,3905007,"Twinsburg City School District, Ohio",Twinsburg City ,24440,5722,733,158,3810,279,709,643
+525,3905009,"Bloomfield-Mespo Local School District, Ohio",Bloomfield-Mespo Local ,4209,752,245,28,206,33,122,89
+526,3905011,"Bristol Local School District, Ohio",Bristol Local ,5108,887,124,19,369,111,242,151
+527,3905012,"Brookfield Local School District, Ohio",Brookfield Local ,8070,1025,309,145,617,310,388,486
+528,3905013,"Champion Local School District, Ohio",Champion Local ,8984,2137,158,68,861,135,399,403
+529,3905015,"Mathews Local School District, Ohio",Mathews Local ,6623,832,233,75,664,125,344,320
+530,3905016,"Howland Local School District, Ohio",Howland Local ,20847,3485,686,209,1742,514,963,787
+531,3905017,"Joseph Badger Local School District, Ohio",Joseph Badger Local ,6171,1082,265,30,517,122,236,368
+532,3905018,"Lakeview Local School District, Ohio",Lakeview Local ,11678,2138,201,137,1419,243,589,368
+533,3905019,"Liberty Local School District, Ohio",Liberty Local ,11026,2296,571,129,951,342,476,452
+534,3905020,"Lordstown Local School District, Ohio",Lordstown Local ,3231,454,133,44,302,118,207,183
+535,3905021,"Maplewood Local School District, Ohio",Maplewood Local ,4910,723,98,91,338,143,347,209
+536,3905022,"McDonald Local School District, Ohio",McDonald Local ,3843,889,97,86,244,103,281,160
+537,3905023,"Southington Local School District, Ohio",Southington Local ,3463,681,30,30,342,103,113,208
+538,3905024,"LaBrae Local School District, Ohio",LaBrae Local ,7312,916,556,81,365,161,360,295
+539,3905025,"Weathersfield Local School District, Ohio",Weathersfield Local ,4866,904,85,34,317,162,309,298
+540,3905027,"Garaway Local School District, Ohio",Garaway Local ,10634,2174,106,57,750,104,403,252
+541,3905028,"Indian Valley Local School District, Ohio",Indian Valley Local ,10260,1583,386,85,670,151,561,578
+542,3905029,"Strasburg-Franklin Local School District, Ohio",Strasburg-Franklin Local ,4425,752,85,58,391,53,250,125
+543,3905030,"Tuscarawas Valley Local School District, Ohio",Tuscarawas Valley Local ,9484,1901,146,51,1167,125,479,305
+544,3905032,"Fairbanks Local School District, Ohio",Fairbanks Local ,6408,1694,109,43,1026,51,121,119
+545,3905033,"North Union Local School District, Ohio",North Union Local ,7998,1476,133,65,870,162,363,351
+546,3905035,"Crestview Local School District (Van Wert County), Ohio",Crestview Local ,4258,890,52,63,480,67,220,135
+547,3905039,"Vinton County Local School District, Ohio",Vinton County Local ,12532,1893,747,163,677,358,462,684
+548,3905041,"Carlisle Local School District, Ohio",Carlisle Local ,9895,2023,178,56,1058,75,485,210
+549,3905042,"Springboro Community City School District, Ohio",Springboro Community City ,30391,9441,252,187,6224,45,358,544
+550,3905043,"Kings Local School District, Ohio",Kings Local ,27981,7280,330,56,4228,250,899,401
+551,3905044,"Little Miami Local School District, Ohio",Little Miami Local ,30497,8566,201,129,5014,372,1032,369
+552,3905045,"Mason City School District, Ohio",Mason City ,50162,14996,445,135,8743,451,819,738
+553,3905046,"Wayne Local School District, Ohio",Wayne Local ,9035,2258,48,75,1187,111,213,211
+554,3905048,"Fort Frye Local School District, Ohio",Fort Frye Local ,6341,1472,223,52,362,174,344,300
+555,3905049,"Frontier Local School District, Ohio",Frontier Local ,4609,825,119,44,190,157,247,293
+556,3905051,"Wolf Creek Local School District, Ohio",Wolf Creek Local ,3294,692,75,34,262,118,163,182
+557,3905053,"Chippewa Local School District, Ohio",Chippewa Local ,9096,1940,79,87,1164,231,387,358
+558,3905054,"Dalton Local School District, Ohio",Dalton Local ,6807,1514,331,58,506,104,157,225
+559,3905055,"Green Local School District (Wayne County), Ohio",Green Local ,6601,1319,185,62,679,89,321,198
+560,3905056,"Norwayne Local School District, Ohio",Norwayne Local ,7597,1603,257,32,563,176,368,255
+561,3905058,"Southeast Local School District (Holmes, Stark, and Wayne Counties); Ohio",Southeast Local ,17267,3316,624,221,1015,133,444,433
+562,3905059,"Triway Local School District, Ohio",Triway Local ,12057,2149,429,105,1057,241,436,520
+563,3905061,"Edgerton Local School District, Ohio",Edgerton Local ,3952,925,91,28,250,95,219,267
+564,3905062,"Edon Northwest Local School District, Ohio",Edon Northwest Local ,2989,635,55,29,195,83,87,134
+565,3905063,"Millcreek-West Unity Local School District, Ohio",Millcreek-West Unity Local ,3466,698,185,7,227,72,134,115
+566,3905064,"North Central Local School District, Ohio",North Central Local ,4060,687,164,50,278,105,232,105
+567,3905065,"Stryker Local School District, Ohio",Stryker Local ,2714,559,75,9,191,32,177,99
+568,3905067,"Eastwood Local School District, Ohio",Eastwood Local ,8276,1723,269,52,806,75,323,334
+569,3905068,"Elmwood Local School District, Ohio",Elmwood Local ,6106,1250,134,57,599,107,186,232
+570,3905069,"Lake Local School District (Ottawa and Wood Counties), Ohio",Lake Local ,11180,2324,274,161,1184,206,518,523
+571,3905070,"North Baltimore Local School District, Ohio",North Baltimore Local ,4204,914,173,42,275,89,134,166
+572,3905071,"Northwood Local School District, Ohio",Northwood Local ,5121,1173,112,78,452,15,252,100
+573,3905072,"Otsego Local School District, Ohio",Otsego Local ,9811,2136,290,73,1118,122,334,327
+574,3905074,"Mohawk Local School District, Ohio",Mohawk Local ,5316,1128,18,39,548,121,311,272
+575,3906190,"Adams County/Ohio Valley Local School District, Ohio",Adams County/Ohio Valley Local ,22234,3437,1466,229,1217,629,1056,1278
+576,3906496,"College Corner Local School District, Ohio",College Corner Local ,561,127,37,7,26,12,37,29
+577,3906568,"Gallia County Local School District, Ohio",Gallia County Local ,14616,2604,629,343,882,284,683,739
+578,3906968,"East Guernsey Local School District, Ohio",East Guernsey Local ,7642,1243,413,103,489,182,386,254
+579,3910000,"Findlay City School District, Ohio",Findlay City ,38241,7141,1913,257,3053,545,1449,1229
+580,3910001,"Van Buren Local School District, Ohio",Van Buren Local ,6602,1221,307,43,1068,41,222,164
+581,3910002,"Arcadia Local School District, Ohio",Arcadia Local ,2629,536,37,6,242,119,123,109
+582,3910003,"Sidney City School District, Ohio",Sidney City ,23173,4733,711,213,1732,378,662,854
+583,3910004,"Anna Local School District, Ohio",Anna Local ,5276,1474,29,33,739,38,126,140
+584,3910005,"Jackson Center Local School District, Ohio",Jackson Center Local ,2318,437,30,10,219,53,74,96
+585,3910006,"Salem City School District, Ohio",Salem City ,15440,2626,661,183,1107,306,723,740
+586,3910007,"Leetonia Exempted Village School District, Ohio",Leetonia Exempted Village ,4617,762,174,56,278,67,245,257
+587,3910008,"Crestline Exempted Village School District, Ohio",Crestline Exempted Village ,4862,864,177,89,270,137,216,301
+588,3910009,"Shelby City School District, Ohio",Shelby City ,11982,2085,290,145,777,188,501,598
+589,3910010,"Miami Trace Local School District, Ohio",Miami Trace Local ,14472,2608,465,147,1307,290,669,615
+590,3910011,"Washington Court House City School District, Ohio",Washington Court House City ,12884,2165,745,126,669,236,505,504
+591,3910012,"Mount Vernon City School District, Ohio",Mount Vernon City ,27319,4865,1220,245,1981,382,1094,986
+592,3910013,"East Knox Local School District, Ohio",East Knox Local ,9871,1577,555,66,767,139,496,486
+593,3910014,"Riverside Local School District (Geauga and Lake Counties), Ohio",Riverside Local ,35050,7349,766,169,5247,391,1054,1236
+594,3910015,"Painesville City Local School District, Ohio",Painesville City Local ,15129,3221,1184,155,551,179,625,239
+595,3910016,"Orange City School District, Ohio",Orange City ,13563,3207,241,143,3449,79,222,191
+596,3910017,"Bedford City School District, Ohio",Bedford City ,28204,5053,1172,273,1745,475,1120,939
+597,3910018,"Warren Local School District, Ohio",Warren Local ,14443,2710,252,160,1392,186,712,622
+598,3910019,"Marietta City School District, Ohio",Marietta City ,20891,2936,1153,281,1555,604,867,878
+599,3910020,"Clyde-Green Springs Exempted Village School District, Ohio",Clyde-Green Springs Exempted Village ,12147,2356,559,109,874,291,616,595
+600,3910021,"Old Fort Local School District, Ohio",Old Fort Local ,3167,621,42,11,238,46,158,104
+601,3910022,"Lincolnview Local School District, Ohio",Lincolnview Local ,3995,908,35,61,353,29,217,149
+602,3910023,"Van Wert City School District, Ohio",Van Wert City ,13332,2858,502,221,787,239,700,636
+603,3910024,"Upper Sandusky Exempted Village School District, Ohio",Upper Sandusky Exempted Village ,10298,2052,186,117,801,191,467,610
+604,3910025,"Kenton City School District, Ohio",Kenton City ,11169,2211,515,114,723,324,580,395
+605,3910026,"Clay Local School District, Ohio",Clay Local ,3228,591,121,98,247,33,150,173
+606,3910027,"Portsmouth City School District, Ohio",Portsmouth City ,19378,2147,2359,301,773,600,716,781
+607,3910028,"Rittman Exempted Village School District, Ohio",Rittman Exempted Village ,6890,1253,327,36,390,114,247,271
+608,3910029,"Wadsworth City School District, Ohio",Wadsworth City ,27533,6305,496,178,3446,301,996,910
+609,3910030,"Celina City School District, Ohio",Celina City ,17422,3645,395,132,1405,151,961,798
+610,3910031,"Marion Local School District, Ohio",Marion Local ,3773,871,134,32,498,50,61,101
+611,3910032,"Wooster City School District, Ohio",Wooster City ,26121,4377,933,177,2079,580,990,1086
+612,3910033,"Northwestern Local School District (Ashland and Wayne Counties), Ohio",Northwestern Local ,7785,1823,227,54,533,114,320,320
+613,3999997,"School District Not Defined, Ohio",,18,6,0,0,0,0,8,0
