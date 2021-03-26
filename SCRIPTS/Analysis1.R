@@ -127,9 +127,613 @@ poly_regression <- lm(HS_PLUS_percentage ~ poverty_percentage + I(poverty_percen
 print(summary(poly_regression))
 
 #####################################################################
-## Poly Linear Regression
+## Region 1
+
+region1 <- subset(mod_model_data, mod_model_data$Region == "Region 1")
+
+attach(region1)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R1 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region1)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R1)
+print(summary(poverty_percent_R1))
 
 
+
+chronic_absenteesim_percent_R1 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region1)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R1)
+print(summary(chronic_absenteesim_percent_R1))
+#####################################################################
+## Region 2
+
+region2 <- subset(mod_model_data, mod_model_data$Region == "Region 2")
+
+attach(region2)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R2 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region2)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R2)
+print(summary(poverty_percent_R2))
+
+
+
+chronic_absenteesim_percent_R2 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region2)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R2)
+print(summary(chronic_absenteesim_percent_R2))
+
+#####################################################################
+## Region 3
+
+region3 <- subset(mod_model_data, mod_model_data$Region == "Region 3")
+
+attach(region3)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R3 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region3)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R3)
+print(summary(poverty_percent_R3))
+
+
+
+chronic_absenteesim_percent_R3 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region3)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R3)
+print(summary(chronic_absenteesim_percent_R3))
+
+
+#####################################################################
+## Region 4
+
+region4 <- subset(mod_model_data, mod_model_data$Region == "Region 4")
+
+attach(region4)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R4 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region4)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R4)
+print(summary(poverty_percent_R4))
+
+
+
+chronic_absenteesim_percent_R4 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region4)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R4)
+print(summary(chronic_absenteesim_percent_R4))
+
+#####################################################################
+## Region 5
+
+region5 <- subset(mod_model_data, mod_model_data$Region == "Region 5")
+
+attach(region5)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R5 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region5)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R5)
+print(summary(poverty_percent_R5))
+
+
+
+chronic_absenteesim_percent_R5 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region5)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R5)
+print(summary(chronic_absenteesim_percent_R5))
+
+#####################################################################
+## Region 6
+
+region6 <- subset(mod_model_data, mod_model_data$Region == "Region 6")
+
+attach(region6)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R6 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region6)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R6)
+print(summary(poverty_percent_R6))
+
+
+
+chronic_absenteesim_percent_R6 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region6)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R6)
+print(summary(chronic_absenteesim_percent_R6))
+
+#####################################################################
+## Region 7
+
+region7 <- subset(mod_model_data, mod_model_data$Region == "Region 7")
+
+attach(region7)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R7 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region7)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R7)
+print(summary(poverty_percent_R7))
+
+
+
+chronic_absenteesim_percent_R7 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region7)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R7)
+print(summary(chronic_absenteesim_percent_R7))
+
+#####################################################################
+## Region 8
+
+region8 <- subset(mod_model_data, mod_model_data$Region == "Region 8")
+
+attach(region8)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R8 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region8)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R8)
+print(summary(poverty_percent_R8))
+
+
+
+chronic_absenteesim_percent_R8 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region8)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R8)
+print(summary(chronic_absenteesim_percent_R8))
+
+#####################################################################
+## Region 9
+
+region9 <- subset(mod_model_data, mod_model_data$Region == "Region 9")
+
+attach(region9)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R9 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region9)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R9)
+print(summary(poverty_percent_R9))
+
+
+
+chronic_absenteesim_percent_R9 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region9)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R9)
+print(summary(chronic_absenteesim_percent_R9))
+
+#####################################################################
+## Region 10
+
+region10 <- subset(mod_model_data, mod_model_data$Region == "Region 10")
+
+attach(region10)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R10 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region10)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R10)
+print(summary(poverty_percent_R10))
+
+
+
+chronic_absenteesim_percent_R10 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region10)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R10)
+print(summary(chronic_absenteesim_percent_R10))
+
+#####################################################################
+## Region 11
+
+region11 <- subset(mod_model_data, mod_model_data$Region == "Region 11")
+
+attach(region11)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R11 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region11)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R11)
+print(summary(poverty_percent_R11))
+
+
+
+chronic_absenteesim_percent_R11 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region11)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R11)
+print(summary(chronic_absenteesim_percent_R11))
+
+
+#####################################################################
+## Region 12
+
+region12 <- subset(mod_model_data, mod_model_data$Region == "Region 12")
+
+attach(region12)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R12 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region12)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R12)
+print(summary(poverty_percent_R12))
+
+
+
+chronic_absenteesim_percent_R12 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region12)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R12)
+print(summary(chronic_absenteesim_percent_R12))
+
+#####################################################################
+## Region 13
+
+region13 <- subset(mod_model_data, mod_model_data$Region == "Region 13")
+
+attach(region13)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R13 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region13)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R13)
+print(summary(poverty_percent_R13))
+
+
+
+chronic_absenteesim_percent_R13 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region13)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R13)
+print(summary(chronic_absenteesim_percent_R13))
+
+#####################################################################
+## Region 14
+
+region14 <- subset(mod_model_data, mod_model_data$Region == "Region 14")
+
+attach(region14)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R14 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region14)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R14)
+print(summary(poverty_percent_R14))
+
+
+
+chronic_absenteesim_percent_R14 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region14)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R14)
+print(summary(chronic_absenteesim_percent_R14))
+
+#####################################################################
+## Region 15
+
+region15 <- subset(mod_model_data, mod_model_data$Region == "Region 15")
+
+attach(region15)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R15 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region15)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R15)
+print(summary(poverty_percent_R15))
+
+
+
+chronic_absenteesim_percent_R15 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region15)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R15)
+print(summary(chronic_absenteesim_percent_R15))
+
+#####################################################################
+## Region 16
+
+region16 <- subset(mod_model_data, mod_model_data$Region == "Region 16")
+
+attach(region16)
+
+# Good
+plot(poverty_percentage, HS_PLUS_percentage)
+
+# Bad
+plot(mean_total_students_discipline, HS_PLUS_percentage)
+
+# Good
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+
+# Good
+plot(mean_attendence, HS_PLUS_percentage)
+
+# Bad
+plot(mean_enrollment, HS_PLUS_percentage)
+
+## Simple Linear Regression for poverty % and HS + %
+
+poverty_percent_R16 <- lm(HS_PLUS_percentage ~ poverty_percentage, data = region16)
+
+plot(poverty_percentage, HS_PLUS_percentage)
+abline(poverty_percent_R16)
+print(summary(poverty_percent_R16))
+
+
+
+chronic_absenteesim_percent_R16 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region16)
+
+plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+abline(chronic_absenteesim_percent_R16)
+print(summary(chronic_absenteesim_percent_R16))
 
 
 
