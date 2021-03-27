@@ -48,9 +48,9 @@ plot(poverty_percentage, HS_PLUS_percentage)
 
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 plot(mean_enrollment, HS_PLUS_percentage)
 #####################################################################
@@ -67,10 +67,10 @@ abline(lm(HS_PLUS_percentage~ poverty_percentage))
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -85,21 +85,21 @@ abline(poverty_percent_SLR)
 print(summary(poverty_percent_SLR))
 
 #####################################################################
-## Simple Linear Regression for mean_chronic_absenteesim % and HS + %
+## Simple Linear Regression for mean_chronic_absenteeism % and HS + %
 
-chronic_absenteesim_percent_SLR <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = mod_model_data)
+chronic_absenteesim_percent_SLR <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = mod_model_data)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_SLR)
 print(summary(chronic_absenteesim_percent_SLR))
 
 
 #####################################################################
-## Simple Linear Regression for mean_attendence % and HS + %
+## Simple Linear Regression for mean_attendance % and HS + %
 
-attendence_percent_SLR <- lm(HS_PLUS_percentage ~ mean_attendence, data = mod_model_data)
+attendence_percent_SLR <- lm(HS_PLUS_percentage ~ mean_attendance, data = mod_model_data)
 
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 abline(attendence_percent_SLR)
 print(summary(attendence_percent_SLR))
 
@@ -149,7 +149,7 @@ res
 #####################################################################
 ## Multiple Linear Regression
 
-full_MLR <- lm(HS_PLUS_percentage ~ poverty_percentage + mean_chronic_absenteesim + mean_attendence, data = mod_model_data)
+full_MLR <- lm(HS_PLUS_percentage ~ poverty_percentage + mean_chronic_absenteeism + mean_attendance, data = mod_model_data)
 
 print(summary(full_MLR))  #Interpretation is that mean-attendance
 
@@ -157,7 +157,7 @@ print(summary(full_MLR))  #Interpretation is that mean-attendance
 #####################################################################
 ## Multiple Linear Regression
 
-dub_MLR <- lm(HS_PLUS_percentage ~ poverty_percentage + mean_chronic_absenteesim, data = mod_model_data)
+dub_MLR <- lm(HS_PLUS_percentage ~ poverty_percentage + mean_chronic_absenteeism, data = mod_model_data)
 
 print(summary(dub_MLR))
 
@@ -186,10 +186,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -204,9 +204,9 @@ print(summary(poverty_percent_R1))
 
 
 
-chronic_absenteesim_percent_R1 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region1)
+chronic_absenteesim_percent_R1 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region1)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R1)
 print(summary(chronic_absenteesim_percent_R1))
 #####################################################################
@@ -223,10 +223,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -241,9 +241,9 @@ print(summary(poverty_percent_R2))
 
 
 
-chronic_absenteesim_percent_R2 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region2)
+chronic_absenteesim_percent_R2 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region2)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R2)
 print(summary(chronic_absenteesim_percent_R2))
 
@@ -261,10 +261,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -279,9 +279,9 @@ print(summary(poverty_percent_R3))
 
 
 
-chronic_absenteesim_percent_R3 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region3)
+chronic_absenteesim_percent_R3 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region3)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R3)
 print(summary(chronic_absenteesim_percent_R3))
 
@@ -300,10 +300,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -318,9 +318,9 @@ print(summary(poverty_percent_R4))
 
 
 
-chronic_absenteesim_percent_R4 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region4)
+chronic_absenteesim_percent_R4 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region4)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R4)
 print(summary(chronic_absenteesim_percent_R4))
 
@@ -338,10 +338,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -356,9 +356,9 @@ print(summary(poverty_percent_R5))
 
 
 
-chronic_absenteesim_percent_R5 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region5)
+chronic_absenteesim_percent_R5 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region5)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R5)
 print(summary(chronic_absenteesim_percent_R5))
 
@@ -376,10 +376,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -394,9 +394,9 @@ print(summary(poverty_percent_R6))
 
 
 
-chronic_absenteesim_percent_R6 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region6)
+chronic_absenteesim_percent_R6 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region6)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R6)
 print(summary(chronic_absenteesim_percent_R6))
 
@@ -414,10 +414,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -432,9 +432,9 @@ print(summary(poverty_percent_R7))
 
 
 
-chronic_absenteesim_percent_R7 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region7)
+chronic_absenteesim_percent_R7 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region7)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R7)
 print(summary(chronic_absenteesim_percent_R7))
 
@@ -452,10 +452,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -470,9 +470,9 @@ print(summary(poverty_percent_R8))
 
 
 
-chronic_absenteesim_percent_R8 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region8)
+chronic_absenteesim_percent_R8 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region8)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R8)
 print(summary(chronic_absenteesim_percent_R8))
 
@@ -490,10 +490,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -508,9 +508,9 @@ print(summary(poverty_percent_R9))
 
 
 
-chronic_absenteesim_percent_R9 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region9)
+chronic_absenteesim_percent_R9 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region9)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R9)
 print(summary(chronic_absenteesim_percent_R9))
 
@@ -528,10 +528,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -546,9 +546,9 @@ print(summary(poverty_percent_R10))
 
 
 
-chronic_absenteesim_percent_R10 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region10)
+chronic_absenteesim_percent_R10 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region10)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R10)
 print(summary(chronic_absenteesim_percent_R10))
 
@@ -566,10 +566,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -584,9 +584,9 @@ print(summary(poverty_percent_R11))
 
 
 
-chronic_absenteesim_percent_R11 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region11)
+chronic_absenteesim_percent_R11 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region11)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R11)
 print(summary(chronic_absenteesim_percent_R11))
 
@@ -605,10 +605,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -623,9 +623,9 @@ print(summary(poverty_percent_R12))
 
 
 
-chronic_absenteesim_percent_R12 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region12)
+chronic_absenteesim_percent_R12 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region12)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R12)
 print(summary(chronic_absenteesim_percent_R12))
 
@@ -643,10 +643,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -661,9 +661,9 @@ print(summary(poverty_percent_R13))
 
 
 
-chronic_absenteesim_percent_R13 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region13)
+chronic_absenteesim_percent_R13 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region13)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R13)
 print(summary(chronic_absenteesim_percent_R13))
 
@@ -681,10 +681,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -699,9 +699,9 @@ print(summary(poverty_percent_R14))
 
 
 
-chronic_absenteesim_percent_R14 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region14)
+chronic_absenteesim_percent_R14 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region14)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R14)
 print(summary(chronic_absenteesim_percent_R14))
 
@@ -719,10 +719,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -737,9 +737,9 @@ print(summary(poverty_percent_R15))
 
 
 
-chronic_absenteesim_percent_R15 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region15)
+chronic_absenteesim_percent_R15 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region15)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R15)
 print(summary(chronic_absenteesim_percent_R15))
 
@@ -757,10 +757,10 @@ plot(poverty_percentage, HS_PLUS_percentage)
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
 # Good
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 
 # Good
-plot(mean_attendence, HS_PLUS_percentage)
+plot(mean_attendance, HS_PLUS_percentage)
 
 # Bad
 plot(mean_enrollment, HS_PLUS_percentage)
@@ -775,9 +775,9 @@ print(summary(poverty_percent_R16))
 
 
 
-chronic_absenteesim_percent_R16 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteesim, data = region16)
+chronic_absenteesim_percent_R16 <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = region16)
 
-plot(mean_chronic_absenteesim, HS_PLUS_percentage)
+plot(mean_chronic_absenteeism, HS_PLUS_percentage)
 abline(chronic_absenteesim_percent_R16)
 print(summary(chronic_absenteesim_percent_R16))
 
