@@ -27,7 +27,7 @@ library(tidycensus)
 library(tidyverse)
 library(tidyr)
 library(readxl)
-
+library(readr)
 ###################################################################
 # Start program run time
 
@@ -38,6 +38,7 @@ start.time <- Sys.time()
 file_path <- "../DATA/model_data_3_25.csv"
 model_data <- read.csv(file_path)
 
+model_data <- read_csv("C:/Users/jacks/Documents/School/MATH_4530/MATH5530/OUTPUT/model_data_3_25.csv")
 ###################################################################
 # Checking linearity of independent variables to dependent variables
 
@@ -60,7 +61,8 @@ attach(mod_model_data)
 
 # Good
 plot(poverty_percentage, HS_PLUS_percentage)
-
+?abline
+abline(lm(HS_PLUS_percentage~ poverty_percentage))
 # Bad
 plot(mean_total_students_discipline, HS_PLUS_percentage)
 
@@ -102,11 +104,55 @@ abline(attendence_percent_SLR)
 print(summary(attendence_percent_SLR))
 
 #####################################################################
+##Assumption Checks for Normality
+View(model_data)
+library(ggpubr)
+names(model_data)[names(model_data) == "mean_chronic_absenteesim"] <- "mean_chronic_absenteeism"
+names(model_data)[names(model_data) == "mean_attendence"] <- "mean_attendance"
+
+#ALL Significantly Different from normal 
+shapiro.test(model_data$HS_PLUS_percentage)
+ggqqplot(model_data$HS_PLUS_percentage, ylab = "Hs completion")
+shapiro.test(model_data$mean_attendance)
+ggqqplot(model_data$mean_attendance, ylab = "Attendance")
+shapiro.test(model_data$poverty_percentage)
+ggqqplot(model_data$poverty_percentage, ylab = "Poverty %")
+shapiro.test(model_data$mean_chronic_absenteeism)
+ggqqplot(model_data$mean_chronic_absenteeism, ylab = "chronic absenteeism")
+shapiro.test(model_data$total_population)
+ggqqplot(model_data$total_population, ylab = "total population")
+shapiro.test(model_data$mean_enrollment)
+ggqqplot(model_data$mean_enrollment, ylab = "Enrollment")
+
+#####################################################################
+## Assumption Checks for Multicollinearity
+
+#Good
+res <-cor.test(model_data$mean_enrollment,model_data$mean_chronic_absenteeism, method = "kendall")
+res
+
+# Multicollinearity
+res <- cor.test(model_data$below_poverty_num ,model_data$mean_chronic_absenteeism, method = "kendall")
+res
+
+#Multicollinearity
+res <- cor.test(model_data$below_poverty_num ,model_data$mean_enrollment, method = "kendall")
+res
+
+#Multicollinearity
+res <- cor.test(model_data$total_population ,model_data$mean_enrollment, method = "kendall")
+res
+
+#Multicollinearity
+res <- cor.test(model_data$poverty_percentage ,model_data$mean_enrollment, method = "kendall")
+res
+#####################################################################
 ## Multiple Linear Regression
 
 full_MLR <- lm(HS_PLUS_percentage ~ poverty_percentage + mean_chronic_absenteesim + mean_attendence, data = mod_model_data)
 
-print(summary(full_MLR))
+print(summary(full_MLR))  #Interpretation is that mean-attendance
+
 
 #####################################################################
 ## Multiple Linear Regression
