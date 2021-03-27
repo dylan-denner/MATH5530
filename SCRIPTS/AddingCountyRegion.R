@@ -138,14 +138,14 @@ df <- df[,-11]
 #####################################################################
 # Reading in corrected data
 
-file_path <- "../DATA/doing_this_by_hand_complete.csv"
-pls_work <- read.csv(file_path)
-
-library(tidyr)
-testing <- pls_work %>% drop_na()
-
-file_path_and_name = "../OUTPUT/model_data_3_25.csv"
-write.csv(df, file_path_and_name)
+# file_path <- "../DATA/doing_this_by_hand_complete.csv"
+# pls_work <- read.csv(file_path)
+# 
+# library(tidyr)
+# testing <- pls_work %>% drop_na()
+# 
+# file_path_and_name = "../OUTPUT/model_data_3_25.csv"
+# write.csv(testing, file_path_and_name)
 
 #####################################################################
 end.time <- Sys.time()
