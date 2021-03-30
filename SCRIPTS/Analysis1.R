@@ -110,6 +110,9 @@ library(ggpubr)
 names(model_data)[names(model_data) == "mean_chronic_absenteesim"] <- "mean_chronic_absenteeism"
 names(model_data)[names(model_data) == "mean_attendence"] <- "mean_attendance"
 
+file_path_and_name = "../OUTPUT/model_data_3_30.csv"
+write.csv(model_data, file_path_and_name)
+
 #ALL Significantly Different from normal 
 shapiro.test(model_data$HS_PLUS_percentage)
 ggqqplot(model_data$HS_PLUS_percentage, ylab = "Hs completion")
