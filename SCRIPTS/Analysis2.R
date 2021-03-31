@@ -41,7 +41,7 @@ library(lmtest)
 file_path <- "../DATA/model_data_3_30.csv"
 model_data <- read.csv(file_path)
 
-#model_data <- read_csv("C:/Users/jacks/Documents/School/MATH_4530/MATH5530/OUTPUT/model_data_3_25.csv")
+model_data <- read_csv("C:/Users/jacks/Documents/School/MATH_4530/MATH5530/OUTPUT/model_data_3_30.csv")
 ###################################################################
 # Potential Problems 3.3.3
 # (1) Non-Linearity of the response-predictor relationships
@@ -109,12 +109,12 @@ dev.off()
 ##############################################
 # Mean Student Discipline vs. Educational Attainment %
 
-plot1 <- ggplot(model_data, aes(x=mean_total_students_discipline, y=HS_PLUS_percentage)) + geom_point() + 
+plot1 <- ggplot(model_data, aes(x= mean_total_students_discipline, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Mean Student Discipline vs. Educational Attainment %") +
   xlab("Mean Student Discipline") + 
   ylab("Educational Attainment %")
 
-plot2 <- ggplot(mod_model_data, aes(x=mean_total_students_discipline, y=HS_PLUS_percentage)) + geom_point() + 
+plot2 <- ggplot(mod_model_data, aes(x= mean_total_students_discipline, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Modified: Mean Student Discipline vs. Educational Attainment %") +
   xlab("Mean Student Discipline") + 
   ylab("Educational Attainment %")
@@ -171,12 +171,12 @@ ggplot(model_data, aes(x=mean_enrollment, y=HS_PLUS_percentage)) + geom_point() 
   xlab("Mean Enrollment") + 
   ylab("Educational Attainment %")
 
-plot1 <- ggplot(model_data, aes(x=mean_enrollment, y=HS_PLUS_percentage)) + geom_point() + 
+plot1 <- ggplot(model_data, aes(x = mean_enrollment, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Mean Enrollment vs. Educational Attainment %") +
   xlab("Mean Enrollment %") + 
   ylab("Educational Attainment %")
 
-plot2 <- ggplot(mod_model_data, aes(x=mean_enrollment, y=HS_PLUS_percentage)) + geom_point() + 
+plot2 <- ggplot(mod_model_data, aes(x= mean_enrollment, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Modified: Mean Enrollment vs. Educational Attainment %") +
   xlab("Mean Enrollment") + 
   ylab("Educational Attainment %")
@@ -240,22 +240,76 @@ shapiro.test(ENROLLMENT_sresid)
 #####################################################################
 # Testing the Homoscedasticity Assumption
 
+#heterodastic
 ncvTest(POVERTY_lm)
+#homoscedastic
 ncvTest(DISCIPLINE_lm)
+#heteroscedastic
 ncvTest(CHRONIC_lm)
+#homoscedastic
 ncvTest(ATTENDANCE_lm)
+#heteroscedastic
 ncvTest(ENROLLMENT_lm)
-
+#significant
 bptest(POVERTY_lm)
+
+#not_significant
 bptest(DISCIPLINE_lm)
 bptest(CHRONIC_lm)
 bptest(ATTENDANCE_lm)
+
+#significant
 bptest(ENROLLMENT_lm)
 
 #####################################################################
-# Testing the Independence (Autocorrelation) Assumption
+#BOXCOX Transformations
+
+#Way better plots, more normal, insignificicant on Shapiro_Wilk Test
+ENROLLMENT_lm <- lm(HS_PLUS_percentage ~ mean_enrollment, data = mod_model_data)
+boxcox(ENROLLMENT_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(ENROLLMENT_lm), resid(ENROLLMENT_lm))
+ENROLLMENT_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ mean_enrollment, data = mod_model_data)
+plot2 <- plot(fitted(ENROLLMENT_lm2), resid(ENROLLMENT_lm2))
+ENROLLMENT_sresid2 <- studres(ENROLLMENT_lm2)
+shapiro.test(ENROLLMENT_sresid2)
+
+#Better P-value for normality, but still significantly Different from Normal
+POVERTY_lm <- lm(HS_PLUS_percentage ~ poverty_percentage, data = mod_model_data)
+boxcox(POVERTY_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(POVERTY_lm), resid(POVERTY_lm))
+POVERTY_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ poverty_percentage, data = mod_model_data)
+plot2 <- plot(fitted(POVERTY_lm2), resid(POVERTY_lm2))
+POVERTY_sresid2 <- studres(POVERTY_lm2)
+shapiro.test(POVERTY_sresid2)
 
 
+#Better P-value for normality, but still significantly Different from Normal
+DISCIPLINE_lm <- lm(HS_PLUS_percentage ~ mean_total_students_discipline, data = mod_model_data)
+boxcox(DISCIPLINE_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(DISCIPLINE_lm), resid(DISCIPLINE_lm))
+DISCIPLINE_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ mean_total_students_discipline, data = mod_model_data)
+plot2 <- plot(fitted(DISCIPLINE_lm2), resid(DISCIPLINE_lm2))
+DISCIPLINE_sresid2 <- studres(DISCIPLINE_lm2)
+shapiro.test(DISCIPLINE_sresid2)
+
+#Better P-value for normality, but still significantly Different from Normal
+CHRONIC_lm <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = mod_model_data)
+boxcox(CHRONIC_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(CHRONIC_lm), resid(CHRONIC_lm))
+CHRONIC_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ mean_chronic_absenteeism, data = mod_model_data)
+plot2 <- plot(fitted(DISCIPLINE_lm2), resid(DISCIPLINE_lm2))
+CHRONIC_sresid2 <- studres(CHRONIC_lm2)
+shapiro.test(DISCIPLINE_sresid2)
+
+
+#Better P-value for normality, but still significantly Different from Normal
+ATTENDANCE_lm <- lm(HS_PLUS_percentage ~ mean_attendance, data = mod_model_data)
+boxcox(ATTENDANCE_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(ATTENDANCE_lm), resid(ATTENDANCE_lm))
+ATTENDANCE_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ mean_attendance, data = mod_model_data)
+plot2 <- plot(fitted(ATTENDANCE_lm2), resid(ATTENDANCE_lm2))
+ATTENDANCE_sresid2 <- studres(ATTENDANCE_lm2)
+shapiro.test(ATTENDANCE_sresid2)
 
 #####################################################################
 # Transformations
