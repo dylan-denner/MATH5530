@@ -1,0 +1,208 @@
+---
+title: "Week 10 Markdown"
+author: "Dylan Denner"
+date: "3/30/2021"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r, echo=FALSE, message=FALSE}
+setwd("C:/Users/dylan/Documents/R/MATH5530/Project/MATH5530/SCRIPTS/")
+
+# Libraries needed for analysis
+
+library(dplyr)
+library(tidycensus)
+library(tidyverse)
+library(tidyr)
+library(readxl)
+library(readr)
+library(gridExtra)
+library(ggpubr)
+library(MASS)
+library(car)
+library(lmtest)
+
+file_path <- "../DATA/model_data_3_30.csv"
+model_data <- read.csv(file_path)
+
+# Removing Outliers
+
+mod_model_data <- subset(model_data, model_data$HS_PLUS_percentage > 0.65)
+require(gridExtra)
+
+
+```
+
+
+```{r}
+# Simple Linear Regression Models
+
+POVERTY_lm <- lm(HS_PLUS_percentage ~ poverty_percentage, data = mod_model_data)
+DISCIPLINE_lm <- lm(HS_PLUS_percentage ~ mean_total_students_discipline, data = mod_model_data)
+CHRONIC_lm <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = mod_model_data)
+ATTENDANCE_lm <- lm(HS_PLUS_percentage ~ mean_attendance, data = mod_model_data)
+ENROLLMENT_lm <- lm(HS_PLUS_percentage ~ mean_enrollment, data = mod_model_data)
+
+```
+
+Shapiro-Wilk Normality Test for Poverty %
+
+```{r}
+POVERTY_sresid <- studres(POVERTY_lm)
+shapiro.test(POVERTY_sresid)
+
+```
+
+Shapiro-Wilk Normality Test for Mean Student Discipline
+```{r}
+DISCIPLINE_sresid <- studres(DISCIPLINE_lm)
+shapiro.test(DISCIPLINE_sresid)
+
+```
+
+
+Shapiro-Wilk Normality Test for Mean Chronic Absenteeism %
+```{r}
+CHRONIC_sresid <- studres(CHRONIC_lm)
+shapiro.test(CHRONIC_sresid)
+
+```
+
+
+Shapiro-Wilk Normality Test for Mean Attendance %
+```{r}
+ATTENDANCE_sresid <- studres(ATTENDANCE_lm)
+shapiro.test(ATTENDANCE_sresid)
+
+```
+
+Shapiro-Wilk Normality Test for Mean Enrollment
+
+```{r}
+ENROLLMENT_sresid <- studres(ENROLLMENT_lm)
+shapiro.test(ENROLLMENT_sresid)
+```
+
+
+Score Test for Non-Constant Error Variance: Poverty %
+```{r}
+#heterodastic
+ncvTest(POVERTY_lm)
+
+```
+
+Score Test for Non-Constant Error Variance: Mean Student Discipline
+
+```{r}
+#homoscedastic
+ncvTest(DISCIPLINE_lm)
+```
+
+Score Test for Non-Constant Error Variance: Mean Chronic Absenteeism %
+
+```{r}
+#heteroscedastic
+ncvTest(CHRONIC_lm)
+```
+
+Score Test for Non-Constant Error Variance: Mean Attendance %
+
+```{r}
+#homoscedastic
+ncvTest(ATTENDANCE_lm)
+```
+
+Score Test for Non-Constant Error Variance: Mean Enrollment
+
+```{r}
+#heteroscedastic
+ncvTest(ENROLLMENT_lm)
+```
+
+
+BOXCOX Transformations
+
+```{r}
+library(MASS)
+boxcox(ENROLLMENT_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(ENROLLMENT_lm), resid(ENROLLMENT_lm))
+ENROLLMENT_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ mean_enrollment, data = mod_model_data)
+plot2 <- plot(fitted(ENROLLMENT_lm2), resid(ENROLLMENT_lm2))
+ENROLLMENT_sresid2 <- studres(ENROLLMENT_lm2)
+shapiro.test(ENROLLMENT_sresid2)
+
+```
+
+
+```{r}
+#Better P-value for normality, but still significantly Different from Normal
+POVERTY_lm <- lm(HS_PLUS_percentage ~ poverty_percentage, data = mod_model_data)
+boxcox(POVERTY_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(POVERTY_lm), resid(POVERTY_lm))
+POVERTY_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ poverty_percentage, data = mod_model_data)
+plot2 <- plot(fitted(POVERTY_lm2), resid(POVERTY_lm2))
+POVERTY_sresid2 <- studres(POVERTY_lm2)
+shapiro.test(POVERTY_sresid2)
+
+```
+
+
+```{r}
+#Better P-value for normality, but still significantly Different from Normal
+DISCIPLINE_lm <- lm(HS_PLUS_percentage ~ mean_total_students_discipline, data = mod_model_data)
+boxcox(DISCIPLINE_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(DISCIPLINE_lm), resid(DISCIPLINE_lm))
+DISCIPLINE_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ mean_total_students_discipline, data = mod_model_data)
+plot2 <- plot(fitted(DISCIPLINE_lm2), resid(DISCIPLINE_lm2))
+DISCIPLINE_sresid2 <- studres(DISCIPLINE_lm2)
+shapiro.test(DISCIPLINE_sresid2)
+
+
+```
+
+
+```{r}
+#Better P-value for normality, but still significantly Different from Normal
+CHRONIC_lm <- lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = mod_model_data)
+boxcox(CHRONIC_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(CHRONIC_lm), resid(CHRONIC_lm))
+CHRONIC_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ mean_chronic_absenteeism, data = mod_model_data)
+plot2 <- plot(fitted(DISCIPLINE_lm2), resid(DISCIPLINE_lm2))
+CHRONIC_sresid2 <- studres(CHRONIC_lm2)
+shapiro.test(DISCIPLINE_sresid2)
+
+```
+
+
+```{r}
+#Better P-value for normality, but still significantly Different from Normal
+ATTENDANCE_lm <- lm(HS_PLUS_percentage ~ mean_attendance, data = mod_model_data)
+boxcox(ATTENDANCE_lm, lambda = seq(-0.25, 10, by = 0.05), plotit = TRUE)
+plot1 <- plot(fitted(ATTENDANCE_lm), resid(ATTENDANCE_lm))
+ATTENDANCE_lm2 <- lm((((HS_PLUS_percentage ^ 6) - 1) / 6) ~ mean_attendance, data = mod_model_data)
+plot2 <- plot(fitted(ATTENDANCE_lm2), resid(ATTENDANCE_lm2))
+ATTENDANCE_sresid2 <- studres(ATTENDANCE_lm2)
+shapiro.test(ATTENDANCE_sresid2)
+
+```
+
+
+```{r}
+
+
+```
+
+
+
+```{r}
+
+
+```

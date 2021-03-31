@@ -41,7 +41,7 @@ library(lmtest)
 file_path <- "../DATA/model_data_3_30.csv"
 model_data <- read.csv(file_path)
 
-model_data <- read_csv("C:/Users/jacks/Documents/School/MATH_4530/MATH5530/OUTPUT/model_data_3_30.csv")
+#model_data <- read_csv("C:/Users/jacks/Documents/School/MATH_4530/MATH5530/OUTPUT/model_data_3_30.csv")
 ###################################################################
 # Potential Problems 3.3.3
 # (1) Non-Linearity of the response-predictor relationships
@@ -199,25 +199,25 @@ ENROLLMENT_lm <- lm(HS_PLUS_percentage ~ mean_enrollment, data = mod_model_data)
 ##############################################
 # (1) Diagnostics
 
-png("POVERTY_dignose.png")
-autoplot(POVERTY_lm)
-dev.off()
-
-png("DISCIPLINE_dignose.png")
-autoplot(DISCIPLINE_lm)
-dev.off()
-
-png("CHRONIC_dignose.png")
-autoplot(CHRONIC_lm)
-dev.off()
-
-png("ATTENDANCE_dignose.png")
-autoplot(ATTENDANCE_lm)
-dev.off()
-
-png("ENROLLMENT_dignose.png")
-autoplot(ENROLLMENT_lm)
-dev.off()
+# png("POVERTY_dignose.png")
+# autoplot(POVERTY_lm)
+# dev.off()
+# 
+# png("DISCIPLINE_dignose.png")
+# autoplot(DISCIPLINE_lm)
+# dev.off()
+# 
+# png("CHRONIC_dignose.png")
+# autoplot(CHRONIC_lm)
+# dev.off()
+# 
+# png("ATTENDANCE_dignose.png")
+# autoplot(ATTENDANCE_lm)
+# dev.off()
+# 
+# png("ENROLLMENT_dignose.png")
+# autoplot(ENROLLMENT_lm)
+# dev.off()
 
 #####################################################################
 #  Shapiro-Wilk Normality Test
@@ -314,23 +314,23 @@ shapiro.test(ATTENDANCE_sresid2)
 #####################################################################
 # Transformations
 
-mod_model_data[,"poverty_percentage"] <- sqrt(mod_model_data$poverty_percentage)
-png("POVERTY_dignose_sqrt.png")
-autoplot(lm(HS_PLUS_percentage ~ poverty_percentage, data = mod_model_data), label.size = 3)
-dev.off()
-
-## Drop Discipline, not at all linear
-
-mod_model_data[,"mean_chronic_absenteeism"] <- sqrt(mod_model_data$mean_chronic_absenteeism)
-png("CHRONIC_dignose_sqrt.png")
-autoplot(lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = mod_model_data), label.size = 3)
-dev.off()
-
-
-mod_model_data[,"mean_attendance"] <- sqrt(mod_model_data$mean_attendance)
-png("ATTENDANCE_dignose_sqrt.png")
-autoplot(lm(HS_PLUS_percentage ~ mean_attendance, data = mod_model_data), label.size = 3)
-dev.off()
+# mod_model_data[,"poverty_percentage"] <- sqrt(mod_model_data$poverty_percentage)
+# png("POVERTY_dignose_sqrt.png")
+# autoplot(lm(HS_PLUS_percentage ~ poverty_percentage, data = mod_model_data), label.size = 3)
+# dev.off()
+# 
+# ## Drop Discipline, not at all linear
+# 
+# mod_model_data[,"mean_chronic_absenteeism"] <- sqrt(mod_model_data$mean_chronic_absenteeism)
+# png("CHRONIC_dignose_sqrt.png")
+# autoplot(lm(HS_PLUS_percentage ~ mean_chronic_absenteeism, data = mod_model_data), label.size = 3)
+# dev.off()
+# 
+# 
+# mod_model_data[,"mean_attendance"] <- sqrt(mod_model_data$mean_attendance)
+# png("ATTENDANCE_dignose_sqrt.png")
+# autoplot(lm(HS_PLUS_percentage ~ mean_attendance, data = mod_model_data), label.size = 3)
+# dev.off()
 
 ## Drop enrollment, not linear?
 
