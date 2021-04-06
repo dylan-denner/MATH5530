@@ -1,0 +1,36 @@
+---
+title: "MATH 5530 Presentation"
+author: "Jackson Tucker & Dylan Denner"
+date: "4/6/2021"
+output: powerpoint_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+...
+
+## Research Questions
+
+- ..
+- ...
+- ...
+
+## Preliminary Analysis
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## In-depth Analysis
+
+```{r pressure}
+plot(pressure)
+```
+
+## Conclusions and Future Work
+
+## Data and Code
