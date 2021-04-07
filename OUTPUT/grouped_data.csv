@@ -1,0 +1,935 @@
+"","District Name","County","Region","mean_enrollment","mean_attendence","mean_chronic_absenteesim","mean_expulsions","mean_out_of_school_suspensions","mean_in_school_suspensions","mean_total_students_discipline"
+"1","A+ Arts Academy","Franklin","Region 11",686,91.2,33,0,0,0,0
+"2","A+ Children's Academy","Franklin","Region 11",128,92.6,24.7,0,0,0,0
+"3","Academy for Urban Scholars Youngstown","Mahoning","Region 5",196,47.7,94.9,0,0,0,0
+"4","Academy of Educational Excellence","Lucas","Region 1",137,90.6,36.9,0,12,0,12
+"5","Academy of Junior Scholars","Hamilton","Region 13",30,93.1,22.4,0,0,0,0
+"6","Achieve Career Preparatory Academy","Lucas","Region 1",145,60,91.5,0,176,0,176
+"7","AchievePoint Career Academy - Cincinnati","Hamilton","Region 13",60,100,0,0,0,0,0
+"8","AchievePoint Career Academy - Columbus","Franklin","Region 11",36,100,0,0,0,0,0
+"9","Ada Exempted Village","Hardin","Region 6",419,95,8.85,0,19.5,17,36.5
+"10","Adams County Ohio Valley Local","Adams","Region 14",578.333333333333,93.5333333333333,16.1166666666667,0,32.75,88.1666666666667,120.916666666667
+"11","Adena Local","Ross","Region 15",397,94.6,10.6666666666667,0,17.3333333333333,109,126.333333333333
+"12","Akron City","Summit","Region 8",478.627906976744,92.146511627907,21.6813953488372,0,127.720930232558,179.918604651163,307.639534883721
+"13","Akron Preparatory School","Summit","Region 8",218,87.8,47,0,140,0,140
+"14","Akros Middle School","Summit","Region 8",122,90.4,32.6,0,66,0,66
+"15","Albert Einstein Academy for Letters, Arts and Sciences-Ohio","Cuyahoga","Region 3",330,90.1,36.6,0,0,11,11
+"16","Alexander Local","Athens","Region 16",740,94.2,12.25,0,11.5,0,11.5
+"17","Allen East Local","Allen","Region 6",375.333333333333,94.6333333333333,13.0333333333333,0,0,0,0
+"18","Alliance Academy of Cincinnati","Hamilton","Region 13",583,90.6,34.4,0,93,0,93
+"19","Alliance City","Stark","Region 9",499.166666666667,92.2,23.5,0,77.2166666666667,4,81.2166666666667
+"20","Alternative Education Academy","Summit","Region 1",1940,89,36,120,0,0,120
+"21","Amanda-Clearcreek Local","Fairfield","Region 11",361.25,93.775,14.175,0,16.925,49.625,66.55
+"22","Amherst Exempted Village","Lorain","Region 2",887.5,94.65,10.15,0,15.875,0,15.875
+"23","Anna Local","Shelby","Region 6",382.333333333333,96.8,3.5,0,0,0,0
+"24","Ansonia Local","Darke","Region 10",260.666666666667,95.7666666666667,6.5,0,5,0,5
+"25","Anthony Wayne Local","Lucas","Region 1",668.333333333333,95.8833333333333,5.85,0,1.83333333333333,0,1.83333333333333
+"26","Antwerp Local","Paulding","Region 1",238.666666666667,95.5666666666667,7.4,0,0,0,0
+"27","Apex Academy","Cuyahoga","Region 3",496,94.3,14.3,0,47.8,0,47.8
+"28","Arcadia Local","Hancock","Region 1",186.666666666667,95.8666666666667,3.93333333333333,0,0,0,0
+"29","Arcanum-Butler Local","Darke","Region 10",371.666666666667,96.3,5.6,0,0,0,0
+"30","Archbold-Area Local","Fulton","Region 1",403,96,4.16666666666667,0,0,0,0
+"31","Arlington Local","Hancock","Region 1",276,96.1,5.8,0,0,0,0
+"32","Arts & College Preparatory Academy","Franklin","Region 11",393,89.5,38.8,0,25.5,0,25.5
+"33","Ashland City","Ashland","Region 7",635.2,94.62,11.92,0,3.2,5.7,8.9
+"34","Ashland County Community Academy","Ashland","Region 7",84,74.9,77.1,0,0,0,0
+"35","Ashtabula Area City","Ashtabula","Region 5",486.714285714286,92.5,23.2714285714286,0,41.5428571428571,49.5714285714286,91.1142857142857
+"36","Athens City","Athens","Region 16",420.833333333333,93.4,16.5333333333333,0,0,6.83333333333333,6.83333333333333
+"37","Auglaize County Educational Academy","Allen","Region 6",83,98.8,2.2,0,0,0,0
+"38","Aurora Academy","Lucas","Region 1",149,84,62.2,0,32.5,0,32.5
+"39","Aurora City","Portage","Region 8",589.6,96.3,3.66,0,4,2,6
+"40","Austintown Local Schools","Mahoning","Region 5",1109.5,93.75,16.025,0,58.25,98.125,156.375
+"41","Autism Model School","Lucas","Region 1",107,89,36.8,0,0,0,0
+"42","Avon Lake City","Lorain","Region 2",538.428571428571,95.8142857142857,4.98571428571429,0,3.57142857142857,16.7142857142857,20.2857142857143
+"43","Avon Local","Lorain","Region 2",864.2,95.98,4.72,0,5.3,0,5.3
+"44","Ayersville Local","Defiance","Region 1",245.333333333333,95.6333333333333,6.3,0,3.83333333333333,0,3.83333333333333
+"45","Barberton City","Summit","Region 8",910.75,92.225,22.225,0,71.025,171.75,242.775
+"46","Barnesville Exempted Village","Belmont","Region 12",457.333333333333,94.5333333333333,10.8,0,0,0,0
+"47","Batavia Local","Clermont","Region 13",748.333333333333,93.1666666666667,18,0,21.8666666666667,18.6,40.4666666666667
+"48","Bath Local","Allen","Region 6",567.333333333333,95.3333333333333,7.3,0,21,0,21
+"49","Bay Village City","Cuyahoga","Region 3",603.5,96.05,4.375,0,0,6,6
+"50","Beachwood City","Cuyahoga","Region 3",366,95.45,8.175,0,0,21,21
+"51","Beacon Academy","Stark","Region 9",178,90.5,38.9,0,176,0,176
+"52","Beacon Hill Academy","Wayne","Region 9",57,97.4,3.5,0,0,0,0
+"53","Beaver Local","Columbiana","Region 5",574,93.1666666666667,18.2,0,0,13,13
+"54","Beavercreek City","Greene","Region 10",765.5,95.77,6.16,0,10.1,16.75,26.85
+"55","Bedford City","Cuyahoga","Region 3",534,93.2333333333333,19.2333333333333,0,136.033333333333,230.416666666667,366.45
+"56","Bella Academy of Excellence","Cuyahoga","Region 3",283,90.4,41.1,0,56,26,82
+"57","Bellaire Local","Belmont","Region 12",393.666666666667,91.3666666666667,30.0333333333333,0,0,0,0
+"58","Bellbrook-Sugarcreek Local","Greene","Region 10",658.75,96.05,5.4,0,0,0,0
+"59","Bellefontaine City","Logan","Region 6",578.75,94.625,12.2,0,0,14.25,14.25
+"60","Bellevue City","Huron","Region 2",667,95.2,8.25,0,8.5,0,8.5
+"61","Bellevue City","Sandusky","Region 2",573,94.4,13.6,0,0,0,0
+"62","Belpre City","Washington","Region 16",482,94,16.95,0,8.5,19,27.5
+"63","Benjamin Logan Local","Logan","Region 6",558.333333333333,95.9,5.46666666666667,0,7.16666666666667,0,7.16666666666667
+"64","Bennett Venture Academy","Lucas","Region 1",677,93.3,20.1,0,207.3,22,229.3
+"65","Benton Carroll Salem Local","Ottawa","Region 1",477.666666666667,96.7666666666667,3.16666666666667,0,0,0,0
+"66","Berea City","Cuyahoga","Region 3",958.666666666667,94.55,10.35,0,41,44.8333333333333,85.8333333333333
+"67","Berkshire Local","Geauga","Region 4",412.666666666667,95.2666666666667,9,0,0,15,15
+"68","Berne Union Local","Fairfield","Region 11",410,94.35,12.2,0,0,0,0
+"69","Bethel-Tate Local","Clermont","Region 13",374.5,94.45,11.175,0,19.425,16.5,35.925
+"70","Bethel Local","Miami","Region 10",485.333333333333,95.2666666666667,8.66666666666667,0,8.5,0,8.5
+"71","Bexley City","Franklin","Region 11",498.2,95.68,5.7,0,0,4.2,4.2
+"72","Big Walnut Local","Delaware","Region 11",530,95.6142857142857,5.02857142857143,0,1.61428571428571,10.5,12.1142857142857
+"73","Bio-Med Science Academy STEM School","Portage","Region 8",607,94.3,11.5,0,0,0,0
+"74","Black River Local","Ashland","Region 7",375.666666666667,94.7666666666667,9.53333333333333,0,0,5.66666666666667,5.66666666666667
+"75","Blanchester Local","Clinton","Region 14",365,94.75,9.575,0,30.75,4.75,35.5
+"76","Bloom-Carroll Local","Fairfield","Region 11",508.5,95.225,7.2,0,5.25,3.25,8.5
+"77","Bloom-Vernon Local","Scioto","Region 15",421.5,94.95,9.95,0,0,35,35
+"78","Bloomfield-Mespo Local","Trumbull","Region 5",116.5,93.45,15.65,0,0,0,0
+"79","Bluffton Exempted Village","Allen","Region 6",375.333333333333,95.7333333333333,6.26666666666667,0,0,0,0
+"80","Boardman Local","Mahoning","Region 5",577.714285714286,95.2142857142857,8.87142857142857,0,12.8571428571429,0,12.8571428571429
+"81","Botkins Local","Shelby","Region 6",299.5,96.15,6.3,0,0,0,0
+"82","Bowling Green City School District","Wood","Region 1",560.2,94.8,11.22,0,10.1,14.4,24.5
+"83","Bradford Exempted Village","Darke","Region 10",228.5,94.25,12.3,0,0,11.5,11.5
+"84","Brecksville-Broadview Heights City","Cuyahoga","Region 3",620.666666666667,96.0333333333333,4.66666666666667,0,5.33333333333333,0,5.33333333333333
+"85","Bridge Gate Community School","Franklin","Region 11",247,90.8,25.5,0,12.2,0,12.2
+"86","Bridgeport Exempted Village","Belmont","Region 12",257.666666666667,94.5,11.9333333333333,0,0,0,0
+"87","Bridges Community Academy","Seneca","Region 7",139,90.2,40.5,0,0,0,0
+"88","Bright Local","Highland","Region 14",238,94.3666666666667,10.5666666666667,0,5,13.3333333333333,18.3333333333333
+"89","Bristol Local","Trumbull","Region 5",250,94.45,11.75,0,0,0,0
+"90","Broadway Academy","Cuyahoga","Region 3",162,83.5,62.1,0,22,0,22
+"91","Brookfield Local","Trumbull","Region 5",326.666666666667,92.9333333333333,20.0333333333333,0,8.33333333333333,0,8.33333333333333
+"92","Brooklyn City","Cuyahoga","Region 3",560,93.2,18.1,0,16.5,10,26.5
+"93","Brookville Local","Montgomery","Region 10",488,96.3,4.7,0,6.66666666666667,0,6.66666666666667
+"94","Brookwood Academy","Franklin","Region 11",75,78.1,67.8,0,0,0,0
+"95","Brown Local","Carroll","Region 12",203.666666666667,94.7333333333333,9.16666666666667,0,4,5,9
+"96","Brunswick City","Medina","Region 8",620.909090909091,95.4636363636364,7.11818181818182,0,18.1545454545455,26,44.1545454545455
+"97","Bryan City","Williams","Region 1",958.5,95.55,7.7,0,16,57.5,73.5
+"98","Buckeye Central Local","Crawford","Region 7",196,95.5333333333333,9.63333333333333,0,7.33333333333333,8.33333333333333,15.6666666666667
+"99","Buckeye Local","Ashtabula","Region 5",424.5,93.875,17.2,0,12.625,0,12.625
+"100","Buckeye Local","Jefferson","Region 12",314.2,92.78,20.4,0,5.2,4.9,10.1
+"101","Buckeye Local","Medina","Region 8",567,95.3,7.95,0,8,5,13
+"102","Buckeye On-Line School for Success","Columbiana","Region 9",574,95.2,13.8,0,0,0,0
+"103","Buckeye Preparatory Academy","Franklin","Region 11",139,83.6,64.8,0,67.8,0,67.8
+"104","Buckeye Valley Local","Delaware","Region 11",540.25,94.75,10.9,0,16.2,2.5,18.7
+"105","Bucyrus City","Crawford","Region 7",597,92.85,18.2,0,53.85,13.25,67.1
+"106","Caldwell Exempted Village","Noble","Region 12",401.5,93.25,19.1,0,44.5,27,71.5
+"107","Cambridge City","Guernsey","Region 12",482.75,94.325,13.875,0,16,40.25,56.25
+"108","Campbell City","Mahoning","Region 5",530.5,91.1,28.6,0,26.1,6.5,32.6
+"109","Canal Winchester Local","Fairfield","Region 11",950,94.6,11.5,0,83.2,130.5,213.7
+"110","Canal Winchester Local","Franklin","Region 11",953.666666666667,94.5,11.6333333333333,0,25.4,54.2,79.6
+"111","Canfield Local","Mahoning","Region 5",641.25,95.2,7.55,0,3,0,3
+"112","Canton City","Stark","Region 9",381.5,94.1363636363636,16.3681818181818,0,38.8636363636364,33.3181818181818,72.1818181818182
+"113","Canton College Preparatory School","Stark","Region 9",269,89.6,44.5,0,119,0,119
+"114","Canton Harbor High School","Stark","Region 9",142,59.7,85.1,0,0,0,0
+"115","Canton Local","Stark","Region 9",625,94.6333333333333,12.5,0,26,74.6666666666667,100.666666666667
+"116","Capital High School","Franklin","Region 11",136,49.9,99.2,0,0,0,0
+"117","Cardinal Local","Geauga","Region 4",288.333333333333,93.2666666666667,16.6333333333333,0,0,0,0
+"118","Cardington-Lincoln Local","Morrow","Region 7",262.75,94.25,11.925,0,8.75,9.25,18
+"119","Carey Exempted Village Schools","Wyandot","Region 7",421.5,95.65,5.4,0,5,12.5,17.5
+"120","Carlisle Local","Warren","Region 13",382.5,95.325,7.8,0,5.75,0,5.75
+"121","Carrollton Exempted Village","Carroll","Region 12",376.2,94.16,14.52,0,9.4,10,19.4
+"122","Cedar Cliff Local","Greene","Region 10",303,95.8,6.9,0,0,0,0
+"123","Celina City","Mercer","Region 6",501.4,95.46,7.76,0,10.96,40.6,51.56
+"124","Centerburg Local","Knox","Region 7",361.666666666667,94.6,12.0333333333333,0,0,0,0
+"125","Centerville City","Montgomery","Region 10",666.75,95.7083333333333,6.63333333333333,0,3.91666666666667,0,3.91666666666667
+"126","Central Academy of Ohio","Lucas","Region 1",121,84,60,0,0,0,0
+"127","Central High School","Franklin","Region 11",142,47.2,94.7,0,0,0,0
+"128","Central Local","Defiance","Region 1",316.666666666667,95.4,8.7,0,0,0,0
+"129","Cesar Chavez College Preparatory School","Franklin","Region 11",326,93.3,18.2,0,88,0,88
+"130","Chagrin Falls Exempted Village","Cuyahoga","Region 3",455.333333333333,95.7666666666667,4.76666666666667,0,0,0,0
+"131","Chagrin Falls Exempted Village","Geauga","Region 3",486,95.5,4.7,0,0,0,0
+"132","Champion Local","Trumbull","Region 5",441.333333333333,95.0333333333333,9.26666666666667,0,0,17.6666666666667,17.6666666666667
+"133","Chapelside Cleveland Academy","Cuyahoga","Region 3",295,88.4,48.7,0,187.5,0,187.5
+"134","Chardon Local","Geauga","Region 4",671.5,95.25,7.65,0,7,0,7
+"135","Charles School at Ohio Dominican University","Franklin","Region 11",340,91,30,0,16,0,16
+"136","Chesapeake Union Exempted Village","Lawrence","Region 15",429.333333333333,93.8,15.7,0,0,0,0
+"137","Chillicothe City","Ross","Region 15",627.25,89.75,31.575,0,71.15,0,71.15
+"138","Chippewa Local","Wayne","Region 9",427,95.0333333333333,10.4666666666667,0,13.1333333333333,22.9333333333333,36.0666666666667
+"139","Cincinnati College Preparatory Academy","Hamilton","Region 13",942,91.6,29.4,0,0,0,0
+"140","Cincinnati Public Schools","Hamilton","Region 13",626.947368421053,89.3105263157895,36.7736842105263,0.22280701754386,0.219298245614035,28.9087719298246,29.3508771929825
+"141","Cincinnati Technology Academy","Hamilton","Region 13",218,90.4,35.3,0,0,0,0
+"142","Circleville City","Pickaway","Region 11",701,92.7,21.3666666666667,0,25.6666666666667,49.3333333333333,75
+"143","Citizens Leadership Academy East","Cuyahoga","Region 3",149,92.8,25.6,0,0,0,0
+"144","City Day Community School","Montgomery","Region 10",159,86.1,59.4,0,0,0,0
+"145","Clark-Shawnee Local","Clark","Region 10",369,94.78,11.26,0,6.66,32.1,38.76
+"146","Clark Preparatory Academy","Clark","Region 10",104,89.6,40.4,0,29,0,29
+"147","Clay Avenue Community School","Lucas","Region 1",400,89,47.3,0,78,0,78
+"148","Clay Local","Scioto","Region 15",229.333333333333,94.2333333333333,17.4,0,0,33,33
+"149","Claymont City","Tuscarawas","Region 12",356.2,93.92,15.46,0,20,56.4,76.4
+"150","Clear Fork Valley Local","Richland","Region 7",403.25,95.275,8.1,0,0,0,0
+"151","Clearview Local","Lorain","Region 2",541.666666666667,91.8666666666667,25.2666666666667,0,64.9333333333333,0,64.9333333333333
+"152","Clermont Northeastern Local","Clermont","Region 13",457,93.7,16.4666666666667,0,9.36666666666667,10.6666666666667,20.0333333333333
+"153","Cleveland Academy for Scholarship Technology and Leadership","Cuyahoga","Region 3",264,65.7,83.6,0,27,0,27
+"154","Cleveland Arts and Social Sciences Academy","Cuyahoga","Region 3",295,88.2,48.7,0,35,0,35
+"155","Cleveland Heights-University Heights City","Cuyahoga","Region 3",514.9,93.1,20.41,0,72.63,170.85,243.48
+"156","Cleveland Municipal","Cuyahoga","Region 3",351.162601626016,90.4593495934959,31.7382113821138,0,61.9577235772358,9.08943089430894,71.0471544715447
+"157","Cleveland Preparatory Academy","Cuyahoga","Region 3",154,79.4,69.4,0,35.2,17,52.2
+"158","Cliff Park High School","Clark","Region 10",178,40.1,96.9,0,0,0,0
+"159","Clinton-Massie Local","Clinton","Region 14",550,95.3333333333333,7.23333333333333,0,8.33333333333333,16.5,24.8333333333333
+"160","Cloverleaf Local","Medina","Region 8",752.333333333333,95.0666666666667,9.73333333333333,0,14.6666666666667,0,14.6666666666667
+"161","Clyde-Green Springs Exempted Village","Sandusky","Region 1",530.25,95.3,8.15,0,8.45,38.325,46.775
+"162","Coldwater Exempted Village","Mercer","Region 6",442,96.3666666666667,3.56666666666667,0,0,0,0
+"163","Colonel Crawford Local","Crawford","Region 7",229.25,95.95,4.25,0,0,3.5,3.5
+"164","Columbia Local","Lorain","Region 2",276.666666666667,95.2,7.9,0,3.33333333333333,0,3.33333333333333
+"165","Columbiana Exempted Village","Columbiana","Region 5",353.333333333333,94.3333333333333,12.5666666666667,0,0,0,0
+"166","Columbus Arts & Technology Academy","Franklin","Region 11",569,90.9,29.7,0,111,0,111
+"167","Columbus Bilingual Academy-North","Franklin","Region 11",296,91.8,27,0,0,0,0
+"168","Columbus City School District","Franklin","Region 11",443.754545454545,88.0247706422018,40.4440366972477,0,68.8440366972477,96.743119266055,165.587155963303
+"169","Columbus Collegiate Academy","Franklin","Region 11",237,92.5,26.5,0,71,0,71
+"170","Columbus Collegiate Academy - West","Franklin","Region 11",240,89.4,36,0,92,0,92
+"171","Columbus Grove Local","Putnam","Region 1",278.666666666667,97,3.5,0,0,0,0
+"172","Columbus Humanities, Arts and Technology Academy","Franklin","Region 11",560,93.9,16.3,0,36,0,36
+"173","Columbus Performance Academy","Franklin","Region 11",193,92.6,22.8,0,97,0,97
+"174","Columbus Preparatory Academy","Franklin","Region 11",810,95.5,5.8,0,0,0,0
+"175","Columbus Preparatory and Fitness Academy","Franklin","Region 11",419,91.9,24.6,0,29.5,0,29.5
+"176","Conneaut Area City","Ashtabula","Region 5",387,93.425,17.55,0,11.575,0,11.575
+"177","Conotton Valley Union Local","Carroll","Region 12",201.5,93.95,15.6,0,0,24,24
+"178","Constellation Schools: Eastside Arts Academy","Cuyahoga","Region 3",126,90.9,31.4,0,0,0,0
+"179","Constellation Schools: Elyria Community","Lorain","Region 2",488,94.3,12.7,0,15,0,15
+"180","Constellation Schools: Lorain Community Elementary","Lorain","Region 2",182,93.1,19.9,0,0,0,0
+"181","Constellation Schools: Lorain Community Middle","Lorain","Region 2",132,93.2,17.6,0,0,0,0
+"182","Constellation Schools: Madison Community Elementary","Cuyahoga","Region 3",248,92,25.5,0,22,0,22
+"183","Constellation Schools: Old Brooklyn Community Elementary","Cuyahoga","Region 3",329,94,16,0,0,0,0
+"184","Constellation Schools: Old Brooklyn Community Middle","Cuyahoga","Region 3",268,94,15.3,0,0,0,0
+"185","Constellation Schools: Parma Community","Cuyahoga","Region 3",1412,93.4,18,0,72,0,72
+"186","Constellation Schools: Puritas Community Elementary","Cuyahoga","Region 3",202,93.1,22,0,0,0,0
+"187","Constellation Schools: Puritas Community Middle","Cuyahoga","Region 3",173,94.6,13.3,0,0,0,0
+"188","Constellation Schools: Stockyard Community Elementary","Cuyahoga","Region 3",255,91.3,29.2,0,21,0,21
+"189","Constellation Schools: Stockyard Community Middle","Cuyahoga","Region 3",66,91.3,28.9,0,0,0,0
+"190","Constellation Schools: Westpark Community Elementary","Cuyahoga","Region 3",315,93.2,21.1,0,0,0,0
+"191","Constellation Schools: Westpark Community Middle","Cuyahoga","Region 3",224,93.8,18.7,0,12,0,12
+"192","Constellation Schools: Westside Community School of the Arts","Cuyahoga","Region 3",326,91.8,25.5,0,16,0,16
+"193","Continental Local","Putnam","Region 1",233,95.95,4.85,0,0,5.5,5.5
+"194","Copley-Fairlawn City","Summit","Region 8",559.2,95.64,7.14,0,3.4,0,3.4
+"195","Cornerstone Academy Community School","Franklin","Region 11",794,95.9,5.4,0,26,25,51
+"196","Cory-Rawson Local","Hancock","Region 1",258.5,95.85,5.8,0,0,0,0
+"197","Coshocton City","Coshocton","Region 12",766,94.5,11.2,0,9.5,103.25,112.75
+"198","Coshocton Opportunity School","Coshocton","Region 12",40,89.6,31.1,0,0,0,0
+"199","Coventry Local","Summit","Region 8",610.333333333333,94.1666666666667,13.3666666666667,0,12.6666666666667,46.1666666666667,58.8333333333333
+"200","Covington Exempted Village","Miami","Region 10",252,95.9333333333333,6.2,0,0,0,0
+"201","Crestline Exempted Village","Crawford","Region 7",237.5,93.35,17.2,0,9.5,22.25,31.75
+"202","Crestview Local","Columbiana","Region 5",401.333333333333,93.8666666666667,14.2333333333333,0,0,0,0
+"203","Crestview Local","Richland","Region 7",343,95.2666666666667,7.36666666666667,0,6.66666666666667,0,6.66666666666667
+"204","Crestview Local","Van Wert","Region 1",266.333333333333,96.2666666666667,4.3,0,0,0,0
+"205","Crestwood Local","Portage","Region 8",411.5,93.675,15.125,0,23.25,0,23.25
+"206","Crooksville Exempted Village","Perry","Region 16",361.666666666667,94.4,13.5,0,0,0,0
+"207","Cuyahoga Falls City","Summit","Region 8",498.777777777778,94.5777777777778,11.3777777777778,0,10,0,10
+"208","Cuyahoga Heights Local","Cuyahoga","Region 3",266.666666666667,96.4333333333333,3.43333333333333,0,0,0,0
+"209","Dalton Local","Wayne","Region 9",281,96,5.16666666666667,0,0,0,0
+"210","Danbury Local","Ottawa","Region 1",178.333333333333,94.8,8.6,0,0,0,0
+"211","Danville Local","Knox","Region 7",203.666666666667,95.4,8.2,0,0,0,0
+"212","Dawson-Bryant Local","Lawrence","Region 15",359.666666666667,94.0333333333333,17.1666666666667,0,0,6.66666666666667,6.66666666666667
+"213","Dayton Business Technology High School","Montgomery","Region 10",118,66,88.6,0,22,0,22
+"214","Dayton City","Montgomery","Region 10",481.769230769231,88.8230769230769,35.6423076923077,0,107.46,0,107.46
+"215","Dayton Early College Academy, Inc","Montgomery","Region 10",342,95.5,8.2,0,12.5,0,12.5
+"216","Dayton Leadership Academies-Dayton View Campus","Montgomery","Region 10",435,92.4,26.9,0,103,0,103
+"217","Dayton Regional STEM School","Montgomery","Region 10",652,96.2,5.6,0,0,0,0
+"218","Dayton SMART Elementary School","Montgomery","Region 10",110,90,37.6,0,20,0,20
+"219","DECA PREP","Montgomery","Region 10",905,93.4,20,0,144,39,183
+"220","Deer Park Community City","Hamilton","Region 13",601.5,93.15,18.9,0,15.5,48,63.5
+"221","Defiance City","Defiance","Region 1",804.666666666667,94.7333333333333,12.0333333333333,0,5,36.8333333333333,41.8333333333333
+"222","Delaware City","Delaware","Region 11",797.428571428571,94.9285714285714,9.84285714285714,0,16.2142857142857,16,32.2142857142857
+"223","Delphos City","Allen","Region 6",205.5,96.9,3.25,0,0,0,0
+"224","Delphos City","Van Wert","Region 6",243.5,94.8,12.1,0,7,5,12
+"225","Discovery Academy","Lucas","Region 1",341,90.7,33,0,96,0,96
+"226","Dohn Community","Hamilton","Region 13",688,47.5,97.4,0,0,0,0
+"227","Dover City","Tuscarawas","Region 12",536,95.64,6.42,0,0,0,0
+"228","Dublin City","Delaware","Region 11",676.333333333333,95.8,4.6,0,0,3.33333333333333,3.33333333333333
+"229","Dublin City","Franklin","Region 11",866.333333333333,95.26,8.64666666666667,0,9.98,25.4666666666667,35.4466666666667
+"230","Dublin City","Union","Region 11",687,96.2,4.2,0,0,0,0
+"231","Eagle Learning Center","Lucas","Region 1",71,40.1,92,0,0,0,0
+"232","Early College Academy","Franklin","Region 11",161,42.8,98.8,0,0,0,0
+"233","East Academy","Cuyahoga","Region 3",306,85.2,55.7,0,49,0,49
+"234","East Branch Preparatory AcademydbaWright Preparatory Academy","Stark","Region 9",136,86.9,47.4,0,53,0,53
+"235","East Bridge Academy of Excellence","Franklin","Region 11",63,90.5,36.3,0,0,0,0
+"236","East Cleveland City School District","Cuyahoga","Region 3",321.5,89.4333333333333,38.0166666666667,0,20.9166666666667,33.1666666666667,54.0833333333333
+"237","East Clinton Local","Clinton","Region 14",308.75,93.9,13.4,0,7.75,21.25,29
+"238","East Guernsey Local","Guernsey","Region 12",338.666666666667,93.2,19.4,0,0,25.2666666666667,25.2666666666667
+"239","East Holmes Local","Holmes","Region 12",198.25,96.525,2.5,0,0,0,0
+"240","East Knox Local","Knox","Region 7",446.5,94.7,9.45,0,5.5,7,12.5
+"241","East Liverpool City","Columbiana","Region 5",425.6,90.52,35.76,0,24.86,8.8,33.66
+"242","East Muskingum Local","Guernsey","Region 12",117,95.9,4.1,0,0,0,0
+"243","East Muskingum Local","Muskingum","Region 12",399.8,94.94,9.88,0,2.2,11.5,13.7
+"244","East Palestine City","Columbiana","Region 5",356,92.5,19.2666666666667,0,5,13.6666666666667,18.6666666666667
+"245","East Preparatory Academy","Cuyahoga","Region 3",198,91.2,33.2,0,19.5,0,19.5
+"246","Eastern Local","Brown","Region 14",305.75,95.65,5.925,0,3.5,3.25,6.75
+"247","Eastern Local","Meigs","Region 16",397.5,92.85,20.8,0,0,30,30
+"248","Eastern Local School District","Pike","Region 15",205.25,93.425,18.45,0,4.75,24.75,29.5
+"249","Eastland Preparatory Academy","Franklin","Region 11",254,83.3,59.8,0,27,29,56
+"250","Eastwood Local","Wood","Region 1",470,95.9666666666667,5.53333333333333,0,0,0,0
+"251","Eaton Community City","Preble","Region 10",477.75,95.05,10.625,0,5,0,5
+"252","Edge Academy, The","Summit","Region 8",239,91.4,32,0,26,0,26
+"253","Edgerton Local","Williams","Region 1",283.5,95.7,6.5,0,0,0,0
+"254","Edgewood City","Butler","Region 13",708,93.78,15.08,0,21.5,22.66,44.16
+"255","Edison Local","Jefferson","Region 12",366,93.875,15.85,0,35.5,0,35.5
+"256","Edison Local (formerly Berlin-Milan)","Erie","Region 2",488,94.9333333333333,10.1666666666667,0,6.83333333333333,0,6.83333333333333
+"257","Edon Northwest Local","Williams","Region 1",239,95.05,9.1,0,0,0,0
+"258","Educational Academy for Boys & Girls","Franklin","Region 11",129,92.9,23.7,0,0,0,0
+"259","Elgin Local","Marion","Region 7",341,93.7,15.1,0,6,4,10
+"260","Elida Local","Allen","Region 6",751,94,14.6666666666667,0,49.5666666666667,10.3666666666667,59.9333333333333
+"261","Elmwood Local","Wood","Region 1",409,96.3,5.66666666666667,0,4.33333333333333,0,4.33333333333333
+"262","Elyria City Schools","Lorain","Region 2",504.5,92.6166666666667,20.65,1,46.0666666666667,8.08333333333333,55.15
+"263","Emerson Academy","Montgomery","Region 10",633,91.3,36.4,0,236.5,0,236.5
+"264","Euclid City","Cuyahoga","Region 3",793,91.1166666666667,30.35,0,175.166666666667,0,175.166666666667
+"265","Euclid Preparatory School","Cuyahoga","Region 3",251,88,47.6,0,290.3,0,290.3
+"266","Everest High School","Franklin","Region 11",52,37.8,93.5,0,0,0,0
+"267","Evergreen Local","Fulton","Region 1",392.666666666667,96.2,4.86666666666667,0,0,0,0
+"268","Fairbanks Local","Union","Region 11",353.666666666667,95.9666666666667,5.36666666666667,0,0,0,0
+"269","Fairborn City","Greene","Region 10",1039.5,92.825,20.325,0,78.275,89.375,167.65
+"270","Fairborn Digital Academy","Greene","Region 10",145,99.9,0.5,0,0,0,0
+"271","Fairfield City","Butler","Region 13",921.5,94.84,11.04,0,56.18,136.9,193.08
+"272","Fairfield Local","Highland","Region 14",300.666666666667,95.0333333333333,10.3666666666667,0,0,13.3333333333333,13.3333333333333
+"273","Fairfield Union Local","Fairfield","Region 11",475.5,94.8,11.15,0,8.875,7.75,16.625
+"274","Fairland Local","Lawrence","Region 15",390.75,94.4,13.825,0,0,0,0
+"275","Fairlawn Local","Shelby","Region 6",286.5,95.25,5.8,0,0,6.25,6.25
+"276","Fairless Local","Stark","Region 9",487.333333333333,98.5333333333333,1.93333333333333,0,9.33333333333333,36.6666666666667,46
+"277","Fairport Harbor Exempted Village","Lake","Region 4",342.5,92.9,19.45,0,35.5,23.5,59
+"278","Fairview Park City","Cuyahoga","Region 3",413.25,95.375,7.725,0,5,0,5
+"279","Fayette Local","Fulton","Region 1",205,94.45,12.5,0,0,0,0
+"280","Fayetteville-Perry Local","Brown","Region 14",262,94.6333333333333,10.7333333333333,0,4,6,10
+"281","Federal Hocking Local","Athens","Region 16",251.5,92.75,22.575,0,0,0,0
+"282","Felicity-Franklin Local","Clermont","Region 13",250.333333333333,93.8666666666667,17.0333333333333,0,0,0,0
+"283","Field Local","Portage","Region 8",475.25,94.525,11.775,0,7.75,32.375,40.125
+"284","Findlay City","Hancock","Region 1",436.916666666667,94.3583333333333,11.525,0,12.9333333333333,23.4,36.3333333333333
+"285","Findlay Digital Academy","Hancock","Region 1",127,100,0,0,0,0,0
+"286","Finneytown Local","Hamilton","Region 13",448,94.0333333333333,15.6666666666667,0,24.9,0,24.9
+"287","Firelands Local","Lorain","Region 2",535.333333333333,94.4333333333333,12.2333333333333,0,10.9333333333333,0,10.9333333333333
+"288","Flex High School","Franklin","Region 11",237,55.9,86.1,0,0,0,0
+"289","Focus Learning Academy of Northern Columbus","Franklin","Region 11",482,94.8,14.1,0,20,71,91
+"290","Focus Learning Academy of Southeastern Columbus","Franklin","Region 11",220,41.8,99.5,0,0,0,0
+"291","Focus Learning Academy of Southwest Columbus","Franklin","Region 11",234,37.6,99.8,0,0,0,0
+"292","Focus North High School","Franklin","Region 11",185,41.5,97.8,0,0,0,0
+"293","Forest Hills Local","Hamilton","Region 13",807.111111111111,95.6222222222222,6.47777777777778,0,9.77777777777778,0,9.77777777777778
+"294","Fort Frye Local","Morgan","Region 16",147,94.9,6.8,0,15,0,15
+"295","Fort Frye Local","Washington","Region 16",273,95.0333333333333,9,0,0,9.66666666666667,9.66666666666667
+"296","Fort Loramie Local","Shelby","Region 6",359,98.1,0.7,0,0,0,0
+"297","Fort Recovery Local","Mercer","Region 6",333,97.1,2.1,0,0,0,0
+"298","Fostoria City","Seneca","Region 1",367,92.5666666666667,25.6666666666667,0,13.6666666666667,0,13.6666666666667
+"299","Fostoria City","Wood","Region 1",711,90.2,33.8,0,343,0,343
+"300","Foundation Academy","Richland","Region 7",396,93.6,17.4,0,60,50.5,110.5
+"301","Franklin City","Warren","Region 13",343.875,94.1125,13.575,0,9.125,5.5,14.625
+"302","Franklin Local","Muskingum","Region 12",468.5,94.075,13.75,0,13.25,26.375,39.625
+"303","Franklin Local Community School","Muskingum","Region 12",54,83.1,73.2,0,23.5,45,68.5
+"304","Franklin Monroe Local","Darke","Region 10",292.5,96.65,3.1,0,0,0,0
+"305","Franklinton Preparatory Academy","Franklin","Region 11",168,80,62.7,0,17,0,17
+"306","Frederick Douglass High School","Cuyahoga","Region 3",71,41.8,100,0,0,0,0
+"307","Fredericktown Local","Knox","Region 7",398,95.1333333333333,9.36666666666667,0,14.5,0,14.5
+"308","Fremont City","Sandusky","Region 1",391.111111111111,94.6777777777778,11.4111111111111,0,23.2777777777778,25.4444444444444,48.7222222222222
+"309","Frontier Local","Washington","Region 16",145.5,93.2,18.05,0,0,0,0
+"310","Gahanna-Jefferson City","Franklin","Region 11",680.818181818182,95.5909090909091,6.54545454545454,0,33.9090909090909,26.9090909090909,60.8181818181818
+"311","Galion City","Crawford","Region 7",422.5,93.875,14.975,0,39.175,0,39.175
+"312","Gallia County Local","Gallia","Region 16",271.875,93.1,19.5,0,1.875,3.5,5.375
+"313","Gallipolis City","Gallia","Region 16",400.8,94.4,12.38,0,0,0,0
+"314","Garaway Local","Tuscarawas","Region 12",240.4,96.58,4.02,0,0,0,0
+"315","Garfield Heights City Schools","Cuyahoga","Region 3",695.8,92.52,24.12,0,136.2,70,206.2
+"316","Geneva Area City","Ashtabula","Region 5",442.8,93.46,18.42,0,21.36,0,21.36
+"317","Genoa Area Local","Ottawa","Region 1",429.333333333333,96.0333333333333,5.3,0,0,3.33333333333333,3.33333333333333
+"318","George V. Voinovich High School","Cuyahoga","Region 3",35,44.7,100,0,0,0,0
+"319","Georgetown Exempted Village","Brown","Region 14",525.5,93.65,16.35,0,15,195,210
+"320","Gibsonburg Exempted Village","Sandusky","Region 1",292.333333333333,95.8,6.73333333333333,0,0,0,0
+"321","Girard City School District","Trumbull","Region 5",422.25,92.05,23.8,0,7.625,25.875,33.5
+"322","Glass City Academy","Lucas","Region 1",199,40.5,98.9,0,15,0,15
+"323","Global Ambassadors Language Academy","Cuyahoga","Region 3",181,93.7,15,0,0,0,0
+"324","Global Impact STEM Academy","Clark","Region 10",640,95,9.6,0,0,0,0
+"325","Global Village Academy","Cuyahoga","Region 3",189,95.3,3.2,0,0,0,0
+"326","Goal Digital Academy","Richland","Region 7",650,75.1,53.4,0,0,0,0
+"327","Goshen Local","Clermont","Region 13",694.5,94.25,14.125,0,14.875,16.875,31.75
+"328","Graham Elementary and Middle School","Franklin","Region 11",435,89.5,41.7,0,151.2,0,151.2
+"329","Graham Local","Champaign","Region 6",572.333333333333,94.6666666666667,11.3,0,14.8666666666667,12.4,27.2666666666667
+"330","Graham School, The","Franklin","Region 11",242,90.5,36.6,0,31,0,31
+"331","Grand Valley Local","Ashtabula","Region 5",355.333333333333,93.8666666666667,14.4333333333333,0,3.33333333333333,0,3.33333333333333
+"332","Grandview Heights Schools","Franklin","Region 11",264.25,95.45,5.925,0,0,0,0
+"333","Granville Exempted Village","Licking","Region 11",606,95.55,5.7,0,0,0,0
+"334","Great River Connections Academy","Franklin","Region 11",554,77.3,40.7,0,0,0,0
+"335","Great Western Academy","Franklin","Region 11",762,92,25.5,0,74,106,180
+"336","Greater Ohio Virtual School","Warren","Region 13",404,99.3,3.9,0,0,0,0
+"337","Greater Summit County Early Learning Center","Summit","Region 8",139,95,5,0,0,0,0
+"338","Green Inspiration Academy","Cuyahoga","Region 3",254,91.1,33.1,0,43.3,0,43.3
+"339","Green Local","Scioto","Region 15",190,92.4,21.4666666666667,0,0,0,0
+"340","Green Local","Summit","Region 8",800,95.32,7.4,0,8.88,34.4,43.28
+"341","Green Local","Wayne","Region 9",344,95.6666666666667,7.93333333333333,0,0,4.66666666666667,4.66666666666667
+"342","Greeneview Local","Greene","Region 10",424.666666666667,94.7666666666667,10.0333333333333,0,13.6666666666667,25.8333333333333,39.5
+"343","Greenfield Exempted Village","Highland","Region 14",426.75,95.05,9.475,0,6.75,0,6.75
+"344","Greenfield Exempted Village","Ross","Region 14",203,95.2,11.6,0,0,0,0
+"345","Greenon Local","Clark","Region 10",374.5,94.15,13.625,0,7,0,7
+"346","Greenville City","Darke","Region 10",834.333333333333,93.3666666666667,15.9,0,43.3333333333333,55,98.3333333333333
+"347","Groveport Community School","Franklin","Region 11",761,92.7,22.4,0,95.3,0,95.3
+"348","Groveport Madison Local","Franklin","Region 11",536.272727272727,91.1909090909091,27.2636363636364,0,35.6363636363636,45.5454545454545,81.1818181818182
+"349","Hamilton City","Butler","Region 13",824.916666666667,91.275,24.8083333333333,2.35833333333333,120.983333333333,0,123.341666666667
+"350","Hamilton Cnty Math & Science","Hamilton","Region 13",619,95,14.3,0,0,0,0
+"351","Hamilton Local","Franklin","Region 11",734.5,93.9,12.875,0,42.85,151.4,194.25
+"352","Hardin-Houston Local","Shelby","Region 6",394.5,95.45,7.65,0,20.5,0,20.5
+"353","Hardin Community School","Hardin","Region 6",33,88.5,45.3,0,0,0,0
+"354","Hardin Northern Local","Hardin","Region 6",197,95.45,6.65,0,0,0,0
+"355","Harrisburg Pike Community School","Franklin","Region 11",201,80.4,73.1,0,11.5,0,11.5
+"356","Harrison Hills City","Harrison","Region 12",492,93.8333333333333,16.2,0,0,97,97
+"357","Harvard Avenue Performance Academy","Cuyahoga","Region 3",338,90.5,33.5,0,51.8,0,51.8
+"358","Heath City","Licking","Region 11",410.25,94.35,13.6,0,6.3,11.25,17.55
+"359","Heir Force Community School","Allen","Region 6",241,93.2,21,0,0,0,0
+"360","Hicksville Exempted Village","Defiance","Region 1",451,95.25,9.15,0,0,0,0
+"361","Highland Local","Medina","Region 8",645,95.78,6,0,2.1,0,2.1
+"362","Highland Local","Morrow","Region 7",600.666666666667,94.3333333333333,11.2,0,3.66666666666667,4.66666666666667,8.33333333333333
+"363","Hilliard City","Franklin","Region 11",710.5,96.1272727272727,5.58636363636364,0,13.7545454545455,13.3181818181818,27.0727272727273
+"364","Hillsboro City","Highland","Region 14",462.4,93.66,16.78,0,36.8,43,79.8
+"365","Hillsdale Local","Ashland","Region 7",257,95.6666666666667,6.86666666666667,0,0,0,0
+"366","Holgate Local","Henry","Region 1",213.5,96.5,3.05,0,0,0,0
+"367","Hope Academy for Autism","Trumbull","Region 5",48,89.5,41.6,0,0,0,0
+"368","Hope Academy Northcoast","Cuyahoga","Region 3",297,87.1,51.8,0,184.4,0,184.4
+"369","Hope Academy Northwest Campus","Cuyahoga","Region 3",222,85.5,55.8,0,95,0,95
+"370","Hope Learning Academy of Toledo","Lucas","Region 1",67,92.7,24.1,0,0,0,0
+"371","Hopewell-Loudon Local","Seneca","Region 7",394.5,96.15,5.4,0,0,5.5,5.5
+"372","Horizon Science Academy-Cincinnati","Hamilton","Region 13",225,87.4,54.5,0,135.5,30,165.5
+"373","Horizon Science Academy-Cleveland Middle School","Cuyahoga","Region 3",334,91.4,32.3,0,91.5,107,198.5
+"374","Horizon Science Academy-Dayton","Montgomery","Region 10",162,90.4,38.9,0,27,0,27
+"375","Horizon Science Academy-Denison Middle School","Cuyahoga","Region 3",326,91.1,34.4,0,153,54,207
+"376","Horizon Science Academy-Springfield","Lucas","Region 1",364,90.2,43.3,0,257,119.5,376.5
+"377","Horizon Science Academy Columbus","Franklin","Region 11",492,95.1,11.6,0,186,0,186
+"378","Horizon Science Academy Columbus Middle School","Franklin","Region 11",505,94,17.3,0,116.5,157.5,274
+"379","Horizon Science Academy Dayton Downtown","Montgomery","Region 10",219,93.4,21,0,32.5,43,75.5
+"380","Horizon Science Academy Dayton High School","Montgomery","Region 10",310,89.4,40.9,0,167,0,167
+"381","Horizon Science Academy Elementary School","Franklin","Region 11",486,96.1,6.8,0,11.5,22,33.5
+"382","Horizon Science Academy Lorain","Lorain","Region 3",714,93.2,21.5,0,40,65.5,105.5
+"383","Horizon Science Academy Primary","Franklin","Region 11",260,95.5,8.7,0,0,0,0
+"384","Horizon Science Academy Toledo","Lucas","Region 1",529,92.9,23,0,93,189,282
+"385","Horizon Science Academy Youngstown","Mahoning","Region 5",395,90.4,38.8,0,94,94,188
+"386","Howland Local","Trumbull","Region 5",423.5,94.0333333333333,14.4,0,17.7,0,17.7
+"387","Hubbard Exempted Village","Trumbull","Region 5",633.666666666667,94.2666666666667,12.5,0,6,0,6
+"388","Huber Heights City","Montgomery","Region 10",803.857142857143,94.2714285714286,13.3714285714286,0,19.3428571428571,0,19.3428571428571
+"389","Hudson City","Summit","Region 8",762.5,96.15,4.66666666666667,0,0,2.33333333333333,2.33333333333333
+"390","Huntington Local","Ross","Region 15",349,92.7,20.1333333333333,0,19.3333333333333,0,19.3333333333333
+"391","Huron City Schools","Erie","Region 2",328,95.25,7.725,0,0,0,0
+"392","iLEAD Spring Meadows","Lucas","Region 1",200,92.1,18.3,0,0,0,0
+"393","Imagine Akron Academy","Summit","Region 8",50,87.5,48.9,0,0,0,0
+"394","Imagine Columbus Primary School","Franklin","Region 11",235,90.8,33.3,0,29.8,0,29.8
+"395","Imagine Hill Avenue","Lucas","Region 1",128,94.5,14.4,0,0,0,0
+"396","Imagine Leadership Academy","Summit","Region 8",169,92.5,25.4,0,32,0,32
+"397","Independence Local","Cuyahoga","Region 3",355.666666666667,95.9,6,0,0,0,0
+"398","Indian Creek Local","Jefferson","Region 12",402.4,91.26,33.34,0,7.8,0,7.8
+"399","Indian Hill Exempted Village","Hamilton","Region 13",500.75,95.8,5.6,0,0,6.25,6.25
+"400","Indian Lake Local","Logan","Region 6",477,95.6333333333333,8.03333333333333,0,0,7,7
+"401","Indian Valley Local","Tuscarawas","Region 12",430,94.85,10.6,0,16,0,16
+"402","Inspire Charter School - Elementary","Franklin","Region 11",37,87.9,47.7,0,0,0,0
+"403","Interactive Media & Construction (IMAC)","Richland","Region 7",43,68.6,89,0,20,0,20
+"404","International Acad Of Columbus","Franklin","Region 11",278,94.7,14.2,0,0,0,0
+"405","Invictus High School","Cuyahoga","Region 3",413,42.7,98.7,0,14,0,14
+"406","Ironton City School District","Lawrence","Region 15",442.666666666667,93.9,10.8,0,0,0,0
+"407","iSTEM Geauga Early College High School","Lake","Region 4",178,96,6.9,0,0,0,0
+"408","Jackson-Milton Local","Mahoning","Region 5",249.333333333333,93.9666666666667,16.5333333333333,0,0,0,0
+"409","Jackson Center Local","Shelby","Region 6",255,95.9,9.3,0,0,0,0
+"410","Jackson City","Jackson","Region 16",464.4,93.72,14.74,0,9.6,0,9.6
+"411","Jackson Local","Stark","Region 9",971.833333333333,95.9666666666667,5.36666666666667,0,15.4666666666667,0,15.4666666666667
+"412","James A Garfield Local","Portage","Region 8",456.333333333333,93.9333333333333,14.7666666666667,0,0,6.66666666666667,6.66666666666667
+"413","Jefferson Area Local","Ashtabula","Region 5",413,94.575,10.275,0,11.75,4.375,16.125
+"414","Jefferson Local","Madison","Region 11",380.333333333333,94.4,12.9,0,9.33333333333333,0,9.33333333333333
+"415","Jefferson Township Local","Montgomery","Region 10",169,92.4,25.7,0,26,0,26
+"416","Jennings Local","Putnam","Region 1",186.5,96.95,1.9,0,0,0,0
+"417","Johnstown-Monroe Local","Licking","Region 11",556,94.2666666666667,12.3333333333333,0,4.33333333333333,13.6666666666667,18
+"418","Jonathan Alder Local","Madison","Region 11",431.2,94.82,8.16,0,3,2,5
+"419","Joseph Badger Local","Trumbull","Region 5",228,94.3666666666667,13.2666666666667,0,0,0,0
+"420","Kalida Local","Putnam","Region 1",294.5,97.05,2.05,0,0,0,0
+"421","Kenston Local","Geauga","Region 4",657.25,95.85,4.85,0,0,4,4
+"422","Kent City","Portage","Region 8",542,94.3833333333333,13.1333333333333,0,15.25,21.1333333333333,36.3833333333333
+"423","Kenton City","Hardin","Region 6",600,93.5666666666667,18.7,0,28.9333333333333,51.1666666666667,80.1
+"424","Kettering City School District","Montgomery","Region 10",678.909090909091,95.9909090909091,5.69090909090909,0,26.0454545454545,68,94.0454545454545
+"425","Keystone Local","Lorain","Region 2",483.333333333333,94.5333333333333,10.5333333333333,0,5,0,5
+"426","Kids Care Elementary","Franklin","Region 11",103,89.8,36.8,0,19,0,19
+"427","King Academy Community School","Hamilton","Region 13",125,94.8,14.5,0,0,0,0
+"428","Kings Local","Warren","Region 13",737.833333333333,95.5,7.86666666666667,0,4,0,4
+"429","KIPP Columbus","Franklin","Region 11",1373,92.7,22.9,0,123,0,123
+"430","Kirtland Local","Lake","Region 4",394.666666666667,96.1,3.8,0,0,0,0
+"431","Klepinger Community School","Montgomery","Region 10",569,88.5,45.7,0,145,0,145
+"432","L. Hollingworth School for Talented and Gifted","Lucas","Region 1",340,94.5,11.2,0,0,0,0
+"433","LaBrae Local","Trumbull","Region 5",269.75,93.875,14.95,0,5.5,2.5,8
+"434","Lake Erie College Preparatory School","Cuyahoga","Region 3",248,85.5,59.7,0,112.1,0,112.1
+"435","Lake Erie International High School","Cuyahoga","Region 3",235,32.1,99.1,0,11,0,11
+"436","Lake Local","Stark","Region 9",1112.66666666667,95.8333333333333,4.53333333333333,0,13.1666666666667,46.8333333333333,60
+"437","Lake Local","Wood","Region 1",533,94.7333333333333,11.0333333333333,0,0,16.6666666666667,16.6666666666667
+"438","Lakeland Academy Community School","Harrison","Region 12",66,98.7,0,0,0,0,0
+"439","Lakeview Local","Trumbull","Region 5",541,94.8666666666667,9.43333333333333,0,11.3333333333333,0,11.3333333333333
+"440","Lakewood City","Cuyahoga","Region 3",485.4,95.28,8.67,0,10.76,0,10.76
+"441","Lakewood City Academy","Cuyahoga","Region 3",91,81.4,52,0,0,0,0
+"442","Lakewood Local","Licking","Region 11",449.5,93.85,15,0,3.375,61.75,65.125
+"443","Lakota Local","Butler","Region 13",779.1,95.905,6.405,0,6.325,13.45,19.775
+"444","Lakota Local","Sandusky","Region 1",261,94.2,14.9,0,20.8,90,110.8
+"445","Lakota Local","Seneca","Region 1",354,95.4,10,0,0,26,26
+"446","Lakota Local","Wood","Region 1",391,95.9,5.2,0,0,0,0
+"447","Lancaster City","Fairfield","Region 11",776.625,93.725,15.875,0,56.2125,41.4125,97.625
+"448","Lebanon City","Warren","Region 13",1057.6,95.52,8.6,0,12.96,2.7,15.66
+"449","Leetonia Exempted Village","Columbiana","Region 5",205,92.1666666666667,25.7333333333333,0,0,0,0
+"450","Leipsic Local","Putnam","Region 1",310,95.95,7.5,0,7,15,22
+"451","Lexington Local","Richland","Region 7",472.4,95.2,8.3,0,8.6,0,8.6
+"452","Liberty-Benton Local","Hancock","Region 1",479.666666666667,96.6,3.2,0,0,10.1666666666667,10.1666666666667
+"453","Liberty Center Local","Henry","Region 1",339.666666666667,94.9666666666667,8.73333333333333,0,0,0,0
+"454","Liberty High School","Montgomery","Region 10",138,41.8,92,0,0,0,0
+"455","Liberty Local","Trumbull","Region 5",411.333333333333,91.7,27.7,0,28.6,194,222.6
+"456","Liberty Preparatory School","Wayne","Region 9",63,70.6,88.5,0,26.3,0,26.3
+"457","Liberty Union-Thurston Local","Fairfield","Region 11",407.666666666667,94.8,11.1666666666667,0,6,0,6
+"458","Licking Heights Local","Licking","Region 11",883,94.86,10.96,0,34.4,44.6,79
+"459","Licking Valley Local","Licking","Region 11",664.666666666667,94.5333333333333,11.8333333333333,0,5.66666666666667,17.3333333333333,23
+"460","Life Skills Center of Columbus North","Franklin","Region 11",100,50.8,97.5,0,10,0,10
+"461","Life Skills Center of Columbus Southeast","Franklin","Region 11",117,50.5,93,0,0,0,0
+"462","Life Skills Center of Dayton","Montgomery","Region 10",123,48.3,98.4,0,0,0,0
+"463","Life Skills Center of Elyria","Lorain","Region 2",134,46.6,96.4,0,0,0,0
+"464","Life Skills Center of North Akron","Summit","Region 8",92,49.5,91.4,0,0,0,0
+"465","Life Skills Center Of Toledo","Lucas","Region 1",133,51.3,96.9,0,17,0,17
+"466","Life Skills Ctr Of Cincinnati","Hamilton","Region 13",94,43.4,99,0,0,0,0
+"467","Lighthouse Community Sch Inc","Hamilton","Region 13",56,61.9,92.9,0,55,0,55
+"468","Lima City","Allen","Region 6",403.444444444444,91.7555555555556,26.2,0,28.0888888888889,91.3333333333333,119.422222222222
+"469","Lincoln Park Academy","Cuyahoga","Region 3",426,86.1,55.7,0,95.3,0,95.3
+"470","Lincolnview Local","Van Wert","Region 1",412.5,95.95,5.15,0,0,0,0
+"471","Lisbon Exempted Village","Columbiana","Region 5",427.5,92.5,22,0,0,5,5
+"472","Little Miami Local","Warren","Region 13",767.666666666667,95.8,5.58333333333333,0,0,0,0
+"473","Lockland Local","Hamilton","Region 13",180.333333333333,88.3666666666667,38.2333333333333,0,53.7333333333333,0,53.7333333333333
+"474","Logan-Hocking Local","Hocking","Region 16",536.714285714286,93.8285714285714,14.5857142857143,0,9.57142857142857,0,9.57142857142857
+"475","Logan Elm Local","Hocking","Region 11",254,93.7,16.3,0,0,0,0
+"476","Logan Elm Local","Pickaway","Region 11",291.4,94.78,9.86,0,15.96,0,15.96
+"477","London City","Madison","Region 11",698.666666666667,93.3666666666667,18.5,0,29.1666666666667,58.1666666666667,87.3333333333333
+"478","Lorain Bilingual Preparatory Academy","Lorain","Region 2",104,87.9,46.6,0,0,0,0
+"479","Lorain City","Lorain","Region 2",426,88.22,40.1733333333333,0,86.3,0,86.3
+"480","Lorain Preparatory Academy","Lorain","Region 2",520,90,35.1,0,47.5,0,47.5
+"481","Lordstown Local","Trumbull","Region 5",237,93.3,17.5,0,0,0,0
+"482","Loudonville-Perrysville Exempted Village","Ashland","Region 7",252.25,95.05,10.3,0,0,17,17
+"483","Louisville City","Stark","Region 9",696.5,94.875,9.775,0,0,0,0
+"484","Loveland City","Clermont","Region 13",381,95.2,9.1,0,0,0,0
+"485","Loveland City","Hamilton","Region 13",809.4,95.58,6.94,0,8.98,9.9,18.88
+"486","Lowellville Local","Mahoning","Region 5",247,93.35,16.55,0,0,0,0
+"487","Lucas Local","Richland","Region 7",163,95.5,6.53333333333333,0,0,0,0
+"488","Lynchburg-Clay Local","Highland","Region 14",372.333333333333,94.9,9.26666666666667,0,18,18.3333333333333,36.3333333333333
+"489","Mad River Local","Montgomery","Region 10",533.428571428571,93.8142857142857,16.5714285714286,0,29.8142857142857,0,29.8142857142857
+"490","Madeira City","Hamilton","Region 13",491.666666666667,96.1,4.26666666666667,0,0,3.33333333333333,3.33333333333333
+"491","Madison-Plains Local","Madison","Region 11",293,93.65,15.275,0,0,0,0
+"492","Madison Avenue School of Arts","Lucas","Region 1",546,87.1,51.8,0,168,0,168
+"493","Madison Local","Butler","Region 13",481.666666666667,94.7,11.1666666666667,0,0,0,0
+"494","Madison Local","Lake","Region 4",697.25,94.85,10.9,0,46,79.75,125.75
+"495","Madison Local","Richland","Region 7",587,94.36,12.82,0,36.4,108.6,145
+"496","Madisonville SMART Elementary","Hamilton","Region 13",119,89.9,41.5,0,0,0,0
+"497","Mahoning County High School","Mahoning","Region 5",79,56.8,86.1,0,0,0,0
+"498","Mahoning Unlimited Classroom","Mahoning","Region 5",90,82.8,45.5,0,0,0,0
+"499","Main Preparatory Academy","Summit","Region 8",152,90,41.5,0,42.2,0,42.2
+"500","Manchester Local","Adams","Region 14",416.5,93.4,16,0,67.5,0,67.5
+"501","Manchester Local","Summit","Region 8",429.666666666667,95.3,8.33333333333333,0,0,0,0
+"502","Mansfield City","Richland","Region 7",410.75,92.575,22.475,2.0375,70.675,95.6125,168.325
+"503","Maple Heights City","Cuyahoga","Region 3",711.8,90.14,37.04,0,122.74,85.6,208.34
+"504","Mapleton Local","Ashland","Region 7",295.666666666667,94.4333333333333,12.1333333333333,0,0,0,0
+"505","Maplewood Local","Trumbull","Region 5",339.5,94.8,9,0,6.5,0,6.5
+"506","Margaretta Local","Erie","Region 2",573.5,95.55,6.45,0,6.5,0,6.5
+"507","Mariemont City","Hamilton","Region 13",404,95.175,7.425,0,3.125,0,3.125
+"508","Marietta City","Washington","Region 16",417.833333333333,94.4833333333333,12.1833333333333,0,8.33333333333333,46.3333333333333,54.6666666666667
+"509","Marion City","Marion","Region 7",557,91.2625,25.4625,0,43.05,82,125.05
+"510","Marion Local","Mercer","Region 6",418.5,97.85,0.8,0,0,0,0
+"511","Maritime Academy of Toledo, The","Lucas","Region 1",307,87.9,44.6,0,0,0,0
+"512","Marlington Local","Stark","Region 9",416.6,94.66,10.92,0,2.4,16.2,18.6
+"513","Marshall High School","Butler","Region 13",269,43.9,95.9,0,91,0,91
+"514","Martins Ferry City","Belmont","Region 12",488.666666666667,92.6,21.4666666666667,0,29.3333333333333,0,29.3333333333333
+"515","Marysville Exempted Village","Union","Region 11",556.222222222222,95.3,8.45555555555556,0,7.38888888888889,6.38888888888889,13.7777777777778
+"516","Mason City","Warren","Region 13",2019.2,95.94,6.44,0,8,22.4,30.4
+"517","Mason Run High School","Franklin","Region 11",164,36.4,98.7,0,0,0,0
+"518","Massillon City","Stark","Region 9",627.833333333333,92.8333333333333,19.7333333333333,0,25.0833333333333,81.6666666666667,106.75
+"519","Massillon Digital Academy, Inc","Stark","Region 9",39,100,0,0,0,0,0
+"520","Mathews Local","Trumbull","Region 5",159,94.2,13.6,0,4.75,0,4.75
+"521","Maumee City","Lucas","Region 1",435,95.88,6.22,0,0,12.2,12.2
+"522","Mayfield City","Cuyahoga","Region 3",682.333333333333,95.05,9.06666666666667,0,17.3333333333333,35.1666666666667,52.5
+"523","Maysville Local","Muskingum","Region 12",489.4,91.98,27.96,0,11,27.9,38.9
+"524","McComb Local","Hancock","Region 1",222.666666666667,95.4666666666667,7.4,0,0,0,0
+"525","McDonald Local","Trumbull","Region 5",383,95.3,6.85,0,0,0,0
+"526","Mechanicsburg Exempted Village","Champaign","Region 6",271.666666666667,95.3,7.83333333333333,0,4.16666666666667,10.6666666666667,14.8333333333333
+"527","Medina City SD","Medina","Region 8",600.909090909091,94.8272727272727,9.77272727272727,0,7.98,9.76,17.74
+"528","Meigs Local","Meigs","Region 16",431.5,92,24.85,0,2.75,61,63.75
+"529","Mentor Exempted Village","Lake","Region 4",764.7,95.59,7.48,0,16.58,7.6,24.18
+"530","Metro Early College High School","Franklin","Region 11",926,96.4,6.9,0,0,28,28
+"531","Miami East Local","Miami","Region 10",425.666666666667,96.6,3.3,0,3.33333333333333,0,3.33333333333333
+"532","Miami Trace Local","Fayette","Region 14",819.666666666667,94,16.0666666666667,0,24,108.333333333333,132.333333333333
+"533","Miami Valley Academies","Montgomery","Region 10",124,88.1,44.7,0,25,0,25
+"534","Miamisburg City","Montgomery","Region 10",545.555555555556,95.1333333333333,10.0888888888889,0,15,0,15
+"535","Middlebury Academy","Summit","Region 8",256,88.2,41.8,0,136.7,0,136.7
+"536","Middletown City","Butler","Region 13",591.2,92.78,21.45,0,36.3111111111111,12.7777777777778,49.0888888888889
+"537","Middletown Preparatory & Fitness Academy","Butler","Region 13",271,92.6,24.8,0,55,0,55
+"538","Midnimo Cross Cultural Community School","Franklin","Region 11",116,94.8,8.4,0,34,0,34
+"539","Midview Local","Lorain","Region 2",577.4,94.08,14.44,0,20,0,20
+"540","Milford Exempted Village","Clermont","Region 13",770.375,95.4625,7.7125,0,4.025,0,4.025
+"541","Millcreek-West Unity Local","Williams","Region 1",252,95.75,6.6,0,0,0,0
+"542","Millennium Community School","Franklin","Region 11",515,94,17.6,0,0,0,0
+"543","Miller City-New Cleveland Local","Putnam","Region 1",159.666666666667,97.1,2.53333333333333,0,0,0,0
+"544","Milton-Union Exempted Village","Miami","Region 10",457.666666666667,94.2666666666667,13.0666666666667,0,0,11.3333333333333,11.3333333333333
+"545","Minerva Local","Stark","Region 9",609.666666666667,94.5,12.1,0,0,24.6666666666667,24.6666666666667
+"546","Minford Local","Scioto","Region 15",442.666666666667,93.9,14.9,0,8.33333333333333,17.1666666666667,25.5
+"547","Minster Local","Auglaize","Region 6",416.5,96.6,2.55,0,0,0,0
+"548","Mississinawa Valley Local","Darke","Region 10",317.5,95.2,11.8,0,0,0,0
+"549","Mogadore Local","Summit","Region 8",286,94.5,11.0666666666667,0,0,67.3333333333333,67.3333333333333
+"550","Mohawk Local","Wyandot","Region 7",454,96.35,4.65,0,0,0,0
+"551","Monroe Local","Butler","Region 13",681.75,94.875,9.625,0,3.5,9.25,12.75
+"552","Monroe Preparatory Academy","Erie","Region 2",212,87.7,46.1,0,42,0,42
+"553","Monroeville Local","Huron","Region 2",292.5,96,3.45,0,0,0,0
+"554","Montgomery Preparatory Academy","Montgomery","Region 10",199,84.6,64.9,0,0,0,0
+"555","Montpelier Exempted Village","Williams","Region 1",439.5,94.55,13.9,0,0,32.5,32.5
+"556","Morgan Local","Morgan","Region 12",352.6,94.4,12.92,0,6.6,27,33.6
+"557","Mound Street Academies","Montgomery","Region 10",163,63.1,83,0,35,0,35
+"558","Mount Auburn Preparatory Academy","Hamilton","Region 13",303,83,69.5,0,29.8,0,29.8
+"559","Mount Gilead Exempted Village","Morrow","Region 7",379,94.6666666666667,11.3666666666667,0,4.76666666666667,6.16666666666667,10.9333333333333
+"560","Mount Vernon City","Knox","Region 7",459.25,95.1125,9.8,0,4.6875,5.125,9.8125
+"561","Mt Healthy City","Hamilton","Region 13",777.5,89.875,33.55,0,136.9,0,136.9
+"562","Mt. Healthy Preparatory and Fitness Academy","Hamilton","Region 13",264,92.7,21.8,0,0,0,0
+"563","Napoleon Area City","Henry","Region 1",960,95.6,6.6,0,0,19.5,19.5
+"564","National Trail Local","Preble","Region 10",321.666666666667,94.8,12.3333333333333,0,11.8333333333333,17.7333333333333,29.5666666666667
+"565","Nelsonville-York City","Athens","Region 16",399,92.8333333333333,18.8,0,0,0,0
+"566","New Albany-Plain Local","Franklin","Region 11",986.2,96.08,4.3,0,0,0,0
+"567","New Boston Local","Scioto","Region 15",138,93.9333333333333,14.6333333333333,0,25.5,4,29.5
+"568","New Bremen Local","Auglaize","Region 6",369.5,96.9,2.25,0,0,0,0
+"569","New Day Academy Boarding & Day School","Cuyahoga","Region 3",75,77.4,72.7,0,42.5,0,42.5
+"570","New Knoxville Local","Auglaize","Region 6",192.5,96.9,2.3,0,0,0,0
+"571","New Lebanon Local","Montgomery","Region 10",368,95.1666666666667,10.6,0,0,0,0
+"572","New Lexington School District","Perry","Region 16",419.25,93.55,16.075,0,8.375,10.25,18.625
+"573","New London Local","Huron","Region 2",289,94.9666666666667,10.6333333333333,0,0,0,0
+"574","New Miami Local","Butler","Region 13",217.666666666667,89.8666666666667,36.3333333333333,0,12.6666666666667,0,12.6666666666667
+"575","New Philadelphia City","Tuscarawas","Region 12",443.714285714286,94.7285714285714,10.8714285714286,0,7.85714285714286,11.7142857142857,19.5714285714286
+"576","New Richmond Exempted Village","Clermont","Region 13",460.4,94.38,12.38,0,7.86,25.1,32.96
+"577","New Riegel Local","Seneca","Region 7",196,96.45,3.9,0,0,0,0
+"578","Newark City","Licking","Region 11",537.75,91.9666666666667,21.0333333333333,0,62.4,126.916666666667,189.316666666667
+"579","Newbury Local","Geauga","Region 4",166,95.35,9.75,0,0,5,5
+"580","Newcomerstown Exempted Village","Tuscarawas","Region 12",243.5,93.7,15.975,0,6.25,7.75,14
+"581","Newton Falls Exempted Village","Trumbull","Region 5",240.25,92.6,20.525,0,0,13.5,13.5
+"582","Newton Local","Miami","Region 10",294,96,3.15,0,0,0,0
+"583","Niles City","Trumbull","Region 5",552.5,91.25,29.25,0,45.9,13.875,59.775
+"584","Noble Academy-Cleveland","Cuyahoga","Region 3",434,94.3,14.7,0,133,203,336
+"585","Noble Academy-Columbus","Franklin","Region 11",334,92.7,22.5,0,13,0,13
+"586","Noble Local","Noble","Region 12",421.5,93.1,18.25,0,0,0,0
+"587","Nordonia Hills City","Summit","Region 8",587.166666666667,96.0333333333333,5.18333333333333,0,0,0,0
+"588","North Baltimore Local","Wood","Region 1",201.333333333333,95.5333333333333,9,0,3.33333333333333,0,3.33333333333333
+"589","North Canton City","Stark","Region 9",689,95.7,6.28333333333333,0,6.83333333333333,6,12.8333333333333
+"590","North Central Academy","Seneca","Region 1",91,88.7,41.3,0,16,0,16
+"591","North Central Local","Williams","Region 1",287.5,96.05,4.2,0,0,0,0
+"592","North College Hill City","Hamilton","Region 13",518.333333333333,88.4666666666667,39.4,0,178.166666666667,0,178.166666666667
+"593","North Dayton School Of Science & Discovery","Montgomery","Region 10",621,91.5,32.4,0,239.5,0,239.5
+"594","North Fork Local","Licking","Region 11",388,94.55,12.625,0,11.375,10.5,21.875
+"595","North Olmsted City","Cuyahoga","Region 3",464.375,94.575,11.125,0,24,47.3125,71.3125
+"596","North Ridgeville City","Lorain","Region 2",865.8,94.88,9.88,0,18.38,0,18.38
+"597","North Royalton City","Cuyahoga","Region 3",786.2,95.98,5.22,0,16.34,19.3,35.64
+"598","North Union Local School District","Union","Region 11",498.666666666667,93.8333333333333,14.0666666666667,0,9.93333333333333,14.9333333333333,24.8666666666667
+"599","Northeastern Local","Clark","Region 10",444.285714285714,94.6857142857143,12.0571428571429,0,1.92857142857143,5.28571428571429,7.21428571428571
+"600","Northeastern Local","Defiance","Region 1",267.5,95.775,6.35,0,0,0,0
+"601","Northern Local","Perry","Region 12",438.6,95,8.96,0,0,0,0
+"602","Northland Preparatory and Fitness Academy","Franklin","Region 11",205,90.3,34,0,34,0,34
+"603","Northmont City","Montgomery","Region 10",616.375,96.0125,6.3625,0,30.7125,0,30.7125
+"604","Northmor Local","Morrow","Region 7",523,94.65,11.75,0,9.5,0,9.5
+"605","Northridge Local","Licking","Region 11",280.5,94.85,9.85,0,0,14.375,14.375
+"606","Northridge Local","Montgomery","Region 10",386.25,91.4,32.325,0,46.875,20.75,67.625
+"607","Northwest Local","Hamilton","Region 13",836.3,93.3,17.67,1,170.87,1.23,173.1
+"608","Northwest Local","Scioto","Region 15",443.666666666667,93,18.5666666666667,0,6,11.3333333333333,17.3333333333333
+"609","Northwest Local","Stark","Region 9",448.25,99.5,0.025,0,3,6.25,9.25
+"610","Northwestern Local","Clark","Region 10",787,94.95,9.55,0,12.25,0,12.25
+"611","Northwestern Local","Wayne","Region 9",443.666666666667,95.3333333333333,8.4,0,0,20.3333333333333,20.3333333333333
+"612","Northwood Local Schools","Wood","Region 1",439.5,94.45,14.8,0,8,0,8
+"613","Norton City","Summit","Region 8",618,94.05,13.975,0,7.125,23.95,31.075
+"614","Norwalk City","Huron","Region 2",445.833333333333,94.2666666666667,14.4833333333333,0,0,0,0
+"615","Norwayne Local","Wayne","Region 9",469,95.5666666666667,7.13333333333333,0,0,11.3333333333333,11.3333333333333
+"616","Norwood City","Hamilton","Region 13",315.333333333333,91.5833333333333,25.6666666666667,0,51.25,32.3333333333333,83.5833333333333
+"617","Oak Hill Union Local","Jackson","Region 16",581,93.1,19.65,0,5,8.5,13.5
+"618","Oak Hills Local","Hamilton","Region 13",821.888888888889,94.2,13.4777777777778,0,53.3111111111111,0,53.3111111111111
+"619","Oakstone Community School","Franklin","Region 11",248,94.2,13.7,0,0,0,0
+"620","Oakwood City","Montgomery","Region 10",406.8,96.24,3.32,0,0,0,0
+"621","Oberlin City Schools","Lorain","Region 2",242.5,92.6,20.425,0,23,2.75,25.75
+"622","Ohio College Preparatory School","Cuyahoga","Region 3",297,87.8,53.6,0,65,0,65
+"623","Ohio Connections Academy, Inc","Cuyahoga","Region 11",4362,97,7.5,0,0,0,0
+"624","Ohio Construction Academy","Franklin","Region 11",52,74.9,58.5,0,0,0,0
+"625","Ohio Virtual Academy","Lucas","Region 1",12702,95.7,9.2,0,0,0,0
+"626","Old Brook High School","Cuyahoga","Region 3",158,59.4,96.8,0,0,0,0
+"627","Old Fort Local","Seneca","Region 7",308,96.15,4.7,0,0,0,0
+"628","Olentangy Local","Delaware","Region 11",858.416666666667,96.0916666666667,4.59583333333333,0,1.97083333333333,1.8125,3.78333333333333
+"629","Olmsted Falls City","Cuyahoga","Region 3",709.8,95.28,8.54,0,17.8,0,17.8
+"630","Ontario Local","Richland","Region 7",674.333333333333,95.1666666666667,8.86666666666667,0,24.6666666666667,18.1666666666667,42.8333333333333
+"631","Orange City","Cuyahoga","Region 3",648,95,9.56666666666667,0,5.66666666666667,8.66666666666667,14.3333333333333
+"632","Orchard Park Academy","Cuyahoga","Region 3",159,89.9,35.7,0,36,0,36
+"633","Oregon City","Lucas","Region 1",590.5,94.5,10.85,0,7.66666666666667,38.6666666666667,46.3333333333333
+"634","Orion Academy","Hamilton","Region 13",498,87.2,53.7,0,196,0,196
+"635","Orrville City","Wayne","Region 9",507,95.4,9.23333333333333,0,11.3333333333333,8.66666666666667,20
+"636","Osnaburg Local","Stark","Region 9",281,95.2666666666667,8.43333333333333,0,0,4.66666666666667,4.66666666666667
+"637","Otsego Local","Wood","Region 1",508.666666666667,95.6666666666667,7.76666666666667,0,0,0,0
+"638","Ottawa-Glandorf Local","Putnam","Region 1",496.333333333333,96.6333333333333,3.9,0,4.83333333333333,0,4.83333333333333
+"639","Ottawa Hills Local","Lucas","Region 1",491,96.5,2.9,0,0,0,0
+"640","Ottoville Local","Putnam","Region 1",223,96.9,3,0,0,0,0
+"641","Painesville City Local","Lake","Region 4",553.2,92.9,20.88,0,59.3,37.2,96.5
+"642","Paint Valley Local","Ross","Region 15",281,93.6,15.4666666666667,0,30,0,30
+"643","Pandora-Gilboa Local","Putnam","Region 1",171.333333333333,96.2666666666667,3.73333333333333,0,0,0,0
+"644","Par Excellence Academy","Licking","Region 11",253,92.4,24.5,0,22.5,0,22.5
+"645","Parkway Local","Mercer","Region 6",334,95.3666666666667,7,0,0,4,4
+"646","Parma City","Cuyahoga","Region 3",680.857142857143,93.9428571428571,14.6214285714286,0,28.3928571428571,0,28.3928571428571
+"647","Pathway School of Discovery","Montgomery","Region 10",745,92.5,23.8,0,128,0,128
+"648","Patrick Henry Local","Henry","Region 1",275.666666666667,95.2,9.26666666666667,0,0,0,0
+"649","Patriot Preparatory Academy","Franklin","Region 11",596,94.7,10,0,85,86,171
+"650","Paulding Exempted Village","Paulding","Region 1",353.5,94.725,11.775,0,6,17.5,23.5
+"651","Performance Academy Eastland","Franklin","Region 11",342,92.6,23.6,0,76.5,0,76.5
+"652","Perkins Local","Erie","Region 2",471.5,95.425,7.65,0,0,18.25,18.25
+"653","Perry Local","Allen","Region 6",355.5,93.2,19.7,0,52,381.5,433.5
+"654","Perry Local","Lake","Region 4",536,94.9333333333333,9.76666666666667,0,8.33333333333333,0,8.33333333333333
+"655","Perry Local","Stark","Region 9",575,95.5125,7.3875,0,7.475,38.4375,45.9125
+"656","Perrysburg Exempted Village","Wood","Region 1",754.571428571429,96.2428571428571,4.78571428571429,0,0,0,0
+"657","Pettisville Local","Fulton","Region 1",262,95.9,4.95,0,0,0,0
+"658","Phoenix Community Learning Ctr","Hamilton","Region 13",473,83.8,68.3,0,0,0,0
+"659","Pickerington Local","Fairfield","Region 11",693.266666666667,94.2666666666667,12.04,0,12.6,32.7333333333333,45.3333333333333
+"660","Pike-Delta-York Local","Fulton","Region 1",399,94.9,9.23333333333333,0,0,4.43333333333333,4.43333333333333
+"661","Pinnacle Academy","Cuyahoga","Region 3",717,92.9,23.5,0,0,0,0
+"662","Piqua City","Miami","Region 10",634.2,93.78,16.42,0,28.9,0,28.9
+"663","Plain Local","Stark","Region 9",673.555555555556,95.1888888888889,9.64444444444444,0,30.1111111111111,5.55555555555556,35.6666666666667
+"664","Pleasant Local","Marion","Region 7",327,94.35,14.3,0,2.75,3.625,6.375
+"665","Plymouth-Shiloh Local","Richland","Region 7",226,94.6,11.9666666666667,0,9.16666666666667,0,9.16666666666667
+"666","Poland Local","Mahoning","Region 5",454,94.625,9.775,0,3.5,0,3.5
+"667","Port Clinton City","Ottawa","Region 1",413.5,95.025,9.05,0,0,4,4
+"668","Portsmouth City","Scioto","Region 15",556.333333333333,93.3666666666667,19.7333333333333,0,30,0,30
+"669","Preble Shawnee Local","Preble","Region 10",458.333333333333,94.3,12.7666666666667,0,14.3333333333333,0,14.3333333333333
+"670","Princeton City","Hamilton","Region 13",521.363636363636,93.6272727272727,16.6,0,28.0363636363636,10,38.0363636363636
+"671","Promise Academy","Cuyahoga","Region 3",202,35.6,99.6,0,10,0,10
+"672","Put-In-Bay Local","Ottawa","Region 1",35.5,95.35,5.35,0,0,0,0
+"673","Pymatuning Valley Local","Ashtabula","Region 5",376.666666666667,93.9666666666667,13.3333333333333,0,13.3333333333333,0,13.3333333333333
+"674","Quaker Digital Academy","Tuscarawas","Region 12",475,81.7,31.6,0,0,0,0
+"675","Ravenna City","Portage","Region 8",357.166666666667,93.0833333333333,19.3166666666667,0,30.3,87.0833333333333,117.383333333333
+"676","REACH Academy","Lucas","Region 1",172,85.2,60.2,0,97,0,97
+"677","Reading Community City","Hamilton","Region 13",380.75,93.425,17.925,0,13.75,0,13.75
+"678","Regent High School","Cuyahoga","Region 3",195,41.5,98.1,0,16,0,16
+"679","Renaissance Academy","Franklin","Region 11",121,86.5,51.3,0,0,0,0
+"680","Revere Local","Summit","Region 8",665.5,96.3,4.5,0,0,0,0
+"681","Reynoldsburg City","Franklin","Region 11",525.1,92.71,20.7,0,18.96,29.3,48.26
+"682","Reynoldsburg City","Licking","Region 11",492.75,95.2,9.25,0,4.625,9.7,14.325
+"683","Richard Allen Academy","Butler","Region 13",134,94.5,13.2,0,0,0,0
+"684","Richard Allen Preparatory","Montgomery","Region 10",364,93.6,18.1,0,0,0,0
+"685","Richmond Heights Local","Cuyahoga","Region 3",258,93.1666666666667,23.1,0,14.1666666666667,13.3333333333333,27.5
+"686","Ridgedale Local","Marion","Region 7",317.5,93.9,15.45,0,6,0,6
+"687","Ridgemont Local","Hardin","Region 6",255.5,94.4,12.35,0,0,0,0
+"688","Ridgewood Local","Coshocton","Region 12",421.666666666667,95.6,5.43333333333333,0,0,0,0
+"689","Ripley-Union-Lewis-Huntington Local","Brown","Region 14",253.666666666667,93.5,18.5,0,20.5,30.3333333333333,50.8333333333333
+"690","Rise & Shine Academy","Lucas","Region 1",106,90.1,43.4,0,0,0,0
+"691","Rittman Academy","Wayne","Region 9",32,61.8,89.4,0,0,0,0
+"692","Rittman Exempted Village","Wayne","Region 9",320.333333333333,95.3333333333333,8.96666666666667,0,4.66666666666667,0,4.66666666666667
+"693","River Gate High School","Trumbull","Region 5",171,39.8,98.3,0,0,0,0
+"694","River Valley Local","Marion","Region 7",487,95.1,10.5,0,0,0,0
+"695","River View Local","Coshocton","Region 12",323,94.9666666666667,8.93333333333333,0,7.33333333333333,9.33333333333333,16.6666666666667
+"696","Riverdale Local","Hancock","Region 6",251.5,95.45,7,0,0,19,19
+"697","Riverside Academy","Hamilton","Region 13",209,78,72.3,0,99.3,0,99.3
+"698","Riverside Local","Lake","Region 4",484.125,95.1125,9.2125,0,21.75,2.375,24.125
+"699","Riverside Local","Logan","Region 6",303,94.95,9.4,0,0,8.5,8.5
+"700","Road to Success Academy","Franklin","Region 11",83,44.4,100,0,0,0,0
+"701","Rock Hill Local","Lawrence","Region 15",459.333333333333,94.3333333333333,12.7,0,0,0,0
+"702","Rocky River City","Cuyahoga","Region 3",659.25,96.45,4.175,0,2.7,6.175,8.875
+"703","Rolling Hills Local","Guernsey","Region 12",307,93.72,17.8,0,8.5,0,8.5
+"704","Rootstown Local","Portage","Region 8",378.333333333333,94.5333333333333,13.6666666666667,0,4,0,4
+"705","Ross Local","Butler","Region 13",649.5,95.45,8.925,0,11.45,15,26.45
+"706","Rossford Exempted Village","Wood","Region 1",377,94.175,13.65,0,14.075,12.425,26.5
+"707","Russia Local","Shelby","Region 6",194,97.7,1.2,0,0,0,0
+"708","Salem City","Columbiana","Region 5",411.2,92.82,19.52,0,2.4,9.2,11.6
+"709","Sandusky City","Erie","Region 2",456,93.4285714285714,18.6714285714286,0,55.4714285714286,162.142857142857,217.614285714286
+"710","Sandy Valley Local","Stark","Region 9",457.5,100,0,0,9,15,24
+"711","Sandy Valley Local","Tuscarawas","Region 9",390,97.7,4.1,0,42,44,86
+"712","Schnee Learning Center","Summit","Region 8",85,63.7,85.6,0,0,0,0
+"713","Scioto Valley Local","Pike","Region 15",397.333333333333,93.4666666666667,17.9,0,13.3333333333333,41.3333333333333,54.6666666666667
+"714","Sciotoville","Scioto","Region 15",388,91.4,34.7,0,29,0,29
+"715","Sebring Local","Mahoning","Region 5",203,93.45,16.95,0,15,0,15
+"716","Seneca East Local","Seneca","Region 7",287,96.2,3.76666666666667,0,0,39.6666666666667,39.6666666666667
+"717","Shadyside Local","Belmont","Region 12",265.666666666667,94.2,12.8666666666667,0,0,0,0
+"718","Shaker Heights City","Cuyahoga","Region 3",605.5,95.3625,8,0,30.6875,1.4375,32.125
+"719","Shawnee Local","Allen","Region 6",581.5,95.35,8.05,0,5.125,0,5.125
+"720","Sheffield-Sheffield Lake City","Lorain","Region 2",327.8,94.08,13.76,0,8,68,76
+"721","Shelby City","Richland","Region 7",443.5,95.375,8.425,0,6,4.25,10.25
+"722","Sidney City","Shelby","Region 6",520.333333333333,94.3333333333333,14.65,0,20.9166666666667,5.33333333333333,26.25
+"723","SMART Academy","Cuyahoga","Region 3",41,89.3,48.4,0,0,0,0
+"724","Solon City","Cuyahoga","Region 3",738.666666666667,96.5833333333333,3.01666666666667,0,28.5833333333333,14.6666666666667,43.25
+"725","South-Western City","Franklin","Region 11",730.5,93.31,17.5,0.9,76.7033333333333,0,77.6033333333333
+"726","South Central Local","Huron","Region 2",247.333333333333,95.6,5.4,0,0,7.33333333333333,7.33333333333333
+"727","South Columbus Preparatory Academy","Franklin","Region 11",171,89,40.2,0,27,37.5,64.5
+"728","South Euclid-Lyndhurst City","Cuyahoga","Region 3",549.166666666667,95.1666666666667,9.45,0,58.5,5.66666666666667,64.1666666666667
+"729","South Point Local","Lawrence","Region 15",379,93.65,14.875,0,12,0,12
+"730","South Range Local","Mahoning","Region 5",414,96.1,4.96666666666667,0,0,0,0
+"731","South Scioto Academy","Franklin","Region 11",221,90.4,39.3,0,56.5,0,56.5
+"732","Southeast Local","Holmes","Region 9",137,95.8,5.8,0,0,0,0
+"733","Southeast Local","Portage","Region 8",372,93.975,13.85,0,30.75,45.25,76
+"734","Southeast Local","Wayne","Region 9",242.6,95.3,7.86,0,0,8.8,8.8
+"735","Southeastern Local","Clark","Region 10",244,94.8,11.6,0,0,0,0
+"736","Southeastern Local","Ross","Region 15",338.666666666667,93.2333333333333,17.3,0,12.3333333333333,10,22.3333333333333
+"737","Southern Local","Columbiana","Region 5",415.5,93.45,18.7,0,21.5,19,40.5
+"738","Southern Local","Meigs","Region 16",362,93.15,19.85,0,0,12.5,12.5
+"739","Southern Local","Perry","Region 16",330.5,92.15,26.25,0,0,55,55
+"740","Southington Local","Trumbull","Region 5",161.666666666667,93.9333333333333,14.4666666666667,0,3.33333333333333,0,3.33333333333333
+"741","Southside Academy","Mahoning","Region 5",149,84.6,56.6,0,57,0,57
+"742","Southwest Licking Local","Licking","Region 11",814.8,94.56,11.02,0,22.72,127,149.72
+"743","Southwest Local","Hamilton","Region 13",603.333333333333,94.2833333333333,13.9,0,15.9666666666667,8.16666666666667,24.1333333333333
+"744","Southwest Ohio Preparatory School","Hamilton","Region 13",173,95.2,19.8,0,0,0,0
+"745","Spencerville Local","Allen","Region 6",310,96.6333333333333,2.8,0,0,0,0
+"746","Springboro Community City","Warren","Region 13",972,96.8,3,0,12.7166666666667,29.05,41.7666666666667
+"747","Springfield City School District","Clark","Region 10",473,90.5333333333333,29.9466666666667,0,50.82,51.2333333333333,102.053333333333
+"748","Springfield Local","Lucas","Region 1",584.666666666667,94.3666666666667,12.65,0,29.85,68.1666666666667,98.0166666666667
+"749","Springfield Local","Mahoning","Region 5",314.333333333333,95.4666666666667,5.8,0,0,3.33333333333333,3.33333333333333
+"750","Springfield Local","Summit","Region 8",538.25,93.35,19.8,0,60.05,68.25,128.3
+"751","Springfield Preparatory and Fitness Academy","Clark","Region 10",148,92.2,26,0,0,0,0
+"752","St Bernard-Elmwood Place City","Hamilton","Region 13",301.666666666667,92.3,24.4333333333333,0,42,81,123
+"753","St Clairsville-Richland City","Belmont","Region 12",555.666666666667,94.1666666666667,12.6,0,0,7.66666666666667,7.66666666666667
+"754","St Henry Consolidated Local","Mercer","Region 6",325,97.0666666666667,2.53333333333333,0,0,0,0
+"755","St Marys City","Auglaize","Region 6",501,95.925,5.8,0,3.5,7.75,11.25
+"756","Stambaugh Charter Academy","Mahoning","Region 5",443,91.4,32.1,0,70,0,70
+"757","Star Academy of Toledo","Lucas","Region 1",157,86.5,57.4,0,0,0,0
+"758","Stark High School","Stark","Region 9",123,60.2,87.1,0,0,0,0
+"759","STEAM Academy of Akron","Summit","Region 8",158,90.7,41.1,0,70,0,70
+"760","STEAM Academy of Warren","Trumbull","Region 5",210,90.2,36.2,0,43.5,0,43.5
+"761","STEAM Academy of Warrensville Heights","Cuyahoga","Region 3",217,86.6,51.4,0,0,0,0
+"762","Steel Academy","Summit","Region 8",96,84.1,48,0,0,0,0
+"763","Steubenville City","Jefferson","Region 12",508.8,95.52,7.42,0,0,2.2,2.2
+"764","Stow-Munroe Falls City School District","Summit","Region 8",575.888888888889,95.3888888888889,7.03333333333333,0,16.2444444444444,0,16.2444444444444
+"765","Strasburg-Franklin Local","Tuscarawas","Region 12",266,96.55,4.65,0,0,0,0
+"766","Streetsboro City","Portage","Region 8",537.5,94.875,11.475,0,21.875,0,21.875
+"767","Strongsville City","Cuyahoga","Region 3",748,95.5857142857143,6.15714285714286,0,16.4428571428571,17.0857142857143,33.5285714285714
+"768","Struthers City","Mahoning","Region 5",580.333333333333,92.6,20.7333333333333,0,35.6666666666667,0,35.6666666666667
+"769","Stryker Local","Williams","Region 1",203.5,96,5.85,0,0,0,0
+"770","Sullivant Avenue Community School","Franklin","Region 11",336,90.3,35.1,0,0,0,0
+"771","Summit Academy-Youngstown","Mahoning","Region 5",212,89.2,42.9,0,0,0,0
+"772","Summit Academy - Toledo","Lucas","Region 1",138,90.6,37.3,0,25.5,0,25.5
+"773","Summit Academy Akron Elementary School","Summit","Region 8",122,90.6,35.7,0,0,0,0
+"774","Summit Academy Akron Middle School","Summit","Region 8",76,90,33.8,0,0,22,22
+"775","Summit Academy Alternative LearnersWarren Middle & Secondary","Trumbull","Region 5",97,83.3,46.4,0,13,0,13
+"776","Summit Academy Community School-Columbus","Franklin","Region 11",59,88.8,44.2,0,13,0,13
+"777","Summit Academy Community School-Parma","Cuyahoga","Region 3",186,88.9,42.2,0,30,0,30
+"778","Summit Academy Community School-Warren","Trumbull","Region 5",127,89.7,42.1,0,0,0,0
+"779","Summit Academy Community School - Cincinnati","Hamilton","Region 13",111,83.8,67,0,82,0,82
+"780","Summit Academy Community School - Dayton","Montgomery","Region 10",78,91.8,31.4,0,0,0,0
+"781","Summit Academy Community School - Painesville","Lake","Region 4",75,91.1,34,0,0,0,0
+"782","Summit Academy Community School Alternative Learners-Lorain","Lorain","Region 2",95,90.7,36.5,0,10,0,10
+"783","Summit Academy Community School Alternative Learners -Xenia","Greene","Region 10",195,89,37.3,0,20,0,20
+"784","Summit Academy Community School for Alternative Learn-Canton","Stark","Region 9",143,93,22.7,0,0,0,0
+"785","Summit Academy Middle School - Columbus","Franklin","Region 11",55,88.9,51.4,0,15,0,15
+"786","Summit Academy School - Lorain","Lorain","Region 2",114,82.1,56.9,0,60,0,60
+"787","Summit Academy Secondary - Akron","Summit","Region 8",67,87.6,47.6,0,0,0,0
+"788","Summit Academy Secondary - Canton","Stark","Region 9",106,93.8,20.6,0,0,0,0
+"789","Summit Academy Secondary - Youngstown","Mahoning","Region 5",179,90.6,31.5,0,0,0,0
+"790","Summit Academy Secondary School - Middletown","Butler","Region 13",122,87.5,45.6,0,0,0,0
+"791","Summit Academy Transition High School-Cincinnati","Hamilton","Region 13",81,88.2,37.8,0,0,0,0
+"792","Summit Academy Transition High School-Columbus","Franklin","Region 11",56,82.7,67,0,35,0,35
+"793","Summit Academy Transition High School Dayton","Montgomery","Region 10",171,85.6,50.7,0,0,0,0
+"794","Summit Acdy Comm Schl for Alternative Learners of Middletown","Butler","Region 13",98,91.6,28.9,0,0,0,0
+"795","SunBridge Schools","Lucas","Region 1",320,88.7,46.4,0,11.8,0,11.8
+"796","Swanton Local","Fulton","Region 1",390.666666666667,94.8666666666667,10.3,0,0,9.66666666666667,9.66666666666667
+"797","Switzerland of Ohio Local","Belmont","Region 12",141,91.7,21.9,0,15,15,30
+"798","Switzerland of Ohio Local","Monroe","Region 12",252.857142857143,93.2428571428571,16.2,0,5.42857142857143,7.85714285714286,13.2857142857143
+"799","Sycamore Community City","Hamilton","Region 13",771.285714285714,96.0857142857143,4.75714285714286,0,9.07142857142857,28,37.0714285714286
+"800","Sylvania Schools","Lucas","Region 1",648.666666666667,95.3166666666667,8.61666666666667,0,5.625,1.75,7.375
+"801","Symmes Valley Local","Lawrence","Region 15",380,93.9,13.05,0,0,0,0
+"802","T.C.P. World Academy","Hamilton","Region 13",510,95.1,11.1,0,0,0,0
+"803","T2 Honors Academy","Cuyahoga","Region 3",115,88.5,44.5,0,66.5,0,66.5
+"804","Talawanda City","Butler","Region 13",576.6,94.52,11.56,0,5.8,6.6,12.4
+"805","Tallmadge City","Summit","Region 8",589.25,95.275,9.375,0,8.8,14.375,23.175
+"806","Teays Valley Local","Pickaway","Region 11",581.142857142857,94.4428571428571,11.0714285714286,0,5.57142857142857,12.2857142857143,17.8571428571429
+"807","Tecumseh Local","Clark","Region 10",574.6,94.32,12.94,0,5.4,41.2,46.6
+"808","The Academy for Urban Scholars","Franklin","Region 11",304,45.4,95.1,0,0,0,0
+"809","The Autism Academy Of Learning","Lucas","Region 1",54,85.5,41.3,0,0,0,0
+"810","The Richland School of Academic Arts","Richland","Region 7",314,95.3,8,0,18,0,18
+"811","Three Rivers Local","Hamilton","Region 13",1058.5,94.05,15.2,0,14.5,0,14.5
+"812","Tiffin City","Seneca","Region 7",491,95.02,9.62,0,12.4,18,30.4
+"813","Tipp City Exempted Village","Miami","Region 10",499.8,96.08,5.24,0,4.2,8.4,12.6
+"814","Toledo City","Lucas","Region 1",446.16,90.926,27.206,0,113.210204081633,118.642857142857,231.85306122449
+"815","Toledo Preparatory and Fitness Academy","Lucas","Region 1",192,93.2,23.7,0,0,0,0
+"816","Toledo School For The Arts","Lucas","Region 1",690,95,9.1,0,0,0,0
+"817","Toledo SMART Elementary School","Lucas","Region 1",200,90.8,32.9,0,16,0,16
+"818","Tomorrow Center","Morrow","Region 7",117,87.6,44.3,0,16,0,16
+"819","Toronto City","Jefferson","Region 12",445,93,20.7,0,0,0,0
+"820","Townsend North Community School","Erie","Region 2",1140,84.1,32.6,0,12.8,0,12.8
+"821","Towpath Trail High School","Summit","Region 8",443,46.4,96.2,0,0,0,0
+"822","TRECA Digital Academy","Marion","Region 7",1823,91.3,29,0,0,0,0
+"823","Tri-County North Local","Preble","Region 10",258.333333333333,95,11.1666666666667,0,9.33333333333333,0,9.33333333333333
+"824","Tri-State STEM+M Early College High School","Lawrence","Region 15",66,94.1,12.1,0,0,0,0
+"825","Tri-Valley Local","Muskingum","Region 12",494.333333333333,95.1333333333333,8.6,0,0,0,0
+"826","Tri-Village Local","Darke","Region 10",407.5,95.3,9.55,0,0,0,0
+"827","Triad Local","Champaign","Region 6",265,93.8333333333333,11.9666666666667,0,10,0,10
+"828","Trimble Local","Athens","Region 16",260.333333333333,91.4666666666667,23.1,0,8.66666666666667,0,8.66666666666667
+"829","Triway Local","Wayne","Region 9",314.2,95.86,5.94,0,0,9.2,9.2
+"830","Trotwood-Madison City","Montgomery","Region 10",514,91.78,27.84,0,74.04,21.9,95.94
+"831","Trotwood Preparatory & Fitness Academy","Montgomery","Region 10",317,90.6,34.5,0,57,0,57
+"832","Troy City","Miami","Region 10",451.555555555556,94.9333333333333,10.8888888888889,0,20.6333333333333,0,20.6333333333333
+"833","Tuscarawas Valley Local","Tuscarawas","Region 12",323.75,95.95,5.025,0,2.5,0,2.5
+"834","Tuslaw Local","Stark","Region 9",436.666666666667,98.6,0.466666666666667,0,0,5,5
+"835","Twin Valley Community Local","Preble","Region 10",269.333333333333,95.1333333333333,9.43333333333333,0,8.23333333333333,0,8.23333333333333
+"836","Twinsburg City","Summit","Region 8",837.2,95.8,6.74,0,23.64,49.2,72.84
+"837","Union-Scioto Local","Ross","Region 15",699.666666666667,92.7666666666667,20.3,0,44.5,97.1666666666667,141.666666666667
+"838","Union Local","Belmont","Region 12",483.666666666667,93.6,14.8,0,0,20.3333333333333,20.3333333333333
+"839","United Local","Columbiana","Region 5",569.5,94.85,9.65,0,0,0,0
+"840","United Preparatory Academy","Franklin","Region 11",297,92.9,24.2,0,112,0,112
+"841","United Preparatory Academy East","Franklin","Region 11",97,91.6,25.7,0,0,0,0
+"842","University Academy","Summit","Region 8",233,83.9,62.7,0,106,0,106
+"843","University of Cleveland Preparatory School","Cuyahoga","Region 3",288,83.9,66.3,0,98,0,98
+"844","Upper Arlington City","Franklin","Region 11",736.375,96.125,3.9375,0,3.775,0,3.775
+"845","Upper Sandusky Exempted Village","Wyandot","Region 7",310.4,95.82,7.04,0,0,7.4,7.4
+"846","Upper Scioto Valley Local","Hardin","Region 6",136.666666666667,92.6333333333333,24.3,0,10.6666666666667,0,10.6666666666667
+"847","Urban Early College Network","Montgomery","Region 10",81,53.9,98,0,0,0,0
+"848","Urbana City","Champaign","Region 6",646.666666666667,93.4666666666667,17.3333333333333,0,46.5,96.3333333333333,142.833333333333
+"849","Utica Shale Academy of Ohio","Columbiana","Region 9",52,94.2,28.7,0,0,0,0
+"850","Valley Local","Scioto","Region 15",349.333333333333,93.4333333333333,18.3333333333333,0,9.66666666666667,12.1666666666667,21.8333333333333
+"851","Valley STEM+ME2 Academy","Mahoning","Region 5",201,91.4,30.3,0,28,102,130
+"852","Valley View Local","Montgomery","Region 10",445.25,95.15,8.9,0,0,0,0
+"853","Van Buren Local","Hancock","Region 1",353,96.8666666666667,1.86666666666667,0,0,0,0
+"854","Van Wert City","Van Wert","Region 1",514.5,95.425,9.725,0,2.75,0,2.75
+"855","Vandalia-Butler City","Montgomery","Region 10",563.8,95.18,8.58,0,2.26,9.9,12.16
+"856","Vanlue Local","Hancock","Region 1",88.5,96.95,3.25,0,0,0,0
+"857","Vermilion Local","Erie","Region 2",607.333333333333,93.9333333333333,13.6,0,0,0,0
+"858","Versailles Exempted Village","Darke","Region 10",436,97.5,1.16666666666667,0,0,0,0
+"859","Vinton County Local","Vinton","Region 16",391.4,93.96,14.76,0,0,24.5,24.5
+"860","Wadsworth City","Medina","Region 8",570.25,95.8625,5.2875,0,2.1,0,2.1
+"861","Walnut Township Local","Fairfield","Region 11",244,93.9,14,0,0,5,5
+"862","Wapakoneta City","Auglaize","Region 6",607.4,95.12,11.3,0,0,0,0
+"863","Warren City","Trumbull","Region 5",952,89.88,34.26,0,223.84,332,555.84
+"864","Warren Local","Washington","Region 16",503,95.075,10.975,0,0,4.25,4.25
+"865","Warrensville Heights City","Cuyahoga","Region 3",329.6,92.08,24.2,0,49.8,41.2,91
+"866","Washington-Nile Local","Scioto","Region 15",478,94.4,11.2333333333333,0,15.6666666666667,0,15.6666666666667
+"867","Washington Court House City","Fayette","Region 14",540.5,93.625,15.225,0,13.5,0,13.5
+"868","Washington Local","Lucas","Region 1",634.545454545455,93.7,16.8,0,43.5909090909091,27.8181818181818,71.4090909090909
+"869","Washington Park Community School","Cuyahoga","Region 3",207,91.5,28.9,0,12,0,12
+"870","Waterloo Local","Portage","Region 8",342.666666666667,93.4666666666667,18.7,0,24.3333333333333,0,24.3333333333333
+"871","Wauseon Exempted Village","Fulton","Region 1",445,94.925,10.65,0,0,2.5,2.5
+"872","Waverly City","Pike","Region 15",454,93.25,18.7,0,11.25,17,28.25
+"873","Wayne Local","Warren","Region 13",463,96.0666666666667,5.26666666666667,0,0,0,0
+"874","Wayne Trace Local","Paulding","Region 1",298,96.0666666666667,5.83333333333333,0,4,0,4
+"875","Waynesfield-Goshen Local","Auglaize","Region 6",244,95.4,7.2,0,0,5.5,5.5
+"876","Weathersfield Local","Trumbull","Region 5",493,94.65,11.85,0,0,8.5,8.5
+"877","Wellington Exempted Village","Lorain","Region 2",333.333333333333,93.9,14.2666666666667,0,0,10.6666666666667,10.6666666666667
+"878","Wellston City","Jackson","Region 16",325.75,92.375,23.125,0,2.75,20.25,23
+"879","Wellsville Local","Columbiana","Region 5",233.333333333333,93.7,17.0666666666667,0,0,0,0
+"880","West Branch Local","Columbiana","Region 5",338,95.1,8.6,0,0,0,0
+"881","West Branch Local","Mahoning","Region 5",550.666666666667,94.2333333333333,13.1,0,5.66666666666667,20,25.6666666666667
+"882","West Carrollton City","Montgomery","Region 10",500.142857142857,93.6285714285714,16.3285714285714,0,20.1,0,20.1
+"883","West Central Learning Academy II","Allen","Region 6",59,79.3,42.2,0,0,0,0
+"884","West Clermont Local","Clermont","Region 13",797.5,93.82,14.86,1.35,49.31,57.43,108.09
+"885","West Geauga Local","Geauga","Region 4",453.75,94.925,9.125,0,6.75,0,6.75
+"886","West Holmes Local","Holmes","Region 9",297.571428571429,95.4571428571429,6.98571428571429,0,1.57142857142857,6.85714285714286,8.42857142857143
+"887","West Liberty-Salem Local","Champaign","Region 6",593,95.15,9.1,0,0,0,0
+"888","West Muskingum Local","Muskingum","Region 12",460,93.8333333333333,16.1333333333333,0,10.7666666666667,15,25.7666666666667
+"889","West Park Academy","Cuyahoga","Region 3",216,87.3,47.6,0,28,0,28
+"890","West Preparatory Academy","Cuyahoga","Region 3",123,90.6,37,0,17,0,17
+"891","Western Brown Local","Brown","Region 14",722.25,94.975,11.675,0,22.25,0,22.25
+"892","Western Local","Pike","Region 15",247.333333333333,93.2,19,0,14.6666666666667,0,14.6666666666667
+"893","Western Reserve Local","Huron","Region 2",331,95.1,9.06666666666667,0,0,23.5,23.5
+"894","Western Reserve Local","Mahoning","Region 5",217.333333333333,94.6333333333333,9.46666666666667,0,0,0,0
+"895","Westerville City","Delaware","Region 11",1042.33333333333,94.9833333333333,9.46666666666667,0,30.4333333333333,48.9166666666667,79.35
+"896","Westerville City","Franklin","Region 11",554.266666666667,95.4933333333333,7.60666666666667,0,14.94,16.02,30.96
+"897","Westfall Local","Pickaway","Region 11",454,95.1,9.43333333333333,0,18.5,32.3333333333333,50.8333333333333
+"898","Westlake City","Cuyahoga","Region 3",489.571428571429,95.6285714285714,5.65714285714286,0,6.68571428571429,1.57142857142857,8.25714285714286
+"899","Westside Academy","Franklin","Region 11",225,94.8,12,0,0,0,0
+"900","Westwood Preparatory Academy","Franklin","Region 11",225,NA,NA,0,0,225.5,225.5
+"901","Wheelersburg Local","Scioto","Region 15",525.333333333333,95.3333333333333,7.43333333333333,0,0,0,0
+"902","Whitehall City","Franklin","Region 11",695.4,92.3,23.54,0,111.8,59.8,171.6
+"903","Whitehall Preparatory and Fitness Academy","Franklin","Region 11",301,93.2,20.6,0,35.8,0,35.8
+"904","Wickliffe City","Lake","Region 4",419.666666666667,94.3,14.8333333333333,0,11.3333333333333,13.6666666666667,25
+"905","Wildwood Environmental Academy","Lucas","Region 1",363,92.6,23.6,0,66,0,66
+"906","Willard City","Huron","Region 7",482.666666666667,94.1333333333333,15.6,0,10.3333333333333,19.1666666666667,29.5
+"907","Williamsburg Local","Clermont","Region 13",498.5,94.35,13.5,0,6,0,6
+"908","Willoughby-Eastlake City","Lake","Region 4",672.727272727273,94.4181818181818,13.1090909090909,0,17.8181818181818,0,17.8181818181818
+"909","Wilmington City","Clinton","Region 14",544,94,13.38,0,0,0,0
+"910","Windham Exempted Village","Portage","Region 8",161.333333333333,93.5333333333333,17.5,0,10.6666666666667,0,10.6666666666667
+"911","Wings Academy 1","Cuyahoga","Region 3",223,93.8,19.4,0,0,0,0
+"912","Winterfield Venture Academy","Lucas","Region 1",545,93.9,18.1,0,231.5,0,231.5
+"913","Winton Preparatory Academy","Hamilton","Region 13",386,83.7,64.9,0,247.5,0,247.5
+"914","Winton Woods City","Hamilton","Region 13",624.5,92.75,20.65,0,64.1166666666667,0,64.1166666666667
+"915","Wolf Creek Local","Washington","Region 16",301.5,94.95,10.35,0,0,0,0
+"916","Woodmore Local","Ottawa","Region 1",242,95.05,8.6,0,0,0,0
+"917","Woodmore Local","Sandusky","Region 1",451,95.7,5.3,0,12,0,12
+"918","Woodridge Local","Summit","Region 8",619.666666666667,94.7,11,0,29,0,29
+"919","Wooster City","Wayne","Region 9",551.166666666667,94.75,10.5166666666667,0,9.38333333333333,15.7833333333333,25.1666666666667
+"920","Worthington City","Franklin","Region 11",573.058823529412,95.6764705882353,6.45294117647059,0,6.61764705882353,0,6.61764705882353
+"921","Wynford Local","Crawford","Region 7",362.666666666667,95.1,10.1,0,0,10.6666666666667,10.6666666666667
+"922","Wyoming City","Hamilton","Region 13",394.2,95.88,5.2,0,0,4.8,4.8
+"923","Xenia Community City","Greene","Region 10",506.5,93.0875,18.475,0,29.1,0,29.1
+"924","YB Columbus Community School","Franklin","Region 11",124,41,99.4,0,0,0,0
+"925","Yellow Springs Exempted Village","Greene","Region 10",334,94.05,13.5,0,0,0,0
+"926","Youngstown Academy of Excellence","Mahoning","Region 5",167,87.5,47,0,46.5,0,46.5
+"927","Youngstown City","Mahoning","Region 5",374.071428571429,88.7714285714286,40.9,0,69.8642857142857,0,69.8642857142857
+"928","Youngstown Community School","Mahoning","Region 5",341,93.1,21.3,0,27,0,27
+"929","Zane Trace Local","Ross","Region 15",415.666666666667,94.0333333333333,14.4333333333333,0,20.3333333333333,0,20.3333333333333
+"930","Zanesville City","Muskingum","Region 12",630.2,92.78,22.86,0,35.4,90.3,125.7
+"931","Zanesville Community School","Muskingum","Region 12",93,85.1,47,0,15,0,15
+"932","Zenith Academy","Franklin","Region 11",592,100,0,0,35,0,35
+"933","Zenith Academy East","Franklin","Region 11",281,100,0,0,22,0,22
+"934","Zenith Academy West","Franklin","Region 11",208,100,0,0,0,0,0

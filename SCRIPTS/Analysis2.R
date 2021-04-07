@@ -53,34 +53,51 @@ model_data <- read.csv(file_path)
 
 
 
-ggplot(model_data, aes(x=poverty_percentage, y=HS_PLUS_percentage)) + geom_point() + 
+plot1 <- ggplot(model_data, aes(x=poverty_percentage, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Poverty % vs. Educational Attainment %") +
   xlab("Poverty %") + 
   ylab("Educational Attainment %")
 
+png("POV_test.png")
+grid.arrange(plot1)
+dev.off()
 
-ggplot(model_data, aes(x=mean_total_students_discipline, y=HS_PLUS_percentage)) + geom_point() + 
+
+plot1 <- ggplot(model_data, aes(x=mean_total_students_discipline, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Mean Student Discipline vs. Educational Attainment %") +
   xlab("Mean Student Discipline") + 
   ylab("Educational Attainment %")
 
+png("Discipline_test.png")
+grid.arrange(plot1)
+dev.off()
 
-ggplot(model_data, aes(x=mean_chronic_absenteeism, y=HS_PLUS_percentage)) + geom_point() + 
+plot1 <- ggplot(model_data, aes(x=mean_chronic_absenteeism, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Mean Chronic Absenteeism % vs. Educational Attainment %") +
   xlab("Mean Chronic Absenteeism %") + 
   ylab("Educational Attainment %")
 
-ggplot(model_data, aes(x=mean_attendance, y=HS_PLUS_percentage)) + geom_point() + 
+png("Absenteeism_test.png")
+grid.arrange(plot1)
+dev.off()
+
+plot1 <- ggplot(model_data, aes(x=mean_attendance, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Mean Attendance % vs. Educational Attainment %") +
   xlab("Mean Attendance %") + 
   ylab("Educational Attainment %")
 
-ggplot(model_data, aes(x=mean_enrollment, y=HS_PLUS_percentage)) + geom_point() + 
+png("Mean_Attendance_test.png")
+grid.arrange(plot1)
+dev.off()
+
+plot1 <- ggplot(model_data, aes(x=mean_enrollment, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Mean Enrollment vs. Educational Attainment %") +
   xlab("Mean Enrollment") + 
   ylab("Educational Attainment %")
 
-
+png("Enrollment_test.png")
+grid.arrange(plot1)
+dev.off()
 #####################################################################
 # Removing Outliers
 

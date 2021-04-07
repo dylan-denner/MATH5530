@@ -1,0 +1,451 @@
+---
+title: "Week 11 Report"
+author: "Jackson Tucker & Dylan Denner"
+date: "4/6/2021"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Exercises
+8. We will now perform cross-validation on a simulated data set.
+(a) Generate a simulated data set as follows:
+
+set.seed(1)
+x=rnorm(100)
+y=x-2*x^2+rnorm (100)
+
+In this data set, what is n and what is p? Write out the model
+used to generate the data in equation form.
+
+
+```{r}
+library(boot)
+setwd("C:/Users/dylan/Documents/R/MATH5530/Week11")
+
+set.seed(1)
+x <- rnorm(100)
+y <- x -2*x^2 + rnorm(100)
+
+df <- data.frame(x,y)
+```
+
+Here, n = 100, p = 2
+
+(b) Create a scatterplot of X against Y . Comment on what you find.
+
+```{r}
+plot(x,y)
+
+```
+
+There is a very clear nonlinear, quadratic relationship between x and y. 
+
+
+(c) Set a random seed, and then compute the LOOCV errors that
+result from fitting the following four models using least squares:
+i.    Y = β0 + β1X + e
+ii.   Y = β0 + β1X + β2X2 + e
+iii.  Y = β0 + β1X + β2X2 + β3X3 + e
+iv.   Y = β0 + β1X + β2X2 + β3X3 + β4X4 + e
+
+```{r}
+set.seed(100)
+
+model1 <- glm(y~x, data = df)
+LOOCVerror1 <- cv.glm(df,model1)$delta
+LOOCVerror1
+```
+
+```{r}
+model2 <- glm(y~poly(x,2), data = df)
+LOOCVerror2 <- cv.glm(df,model2)$delta
+LOOCVerror2
+```
+
+```{r}
+model3 <- glm(y~poly(x,3), data = df)
+LOOCVerror3 <- cv.glm(df,model3)$delta
+LOOCVerror3
+```
+
+```{r}
+model4 <- glm(y~poly(x,4), data = df)
+LOOCVerror4 <- cv.glm(df,model4)$delta
+LOOCVerror4
+```
+
+
+(d) Repeat (c) using another random seed, and report your results.
+Are your results the same as what you got in (c)? Why?
+
+```{r}
+set.seed(200)
+x <- rnorm(100)
+y <- x -2*x^2 + rnorm(100)
+
+df <- data.frame(x,y)
+
+model1_2 <- glm(y~x, data = df)
+LOOCVerror1_2 <- cv.glm(df,model1_2)$delta
+LOOCVerror1_2
+```
+
+```{r}
+model2_2 <- glm(y~poly(x,2), data = df)
+LOOCVerror2_2 <- cv.glm(df,model2_2)$delta
+LOOCVerror2_2
+```
+
+```{r}
+model3_2 <- glm(y~poly(x,3), data = df)
+LOOCVerror3_2 <- cv.glm(df,model3_2)$delta
+LOOCVerror3_2
+```
+
+```{r}
+model4_2 <- glm(y~poly(x,4), data = df)
+LOOCVerror4_2 <- cv.glm(df,model4_2)$delta
+LOOCVerror4_2
+```
+
+(e) Which of the models in (c) had the smallest LOOCV error? Is
+this what you expected? Explain your answer.
+
+
+
+(f) Comment on the statistical significance of the coefficient estimates that results from fitting each of the models in (c) using
+least squares. Do these results agree with the conclusions drawn
+based on the cross-validation results?
+
+```{r}
+summary(model1)
+```
+
+```{r}
+summary(model2)
+```
+
+```{r}
+summary(model3)
+```
+
+```{r}
+summary(model4)
+```
+
+
+
+## Preperation for Presentation
+
+
+```{r, echo=FALSE}
+setwd("C:/Users/dylan/Documents/R/MATH5530/Project/MATH5530/SCRIPTS/")
+library(dplyr)
+library(tidycensus)
+library(tidyverse)
+library(tidyr)
+library(readxl)
+library(readr)
+library(gridExtra)
+library(ggpubr)
+library(MASS)
+library(car)
+library(lmtest)
+library(dplyr)
+library(tidycensus)
+library(tidyverse)
+library(tidyr)
+library(readxl)
+
+```
+
+
+
+```{r}
+library(tidycensus)
+
+poverty_by_sex_edu_attainment <- get_acs(
+  geography = "school district (unified)", 
+  variables = c(total_population = "B17003_001",
+                below_poverty_num = "B17003_002",
+                below_poverty_num_men = "B17003_003",
+                M_below_poverty_less_than_HS = "B17003_004",
+                M_below_poverty_HS = "B17003_005",
+                M_below_poverty_some_college = "B17003_006",
+                M_below_poverty_bachelor_plus = "B17003_007",
+                below_poverty_num_women = "B17003_008",
+                W_below_poverty_less_than_HS = "B17003_009",
+                W_below_poverty_HS = "B17003_010",
+                W_below_poverty_some_college = "B17003_011",
+                W_below_poverty_bachelor_plus = "B17003_012",
+                above_poverty_num = "B17003_013",
+                above_poverty_num_men = "B17003_014",
+                M_above_poverty_less_than_HS = "B17003_015",
+                M_above_poverty_HS = "B17003_016",
+                M_above_poverty_some_college = "B17003_017",
+                M_above_poverty_bachelor_plus = "B17003_018",
+                above_poverty_num_women = "B17003_019",
+                W_above_poverty_less_than_HS = "B17003_020",
+                W_above_poverty_HS = "B17003_021",
+                W_above_poverty_some_college = "B17003_022",
+                W_above_poverty_bachelor_plus = "B17003_023"),
+  state = "OH", 
+  year = 2019)
+```
+```{r}
+head(poverty_by_sex_edu_attainment)
+dim(poverty_by_sex_edu_attainment)
+length(unique(poverty_by_sex_edu_attainment$NAME))
+```
+
+
+```{r}
+
+poverty_by_sex_edu_attainment <- poverty_by_sex_edu_attainment[,-c(5)]
+
+```
+
+```{r}
+poverty_by_sex_edu_attainment <- spread(poverty_by_sex_edu_attainment, variable, estimate)
+
+head(poverty_by_sex_edu_attainment)
+dim(poverty_by_sex_edu_attainment)
+
+
+```
+
+```{r}
+mod_poverty_by_sex_edu_attainment <- poverty_by_sex_edu_attainment %>% mutate(
+  "tot_less_than_HS" = W_below_poverty_less_than_HS + M_below_poverty_less_than_HS + 
+                      W_above_poverty_less_than_HS + M_above_poverty_less_than_HS,
+  "tot_HS" = W_below_poverty_HS + M_below_poverty_HS + 
+            W_above_poverty_HS + M_above_poverty_HS,
+  "tot_some_college" = W_below_poverty_some_college + M_below_poverty_some_college + 
+                    W_above_poverty_some_college + M_above_poverty_some_college,
+  "tot_bachelor_plus" = W_below_poverty_bachelor_plus + M_below_poverty_bachelor_plus + 
+                      W_above_poverty_bachelor_plus + M_above_poverty_bachelor_plus,
+  "tot_HS_PLUS" = tot_HS + tot_some_college + tot_bachelor_plus,
+  "poverty_percentage" = below_poverty_num/total_population,
+  "HS_PLUS_percentage" = tot_HS_PLUS/total_population)
+
+```
+
+```{r}
+mod_poverty_by_sex_edu_attainment <- dplyr::select(
+  mod_poverty_by_sex_edu_attainment,
+  NAME,
+  total_population,
+  below_poverty_num,
+  above_poverty_num,
+  poverty_percentage,
+  tot_less_than_HS,
+  tot_HS,
+  tot_some_college,
+  tot_bachelor_plus,
+  HS_PLUS_percentage
+)
+
+dim(mod_poverty_by_sex_edu_attainment)
+
+
+```
+
+```{r}
+file_path <- "../DATA/BUILDING_OVERVIEW_1819.xlsx"
+overview_data <- read_excel(file_path, sheet = "BUILDING_OVERVIEW")
+
+file_path <- "../DATA/BUILDING_DISCIPLINE_1819.xlsx"
+discipline_data <- read_excel(file_path, sheet = "DISCIPLINE")
+
+```
+
+```{r}
+overview_data <- dplyr::select(
+  overview_data,
+  "Building IRN",
+  "Building Name",
+  "District Name",
+  "County",
+  "Region",
+  "Enrollment 2018-2019",
+  "Attendance Rate 2018-2019",
+  "Chronic Absenteeism Percent 2018-2019"
+)
+
+overview_data[,6:8] <- sapply(overview_data[,6:8],as.numeric)
+
+discipline_data[ discipline_data == "<10" ] <- "0"
+discipline_data[,8:26] <- sapply(discipline_data[,8:26],as.numeric)
+discipline_data <- discipline_data[,-26]
+discipline_data <- subset(discipline_data, discipline_data$`Discpline Reason Description` == "Disobedient/Disruptive Behavior")
+
+
+```
+
+```{r}
+discipline_data <- dplyr::select(
+  discipline_data,
+  "Building IRN",
+  "Students Disciplined - Expulsions",
+  "Students Disciplined - Out-of-School Suspensions",
+  "Students Disciplined - In-School Suspensions"
+)
+
+```
+
+```{r}
+discipline_data <- discipline_data %>% mutate(
+  "total_students_discipline" = (rowSums(discipline_data[,2:4])))
+
+joined_df <- left_join(overview_data, discipline_data, by = "Building IRN")
+
+
+```
+
+```{r}
+grouped_df <- joined_df %>%
+  group_by(`District Name`, County, Region) %>%
+  summarise(mean_enrollment = mean(`Enrollment 2018-2019`, na.rm = TRUE),
+            mean_attendence = mean(`Attendance Rate 2018-2019`, na.rm = TRUE),
+            mean_chronic_absenteesim = mean(`Chronic Absenteeism Percent 2018-2019`, na.rm = TRUE),
+            mean_expulsions = mean(`Students Disciplined - Expulsions`, na.rm = TRUE),
+            mean_out_of_school_suspensions = mean(`Students Disciplined - Out-of-School Suspensions`, na.rm = TRUE),
+            mean_in_school_suspensions = mean(`Students Disciplined - In-School Suspensions`, na.rm = TRUE),
+            mean_total_students_discipline = mean(`total_students_discipline`, na.rm = TRUE))
+
+```
+
+```{r}
+file_path <- "../DATA/model_data_3_30.csv"
+model_data <- read.csv(file_path)
+
+ggplot(model_data, aes(x=poverty_percentage, y=HS_PLUS_percentage)) + geom_point() + 
+  ggtitle("Poverty % vs. Educational Attainment %") +
+  xlab("Poverty %") + 
+  ylab("Educational Attainment %")
+
+
+ggplot(model_data, aes(x=mean_total_students_discipline, y=HS_PLUS_percentage)) + geom_point() + 
+  ggtitle("Mean Student Discipline vs. Educational Attainment %") +
+  xlab("Mean Student Discipline") + 
+  ylab("Educational Attainment %")
+
+
+ggplot(model_data, aes(x=mean_chronic_absenteeism, y=HS_PLUS_percentage)) + geom_point() + 
+  ggtitle("Mean Chronic Absenteeism % vs. Educational Attainment %") +
+  xlab("Mean Chronic Absenteeism %") + 
+  ylab("Educational Attainment %")
+
+ggplot(model_data, aes(x=mean_attendance, y=HS_PLUS_percentage)) + geom_point() + 
+  ggtitle("Mean Attendance % vs. Educational Attainment %") +
+  xlab("Mean Attendance %") + 
+  ylab("Educational Attainment %")
+
+ggplot(model_data, aes(x=mean_enrollment, y=HS_PLUS_percentage)) + geom_point() + 
+  ggtitle("Mean Enrollment vs. Educational Attainment %") +
+  xlab("Mean Enrollment") + 
+  ylab("Educational Attainment %")
+
+
+```
+
+```{r}
+
+file_path <- "../DATA/model_data_3_30.csv"
+model_data <- read.csv(file_path)
+
+mod_model_data <- subset(model_data, model_data$HS_PLUS_percentage > 0.65)
+
+mod_model_data$HS_PLUS_percentage <- (((mod_model_data$HS_PLUS_percentage ^ 6) - 1) / 6)
+
+library(gam)
+library(mgcv)
+
+```
+
+```{r}
+gam_model_1 <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_attendance) + s(mean_enrollment) + s(mean_total_students_discipline), data = mod_model_data)
+summary(gam_model_1)
+```
+
+```{r}
+gam.check(gam_model_1)
+
+
+```
+
+```{r}
+gam_model_2 <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_attendance) + s(mean_enrollment), data = mod_model_data)
+summary(gam_model_2)
+```
+
+```{r}
+gam.check(gam_model_2)
+
+```
+
+```{r}
+
+gam_model_3 <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_enrollment) + s(mean_total_students_discipline), data = mod_model_data)
+summary(gam_model_3)
+```
+
+```{r}
+gam.check(gam_model_3)
+
+
+```
+
+```{r}
+anova(gam_model_1, gam_model_2, gam_model_3, test = "F")
+
+```
+
+```{r}
+plot(gam_model_3, se=TRUE, col="blue")
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+s
+
+```{r}
+
+```
+

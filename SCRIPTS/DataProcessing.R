@@ -70,10 +70,14 @@ poverty_by_sex_edu_attainment <- select(
 poverty_by_sex_edu_attainment <- spread(poverty_by_sex_edu_attainment, variable, estimate)
 
 mod_poverty_by_sex_edu_attainment <- poverty_by_sex_edu_attainment %>% mutate(
-  "tot_less_than_HS" = W_below_poverty_less_than_HS + M_below_poverty_less_than_HS + W_above_poverty_less_than_HS + M_above_poverty_less_than_HS,
-  "tot_HS" = W_below_poverty_HS + M_below_poverty_HS + W_above_poverty_HS + M_above_poverty_HS,
-  "tot_some_college" = W_below_poverty_some_college + M_below_poverty_some_college + W_above_poverty_some_college + M_above_poverty_some_college,
-  "tot_bachelor_plus" = W_below_poverty_bachelor_plus + M_below_poverty_bachelor_plus + W_above_poverty_bachelor_plus + M_above_poverty_bachelor_plus,
+  "tot_less_than_HS" = W_below_poverty_less_than_HS + M_below_poverty_less_than_HS + 
+                      W_above_poverty_less_than_HS + M_above_poverty_less_than_HS,
+  "tot_HS" = W_below_poverty_HS + M_below_poverty_HS + 
+            W_above_poverty_HS + M_above_poverty_HS,
+  "tot_some_college" = W_below_poverty_some_college + M_below_poverty_some_college + 
+                    W_above_poverty_some_college + M_above_poverty_some_college,
+  "tot_bachelor_plus" = W_below_poverty_bachelor_plus + M_below_poverty_bachelor_plus + 
+                      W_above_poverty_bachelor_plus + M_above_poverty_bachelor_plus,
   "tot_HS_PLUS" = tot_HS + tot_some_college + tot_bachelor_plus,
   "poverty_percentage" = below_poverty_num/total_population,
   "HS_PLUS_percentage" = tot_HS_PLUS/total_population)
