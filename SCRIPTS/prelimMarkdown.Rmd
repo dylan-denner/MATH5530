@@ -1,7 +1,7 @@
 ---
-title: "Week 11 Report"
-author: "Jackson Tucker & Dylan Denner"
-date: "4/6/2021"
+title: "Preliminary Report"
+author: "Dylan Denner & Jackson Tucker"
+date: "4/19/2021"
 output:
   word_document: default
   html_document: default
@@ -10,136 +10,6 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-
-## Exercises
-8. We will now perform cross-validation on a simulated data set.
-(a) Generate a simulated data set as follows:
-
-set.seed(1)
-x=rnorm(100)
-y=x-2*x^2+rnorm (100)
-
-In this data set, what is n and what is p? Write out the model
-used to generate the data in equation form.
-
-
-```{r}
-library(boot)
-setwd("C:/Users/dylan/Documents/R/MATH5530/Week11")
-
-set.seed(1)
-x <- rnorm(100)
-y <- x -2*x^2 + rnorm(100)
-
-df <- data.frame(x,y)
-```
-
-Here, n = 100, p = 2
-
-(b) Create a scatterplot of X against Y . Comment on what you find.
-
-```{r}
-plot(x,y)
-
-```
-
-There is a very clear nonlinear, quadratic relationship between x and y. 
-
-
-(c) Set a random seed, and then compute the LOOCV errors that
-result from fitting the following four models using least squares:
-i.    Y = β0 + β1X + e
-ii.   Y = β0 + β1X + β2X2 + e
-iii.  Y = β0 + β1X + β2X2 + β3X3 + e
-iv.   Y = β0 + β1X + β2X2 + β3X3 + β4X4 + e
-
-```{r}
-set.seed(100)
-
-model1 <- glm(y~x, data = df)
-LOOCVerror1 <- cv.glm(df,model1)$delta
-LOOCVerror1
-```
-
-```{r}
-model2 <- glm(y~poly(x,2), data = df)
-LOOCVerror2 <- cv.glm(df,model2)$delta
-LOOCVerror2
-```
-
-```{r}
-model3 <- glm(y~poly(x,3), data = df)
-LOOCVerror3 <- cv.glm(df,model3)$delta
-LOOCVerror3
-```
-
-```{r}
-model4 <- glm(y~poly(x,4), data = df)
-LOOCVerror4 <- cv.glm(df,model4)$delta
-LOOCVerror4
-```
-
-
-(d) Repeat (c) using another random seed, and report your results.
-Are your results the same as what you got in (c)? Why?
-
-```{r}
-set.seed(200)
-x <- rnorm(100)
-y <- x -2*x^2 + rnorm(100)
-
-df <- data.frame(x,y)
-
-model1_2 <- glm(y~x, data = df)
-LOOCVerror1_2 <- cv.glm(df,model1_2)$delta
-LOOCVerror1_2
-```
-
-```{r}
-model2_2 <- glm(y~poly(x,2), data = df)
-LOOCVerror2_2 <- cv.glm(df,model2_2)$delta
-LOOCVerror2_2
-```
-
-```{r}
-model3_2 <- glm(y~poly(x,3), data = df)
-LOOCVerror3_2 <- cv.glm(df,model3_2)$delta
-LOOCVerror3_2
-```
-
-```{r}
-model4_2 <- glm(y~poly(x,4), data = df)
-LOOCVerror4_2 <- cv.glm(df,model4_2)$delta
-LOOCVerror4_2
-```
-
-(e) Which of the models in (c) had the smallest LOOCV error? Is
-this what you expected? Explain your answer.
-
-
-
-(f) Comment on the statistical significance of the coefficient estimates that results from fitting each of the models in (c) using
-least squares. Do these results agree with the conclusions drawn
-based on the cross-validation results?
-
-```{r}
-summary(model1)
-```
-
-```{r}
-summary(model2)
-```
-
-```{r}
-summary(model3)
-```
-
-```{r}
-summary(model4)
-```
-
-
 
 ## Preperation for Presentation
 
@@ -162,6 +32,8 @@ library(tidycensus)
 library(tidyverse)
 library(tidyr)
 library(readxl)
+library(gam)
+library(mgcv)
 
 ```
 
@@ -206,8 +78,7 @@ length(unique(poverty_by_sex_edu_attainment$NAME))
 
 
 ```{r}
-
-poverty_by_sex_edu_attainment <- poverty_by_sex_edu_attainment[,-c(5)]
+poverty_by_sex_edu_attainment[,-c(5)]
 
 ```
 
@@ -357,59 +228,135 @@ ggplot(model_data, aes(x=mean_enrollment, y=HS_PLUS_percentage)) + geom_point() 
 
 ```{r}
 
-file_path <- "../DATA/model_data_3_30.csv"
-model_data <- read.csv(file_path)
+POVERTY_lm <- lm(log(HS_PLUS_percentage) ~ poverty_percentage, data = model_data)
+DISCIPLINE_lm <- lm(log(HS_PLUS_percentage) ~ mean_total_students_discipline, data = model_data)
+CHRONIC_lm <- lm(log(HS_PLUS_percentage) ~ mean_chronic_absenteeism, data = model_data)
+ATTENDANCE_lm <- lm(log(HS_PLUS_percentage) ~ mean_attendance, data = model_data)
+ENROLLMENT_lm <- lm(log(HS_PLUS_percentage) ~ mean_enrollment, data = model_data)
 
-mod_model_data <- subset(model_data, model_data$HS_PLUS_percentage > 0.65)
+ mod_model_data <- subset(model_data, model_data$HS_PLUS_percentage > 0.65)
 
-mod_model_data$HS_PLUS_percentage <- (((mod_model_data$HS_PLUS_percentage ^ 6) - 1) / 6)
-
-library(gam)
-library(mgcv)
-
-```
-
-```{r}
-gam_model_1 <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_attendance) + s(mean_enrollment) + s(mean_total_students_discipline), data = mod_model_data)
-summary(gam_model_1)
-```
-
-```{r}
-gam.check(gam_model_1)
+POVERTY_lm_mod <- lm(log(HS_PLUS_percentage) ~ poverty_percentage, data = mod_model_data)
+DISCIPLINE_lm_mod <- lm(log(HS_PLUS_percentage) ~ mean_total_students_discipline, data = mod_model_data)
+CHRONIC_lm_mod <- lm(log(HS_PLUS_percentage) ~ mean_chronic_absenteeism, data = mod_model_data)
+ATTENDANCE_lm_mod <- lm(log(HS_PLUS_percentage) ~ mean_attendance, data = mod_model_data)
+ENROLLMENT_lm_mod <- lm(log(HS_PLUS_percentage) ~ mean_enrollment, data = mod_model_data)
 
 
 ```
 
 ```{r}
-gam_model_2 <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_attendance) + s(mean_enrollment), data = mod_model_data)
-summary(gam_model_2)
-```
-
-```{r}
-gam.check(gam_model_2)
+DISCIPLINE_sresid <- studres(DISCIPLINE_lm)
+shapiro.test(DISCIPLINE_sresid)
 
 ```
 
 ```{r}
-
-gam_model_3 <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_enrollment) + s(mean_total_students_discipline), data = mod_model_data)
-summary(gam_model_3)
+DISCIPLINE_sresid_mod <- studres(DISCIPLINE_lm_mod)
+shapiro.test(DISCIPLINE_sresid_mod)
 ```
 
 ```{r}
-gam.check(gam_model_3)
+#heterodastic
+ncvTest(POVERTY_lm)
+ncvTest(POVERTY_lm_mod)
+```
 
+```{r}
+#homoscedastic
+ncvTest(DISCIPLINE_lm)
+ncvTest(DISCIPLINE_lm_mod)
+```
+
+```{r}
+#heteroscedastic
+ncvTest(CHRONIC_lm)
+ncvTest(CHRONIC_lm_mod)
+```
+
+```{r}
+#homoscedastic
+ncvTest(ATTENDANCE_lm)
+ncvTest(ATTENDANCE_lm_mod)
 
 ```
 
 ```{r}
-anova(gam_model_1, gam_model_2, gam_model_3, test = "F")
+#heteroscedastic
+ncvTest(ENROLLMENT_lm)
+ncvTest(ENROLLMENT_lm_mod)
 
 ```
 
 ```{r}
-plot(gam_model_3, se=TRUE, col="blue")
+raw_lm <- lm(log(HS_PLUS_percentage) ~ poverty_percentage* mean_chronic_absenteeism + mean_enrollment, data = model_data)
+summary(raw_lm)
+```
+
+```{r}
+new_lm <- lm(log(HS_PLUS_percentage) ~ poverty_percentage* mean_chronic_absenteeism + mean_enrollment, data = mod_model_data)
+
+summary(new_lm)
+```
+
+```{r}
+new_lm_mod <- lm(log(HS_PLUS_percentage) ~ poverty_percentage* mean_chronic_absenteeism + mean_enrollment, data = mod_model_data)
+
+plot(fitted(new_lm_mod), resid(new_lm_mod))
+
 
 ```
 
+
+```{r}
+new_lm_mod2 <- lm((((HS_PLUS_percentage ^ 7) - 1) / 7) ~ poverty_percentage* mean_chronic_absenteeism + mean_enrollment, data = mod_model_data)
+summary(new_lm_mod2)
+```
+
+```{r}
+plot(fitted(new_lm_mod2), resid(new_lm_mod2))
+
+```
+
+```{r}
+new_sresid_mod2 <- studres(new_lm_mod2)
+new_sresid_mod <- studres(new_lm_mod)
+shapiro.test(new_sresid_mod2)
+shapiro.test(new_sresid_mod)
+```
+
+
+
+```{r, warning=FALSE, message=FALSE}
+attach(mod_model_data)
+smooth_spline_poverty_cv <- smooth.spline(poverty_percentage, HS_PLUS_percentage, cv=TRUE)
+
+smooth_spline_absenteeism_cv <- smooth.spline(mean_chronic_absenteeism, HS_PLUS_percentage, cv=TRUE)
+
+smooth_spline_attendance_cv <- smooth.spline(mean_attendance, HS_PLUS_percentage, cv=TRUE)
+
+smooth_spline_enrollment_cv <- smooth.spline(mean_enrollment, HS_PLUS_percentage, cv=TRUE)
+
+smooth_spline_discipline_cv <- smooth.spline(mean_total_students_discipline, HS_PLUS_percentage, cv=TRUE)
+
+smooth_spline_poverty_cv$df
+smooth_spline_absenteeism_cv$df
+smooth_spline_attendance_cv$df
+smooth_spline_enrollment_cv$df
+smooth_spline_discipline_cv$df
+```
+
+```{r}
+gam_model <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_attendance) + s(mean_enrollment) + s(mean_total_students_discipline), data = mod_model_data)
+summary(gam_model)
+gam_model$coefficients
+```
+
+```{r}
+gam.check(gam_model)
+```
+
+```{r}
+plot(gam_model, se=TRUE, col="blue")
+```
 

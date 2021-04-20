@@ -23,16 +23,6 @@ start.time <- Sys.time()
 library(dplyr)
 library(boot)
 library(splines)
-#library(tidycensus)
-#library(tidyverse)
-#library(tidyr)
-#library(readxl)
-#library(readr)
-#library(gridExtra)
-#library(ggpubr)
-#library(MASS)
-#library(car)
-#library(lmtest)
 library(ggplot2)
 
 
@@ -126,12 +116,7 @@ plot(smooth_, cv.smooth_spline)
 attach(mod_model_data)
 library(gam)
 #library(gamclass)
-gam1 <- gam(HS_PLUS_percentage~s(poverty_percentage,12)+s(mean_chronic_absenteeism, 12), data = mod_model_data)
-
-
-#cv.gam <- CVgam(HS_PLUS_percentage~s(poverty_percentage,12)+s(mean_chronic_absenteeism, 12), data = mod_model_data, nfold = 10, debug.level = 0, method = "GCV.Cp",
-#                printit = TRUE, cvparts = NULL, gamma = 1, seed = 29)
-
+gam1 <- gam(HS_PLUS_percentage~s(poverty_percentage,12)+s(mean_chronic_absenteeism, 5), data = mod_model_data)
   
 #Randomly shuffle the data
 df_gam <- mod_model_data[sample(nrow(mod_model_data)),]
@@ -150,7 +135,7 @@ for(i in 1:59){
   trainData <- df_gam[-testIndexes, ]
   #Use the test and train data partitions however you desire...
   
-  gam_temp <- gam(HS_PLUS_percentage~s(poverty_percentage,12)+s(mean_chronic_absenteeism, 12), data = trainData)
+  gam_temp <- gam(HS_PLUS_percentage~s(poverty_percentage,12)+s(mean_chronic_absenteeism, 5), data = trainData)
   
   pred <- predict(gam_temp, testData)
   cv.gam[i] <- mean((pred - testData$HS_PLUS_percentage)^2)
@@ -158,6 +143,9 @@ for(i in 1:59){
 }
 
 print(mean(cv.gam))
+
+
+
   
 #####################################################################
 end.time <- Sys.time()

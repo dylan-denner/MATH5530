@@ -54,12 +54,24 @@ mod_model_data$HS_PLUS_percentage <- (((mod_model_data$HS_PLUS_percentage ^ 6) -
 library(gam)
 library(mgcv)
 
-gam_model <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_attendance) + s(mean_enrollment) + s(mean_total_students_discipline), data = mod_model_data)
-summary(gam_model)
-gam.check(gam_model)
+gam_model_1 <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_attendance) + s(mean_enrollment) + s(mean_total_students_discipline), data = mod_model_data)
+summary(gam_model_1)
+gam.check(gam_model_1)
 
-par(mfrow=c(1,3))
+gam_model_2 <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_attendance) + s(mean_enrollment), data = mod_model_data)
+summary(gam_model_2)
+gam.check(gam_model_2)
+
+gam_model_3 <- gam(HS_PLUS_percentage ~ s(poverty_percentage) + s(mean_chronic_absenteeism) + s(mean_enrollment) + s(mean_total_students_discipline), data = mod_model_data)
+summary(gam_model_3)
+gam.check(gam_model_3)
+
+anova(gam_model_1, gam_model_2, gam_model_3, test = "F")
+
+
 plot(gam_model, se=TRUE, col="blue")
+
+plot.gam(gam_model, se=TRUE, col="red")
 #####################################################################
 end.time <- Sys.time()
 time.taken <- end.time - start.time
