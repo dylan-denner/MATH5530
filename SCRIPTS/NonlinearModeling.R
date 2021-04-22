@@ -24,6 +24,8 @@ library(dplyr)
 library(boot)
 library(splines)
 library(ggplot2)
+library(reshape2)
+library(fabricatr)
 
 
 ###################################################################
@@ -36,14 +38,13 @@ model_data <- read.csv(file_path)
 # Data Transformation
 
 mod_model_data <- subset(model_data, model_data$HS_PLUS_percentage > 0.65)
+
 df <- mod_model_data %>% select(
   poverty_percentage,
   HS_PLUS_percentage
 )
 
 #####################################################################
-
-plot(mod_model_data$poverty_percentage, mod_model_data$HS_PLUS_percentage)
 
 ggplot(mod_model_data, aes(x=poverty_percentage, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Poverty % vs. Educational Attainment %") +
@@ -54,45 +55,150 @@ ggplot(mod_model_data, aes(x=poverty_percentage, y=HS_PLUS_percentage)) + geom_p
 # Polynomial Regression
 
 set.seed(100)
-cv.poly <- rep(0,5)
+
+# Initializing Test MSE arrays
+cv.poly1 <- rep(0,5)
+cv.poly5 <- rep(0,5)
+cv.poly10 <- rep(0,5)
+
+
 for(i in 1:5){
   poly_fit <- glm(HS_PLUS_percentage~poly(poverty_percentage, i), data = df)
-  cv.poly[i] <- cv.glm(df, poly_fit)$delta[1]
+  
+  # This function calculates the estimated K-fold cross-validation prediction error for generalized linear models
+  cv.poly1[i] <- cv.glm(df,poly_fit)$delta[1]
+  cv.poly5[i] <- cv.glm(df,poly_fit, K=5)$delta[1]
+  cv.poly10[i] <- cv.glm(df, poly_fit, K=10)$delta[1]
+  
 }
 
 poly_ <- c(1,2,3,4,5)
-plot(poly_, cv.poly)
+
+dt_poly <- data.frame(
+  PolyDegree = poly_,
+  "K = 1" = cv.poly1,
+  "K = 5" = cv.poly5,
+  "K = 10" = cv.poly10
+)
+
+df.m <- melt(dt_poly, id.vars = "PolyDegree")
+
+ggplot(df.m, aes(PolyDegree, value, colour = variable)) +
+  geom_point() + 
+  ggtitle("Polynomial Regression: K = 1, 5, 10") +
+  xlab("Polynomial Degree") + 
+  ylab("Test MSE")
+
+poly_fit1 <- glm(HS_PLUS_percentage~poly(poverty_percentage, 1), data = df)
+poly_fit2 <- glm(HS_PLUS_percentage~poly(poverty_percentage, 2), data = df)
+poly_fit3 <- glm(HS_PLUS_percentage~poly(poverty_percentage, 3), data = df)
+poly_fit4 <- glm(HS_PLUS_percentage~poly(poverty_percentage, 4), data = df)
+poly_fit5 <- glm(HS_PLUS_percentage~poly(poverty_percentage, 5), data = df)
+
+poly_pred1 <- predict(poly_fit1, type = "response")
+poly_pred2 <- predict(poly_fit2, type = "response")
+poly_pred3 <- predict(poly_fit3, type = "response")
+poly_pred4 <- predict(poly_fit4, type = "response")
+poly_pred5 <- predict(poly_fit5, type = "response")
+
+poly_df <- cbind(df, poly_pred1)
+poly_df <- cbind(poly_df, poly_pred2)
+poly_df <- cbind(poly_df, poly_pred3)
+poly_df <- cbind(poly_df, poly_pred4)
+poly_df <- cbind(poly_df, poly_pred5)
+
+
+ggplot(poly_df, aes(x = poverty_percentage)) +
+  geom_point(aes(y=HS_PLUS_percentage))+
+  geom_line(aes(y=poly_pred1),color="red", size=1)+
+  geom_line(aes(y=poly_pred2),color="yellow", size=1)+
+  geom_line(aes(y=poly_pred3),color="orange", size=1)+
+  geom_line(aes(y=poly_pred4),color="blue", size=1)+
+  geom_line(aes(y=poly_pred5),color="pink", size=1)
+
+
 
 #####################################################################
 # Regression Splines
 
-set.seed(100)
-library(fabricatr)
 
-
-# Cubic spline df has # knots plus 4
+# Cubic spline df = # knots plus 4
 cv.spline <- rep(0,10)
+
 for(i in 5:14){
   spline_fit <- glm(HS_PLUS_percentage~bs(poverty_percentage, df = i), data = df)
   cv.spline[i-4] <- cv.glm(df, spline_fit)$delta[1]
 }
 
+spline_ <- c(1,2,3,4,5,6,7,8,9,10)
 
-spine_ <- c(1,2,3,4,5,6,7,8,9,10)
-plot(spine_, cv.spline)
+dt_splines <- data.frame(
+  spline_knot = spline_,
+  "Spline_TMSE" = cv.spline
+)
+
+ggplot(dt_splines, aes(x=spline_knot, y=Spline_TMSE)) + geom_point() + 
+  ggtitle("Cubic Regression Spline") +
+  xlab("Number of Knots") + 
+  ylab("Test MSE")
+  
+spline_1 <- glm(HS_PLUS_percentage~bs(poverty_percentage, df = 5), data = df)
+spline_5 <- glm(HS_PLUS_percentage~bs(poverty_percentage, df = 10), data = df)
+
+spline_pred1 <- predict(spline_1, type = "response")
+spline_pred2 <- predict(spline_5, type = "response")
+
+spline_df <- cbind(df, spline_pred1)
+spline_df <- cbind(spline_df, spline_pred2)
+
+
+ggplot(spline_df, aes(x = poverty_percentage)) +
+  geom_point(aes(y=HS_PLUS_percentage))+
+  geom_line(aes(y=spline_pred1),color="red", size=1)+
+  geom_line(aes(y=spline_pred2),color="yellow", size=1)
+
 #####################################################################
 # Natural Cubic Spline
 
 # Natrual Cubic spline df = # knots
 cv.ns_spline <- rep(0,10)
+
 for(i in 1:10){
   ns_spline_fit <- glm(HS_PLUS_percentage~ns(poverty_percentage, df = i), data = df)
   cv.ns_spline[i] <- cv.glm(df, ns_spline_fit)$delta[1]
 }
 
+foo <- data.frame(
+  NS_Spline_TMSE = cv.ns_spline
+)
 
-spine_ <- c(1,2,3,4,5,6,7,8,9,10)
-plot(spine_, cv.ns_spline)
+dt_splines <- cbind(dt_splines, foo)
+
+
+df.s <- melt(dt_splines, id.vars = "spline_knot")
+
+ggplot(df.s, aes(spline_knot, value, colour = variable)) +
+  geom_point() + 
+  ggtitle("Regression Spline: Natural vs Unnatrual") +
+  xlab("Number of Knots") + 
+  ylab("Test MSE")
+
+
+ns_spline_1 <- glm(HS_PLUS_percentage~bs(poverty_percentage, df = 1), data = df)
+ns_spline_8 <- glm(HS_PLUS_percentage~bs(poverty_percentage, df = 8), data = df)
+
+ns_pred1 <- predict(ns_spline_1, type = "response")
+ns_pred8 <- predict(ns_spline_8, type = "response")
+
+dt_splines <- cbind(dt_splines, pred1)
+dt_splines <- cbind(dt_splines, pred2)
+
+
+ggplot(dt_splines, aes(x = poverty_percentage)) +
+  geom_point(aes(y=HS_PLUS_percentage))+
+  geom_line(aes(y=ns_pred1),color="red", size=1)+
+  geom_line(aes(y=ns_pred8),color="yellow", size=1)
+
 #####################################################################
 # Smoothing Spline
 attach(df)
@@ -101,15 +207,38 @@ smooth_spline_poverty_cv <- smooth.spline(poverty_percentage, HS_PLUS_percentage
 smooth_spline_chron_cv <- smooth.spline(mod_model_data$mean_chronic_absenteeism, mod_model_data$HS_PLUS_percentage, cv=TRUE)
 
 # Smooth Spline
-cv.smooth_spline <- rep(0,16)
-for(i in 4:20){
+cv.smooth_spline <- rep(0,10)
+for(i in 5:14){
   smooth_fit <- smooth.spline(poverty_percentage, HS_PLUS_percentage, nknots = i)
-  cv.smooth_spline[i-3] <- smooth_fit$cv.crit
+  cv.smooth_spline[i-4] <- smooth_fit$cv.crit
 }
 
 
-smooth_ <- c(4:20)
-plot(smooth_, cv.smooth_spline)
+smooth_ <- c(5:14)
+
+dt_smooth <- data.frame(
+  smooth_knot = smooth_,
+  "Smooth_TMSE" = cv.smooth_spline
+)
+
+ggplot(dt_smooth, aes(x=smooth_knot, y=Smooth_TMSE)) + geom_point() + 
+  ggtitle("Smoothing Spline") +
+  xlab("Number of Knots") + 
+  ylab("Test MSE")
+
+foo <- data.frame(
+  "Smooth_TMSE" = cv.smooth_spline
+)
+
+dt_splines <- cbind(dt_splines, foo)
+
+dt_splines <- melt(dt_splines, id.vars = "spline_knot")
+
+ggplot(dt_splines, aes(spline_knot, value, colour = variable)) +
+  geom_point() + 
+  ggtitle("Regression Spline: Natural, Unnatrual, Smooth") +
+  xlab("Number of Knots") + 
+  ylab("Test MSE")
 
 #####################################################################
 # GAMs
