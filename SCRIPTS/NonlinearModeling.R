@@ -26,18 +26,25 @@ library(splines)
 library(ggplot2)
 library(reshape2)
 library(fabricatr)
-
+library(mgcv)
 
 ###################################################################
 
-file_path <- "../DATA/model_data_3_30.csv"
+file_path <- "../DATA/model_data_4_23.csv"
 model_data <- read.csv(file_path)
+
+# model_data$HS_PLUS_percentage <- model_data$HS_PLUS_percentage*100
+# model_data$poverty_percentage <- model_data$poverty_percentage*100
+# 
+# file_path_and_name = "../DATA/model_data_4_23.csv"
+# write.csv(model_data, file_path_and_name)
+
 
 #model_data <- read_csv("C:/Users/jacks/Documents/School/MATH_4530/MATH5530/OUTPUT/model_data_3_30.csv")
 ###################################################################
 # Data Transformation
 
-mod_model_data <- subset(model_data, model_data$HS_PLUS_percentage > 0.65)
+mod_model_data <- subset(model_data, model_data$HS_PLUS_percentage > 65.0)
 
 df <- mod_model_data %>% select(
   poverty_percentage,
@@ -101,14 +108,14 @@ poly_pred3 <- predict(poly_fit3, type = "response")
 poly_pred4 <- predict(poly_fit4, type = "response")
 poly_pred5 <- predict(poly_fit5, type = "response")
 
-poly_df <- cbind(df, poly_pred1)
-poly_df <- cbind(poly_df, poly_pred2)
-poly_df <- cbind(poly_df, poly_pred3)
-poly_df <- cbind(poly_df, poly_pred4)
-poly_df <- cbind(poly_df, poly_pred5)
+predict_df <- cbind(df, poly_pred1)
+predict_df <- cbind(predict_df, poly_pred2)
+predict_df <- cbind(predict_df, poly_pred3)
+predict_df <- cbind(predict_df, poly_pred4)
+predict_df <- cbind(predict_df, poly_pred5)
 
 
-ggplot(poly_df, aes(x = poverty_percentage)) +
+ggplot(predict_df, aes(x = poverty_percentage)) +
   geom_point(aes(y=HS_PLUS_percentage))+
   geom_line(aes(y=poly_pred1),color="red", size=1)+
   geom_line(aes(y=poly_pred2),color="yellow", size=1)+
@@ -148,11 +155,11 @@ spline_5 <- glm(HS_PLUS_percentage~bs(poverty_percentage, df = 10), data = df)
 spline_pred1 <- predict(spline_1, type = "response")
 spline_pred2 <- predict(spline_5, type = "response")
 
-spline_df <- cbind(df, spline_pred1)
-spline_df <- cbind(spline_df, spline_pred2)
+predict_df <- cbind(predict_df, spline_pred1)
+predict_df <- cbind(predict_df, spline_pred2)
 
 
-ggplot(spline_df, aes(x = poverty_percentage)) +
+ggplot(predict_df, aes(x = poverty_percentage)) +
   geom_point(aes(y=HS_PLUS_percentage))+
   geom_line(aes(y=spline_pred1),color="red", size=1)+
   geom_line(aes(y=spline_pred2),color="yellow", size=1)
@@ -173,8 +180,6 @@ foo <- data.frame(
 )
 
 dt_splines <- cbind(dt_splines, foo)
-
-
 df.s <- melt(dt_splines, id.vars = "spline_knot")
 
 ggplot(df.s, aes(spline_knot, value, colour = variable)) +
@@ -190,11 +195,11 @@ ns_spline_8 <- glm(HS_PLUS_percentage~bs(poverty_percentage, df = 8), data = df)
 ns_pred1 <- predict(ns_spline_1, type = "response")
 ns_pred8 <- predict(ns_spline_8, type = "response")
 
-dt_splines <- cbind(dt_splines, pred1)
-dt_splines <- cbind(dt_splines, pred2)
+predict_df <- cbind(predict_df, ns_pred1)
+predict_df <- cbind(predict_df, ns_pred8)
 
 
-ggplot(dt_splines, aes(x = poverty_percentage)) +
+ggplot(predict_df, aes(x = poverty_percentage)) +
   geom_point(aes(y=HS_PLUS_percentage))+
   geom_line(aes(y=ns_pred1),color="red", size=1)+
   geom_line(aes(y=ns_pred8),color="yellow", size=1)
@@ -204,7 +209,7 @@ ggplot(dt_splines, aes(x = poverty_percentage)) +
 attach(df)
 
 smooth_spline_poverty_cv <- smooth.spline(poverty_percentage, HS_PLUS_percentage, cv=TRUE)
-smooth_spline_chron_cv <- smooth.spline(mod_model_data$mean_chronic_absenteeism, mod_model_data$HS_PLUS_percentage, cv=TRUE)
+#smooth_spline_chron_cv <- smooth.spline(mod_model_data$mean_chronic_absenteeism, mod_model_data$HS_PLUS_percentage, cv=TRUE)
 
 # Smooth Spline
 cv.smooth_spline <- rep(0,10)
@@ -212,7 +217,6 @@ for(i in 5:14){
   smooth_fit <- smooth.spline(poverty_percentage, HS_PLUS_percentage, nknots = i)
   cv.smooth_spline[i-4] <- smooth_fit$cv.crit
 }
-
 
 smooth_ <- c(5:14)
 
@@ -232,9 +236,9 @@ foo <- data.frame(
 
 dt_splines <- cbind(dt_splines, foo)
 
-dt_splines <- melt(dt_splines, id.vars = "spline_knot")
+dt.ss <- melt(dt_splines, id.vars = "spline_knot")
 
-ggplot(dt_splines, aes(spline_knot, value, colour = variable)) +
+ggplot(dt.ss, aes(spline_knot, value, colour = variable)) +
   geom_point() + 
   ggtitle("Regression Spline: Natural, Unnatrual, Smooth") +
   xlab("Number of Knots") + 
@@ -242,11 +246,16 @@ ggplot(dt_splines, aes(spline_knot, value, colour = variable)) +
 
 #####################################################################
 # GAMs
-attach(mod_model_data)
-library(gam)
-#library(gamclass)
-gam1 <- gam(HS_PLUS_percentage~s(poverty_percentage,12)+s(mean_chronic_absenteeism, 5), data = mod_model_data)
-  
+
+#gam1 <- gam(HS_PLUS_percentage~s(poverty_percentage,12), data = mod_model_data, method = 'REML')
+ 
+gam1 <- gam(HS_PLUS_percentage~s(poverty_percentage), data = mod_model_data, method = 'REML') 
+
+summary(gam1)
+plot(gam1,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+
+gam.check(gam1)
+
 #Randomly shuffle the data
 df_gam <- mod_model_data[sample(nrow(mod_model_data)),]
 
