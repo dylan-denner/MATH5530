@@ -12,6 +12,9 @@
 ###################################################################
 # Working directory
 
+dev.off()
+
+
 setwd("C:/Users/dylan/Documents/R/MATH5530/Project/MATH5530/SCRIPTS/")
 
 ###################################################################
@@ -45,6 +48,7 @@ model_data <- read.csv(file_path)
 # Data Transformation
 
 mod_model_data <- subset(model_data, model_data$HS_PLUS_percentage > 65.0)
+mod_model_data <- subset(mod_model_data, mod_model_data$mean_enrollment < 2000)
 
 df <- mod_model_data %>% select(
   poverty_percentage,
@@ -56,6 +60,26 @@ df <- mod_model_data %>% select(
 ggplot(mod_model_data, aes(x=poverty_percentage, y=HS_PLUS_percentage)) + geom_point() + 
   ggtitle("Poverty % vs. Educational Attainment %") +
   xlab("Poverty %") + 
+  ylab("Educational Attainment %")
+
+ggplot(mod_model_data, aes(x=mean_total_students_discipline, y=HS_PLUS_percentage)) + geom_point() + 
+  ggtitle("Mean Student Discipline vs. Educational Attainment %") +
+  xlab("Mean Student Discipline") + 
+  ylab("Educational Attainment %")
+
+ggplot(mod_model_data, aes(x=mean_chronic_absenteeism, y=HS_PLUS_percentage)) + geom_point() + 
+  ggtitle("Mean Chronic Absenteeism % vs. Educational Attainment %") +
+  xlab("Mean Chronic Absenteeism %") + 
+  ylab("Educational Attainment %")
+
+ggplot(mod_model_data, aes(x=mean_attendance, y=HS_PLUS_percentage)) + geom_point() + 
+  ggtitle("Mean Attendance % vs. Educational Attainment %") +
+  xlab("Mean Attendance %") + 
+  ylab("Educational Attainment %")
+
+ggplot(mod_model_data, aes(x=mean_enrollment, y=HS_PLUS_percentage)) + geom_point() + 
+  ggtitle("Mean Enrollment vs. Educational Attainment %") +
+  xlab("Mean Enrollment") + 
   ylab("Educational Attainment %")
 
 #####################################################################
@@ -249,12 +273,30 @@ ggplot(dt.ss, aes(spline_knot, value, colour = variable)) +
 
 #gam1 <- gam(HS_PLUS_percentage~s(poverty_percentage,12), data = mod_model_data, method = 'REML')
  
-gam1 <- gam(HS_PLUS_percentage~s(poverty_percentage), data = mod_model_data, method = 'REML') 
+gam_poverty <- gam(HS_PLUS_percentage~s(poverty_percentage), data = mod_model_data, method = 'REML') 
+gam_absenteeism <- gam(HS_PLUS_percentage~s(mean_chronic_absenteeism), data = mod_model_data, method = 'REML') 
+gam_attendance <- gam(HS_PLUS_percentage~s(mean_attendance), data = mod_model_data, method = 'REML') 
+gam_discipline <- gam(HS_PLUS_percentage~s(mean_total_students_discipline), data = mod_model_data, method = 'REML') 
+gam_enrollment <- gam(HS_PLUS_percentage~s(mean_enrollment), data = mod_model_data, method = 'REML') 
 
-summary(gam1)
-plot(gam1,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
 
-gam.check(gam1)
+plot(gam_poverty,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+plot(gam_absenteeism,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+plot(gam_attendance,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+plot(gam_discipline,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+plot(gam_enrollment,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+
+gam_PAA <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance), data = mod_model_data, method = 'REML') 
+plot(gam_PAA,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+
+gam_total <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance)+s(mean_total_students_discipline)+s(mean_enrollment), data = mod_model_data, method = 'REML') 
+plot(gam_total,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+
+summary(gam_poverty)
+summary(gam_PAA)
+summary(gam_total)
+
+gam.check(gam_poverty)
 
 #Randomly shuffle the data
 df_gam <- mod_model_data[sample(nrow(mod_model_data)),]
@@ -263,7 +305,10 @@ df_gam <- mod_model_data[sample(nrow(mod_model_data)),]
 folds <- cut(seq(1,nrow(df_gam)),breaks=59,labels=FALSE)
 
 
-cv.gam <- rep(0,59)
+cv.gam_poverty <- rep(0,59)
+cv.gam_PAA <- rep(0,59)
+cv.gam_total <- rep(0,59)
+
 
 #Perform 10 fold cross validation
 for(i in 1:59){
@@ -273,14 +318,22 @@ for(i in 1:59){
   trainData <- df_gam[-testIndexes, ]
   #Use the test and train data partitions however you desire...
   
-  gam_temp <- gam(HS_PLUS_percentage~s(poverty_percentage,12)+s(mean_chronic_absenteeism, 5), data = trainData)
+  cv_gam_poverty <- gam(HS_PLUS_percentage~s(poverty_percentage), data = trainData, method = 'REML') 
+  cv_gam_PAA <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance), data = trainData, method = 'REML') 
+  cv_gam_total <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance)+s(mean_total_students_discipline)+s(mean_enrollment), data = trainData, method = 'REML') 
   
-  pred <- predict(gam_temp, testData)
-  cv.gam[i] <- mean((pred - testData$HS_PLUS_percentage)^2)
+  pred_poverty <- predict(cv_gam_poverty, testData)
+  pred_PAA <- predict(cv_gam_PAA, testData)
+  pred_total <- predict(cv_gam_total, testData)
   
+  cv.gam_poverty[i] <- mean((pred_poverty - testData$HS_PLUS_percentage)^2)
+  cv.gam_PAA[i] <- mean((pred_PAA - testData$HS_PLUS_percentage)^2)
+  cv.gam_total[i] <- mean((pred_total - testData$HS_PLUS_percentage)^2)
 }
 
-print(mean(cv.gam))
+print(mean(cv.gam_poverty))
+print(mean(cv.gam_PAA))
+print(mean(cv.gam_total))
 
 
 
