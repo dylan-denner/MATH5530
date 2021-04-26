@@ -12,7 +12,7 @@
 ###################################################################
 # Working directory
 
-dev.off()
+#dev.off()
 
 
 setwd("C:/Users/dylan/Documents/R/MATH5530/Project/MATH5530/SCRIPTS/")
@@ -116,7 +116,7 @@ df.m <- melt(dt_poly, id.vars = "PolyDegree")
 
 ggplot(df.m, aes(PolyDegree, value, colour = variable)) +
   geom_point() + 
-  ggtitle("Polynomial Regression: K = 1, 5, 10") +
+  ggtitle("Polynomial Regression CV: K = 1, 5, 10") +
   xlab("Polynomial Degree") + 
   ylab("Test MSE")
 
@@ -139,15 +139,22 @@ predict_df <- cbind(predict_df, poly_pred4)
 predict_df <- cbind(predict_df, poly_pred5)
 
 
+
 ggplot(predict_df, aes(x = poverty_percentage)) +
   geom_point(aes(y=HS_PLUS_percentage))+
-  geom_line(aes(y=poly_pred1),color="red", size=1)+
-  geom_line(aes(y=poly_pred2),color="yellow", size=1)+
-  geom_line(aes(y=poly_pred3),color="orange", size=1)+
-  geom_line(aes(y=poly_pred4),color="blue", size=1)+
-  geom_line(aes(y=poly_pred5),color="pink", size=1)
-
-
+  geom_line(aes(y=poly_pred1,colour="Blue"), size=1.15)+
+  geom_line(aes(y=poly_pred3,colour="green"), size=1.15)+
+  geom_line(aes(y=poly_pred5,colour="Red"), size=1.15)+
+  scale_color_discrete(name = "Polynomial Degree", labels = c("1", "3", "5"))+
+  theme(
+    legend.position = c(.95, .95),
+    legend.justification = c("right", "top"),
+    legend.box.just = "right",
+    legend.margin = margin(1, 1, 1, 1)
+  ) + ggtitle("Polynomial Regression") +
+  xlab("Poverty %") + 
+  ylab("Educational Attainment %")
+  
 
 #####################################################################
 # Regression Splines
@@ -169,7 +176,7 @@ dt_splines <- data.frame(
 )
 
 ggplot(dt_splines, aes(x=spline_knot, y=Spline_TMSE)) + geom_point() + 
-  ggtitle("Cubic Regression Spline") +
+  ggtitle("Cubic Regression Spline CV") +
   xlab("Number of Knots") + 
   ylab("Test MSE")
   
@@ -185,8 +192,18 @@ predict_df <- cbind(predict_df, spline_pred2)
 
 ggplot(predict_df, aes(x = poverty_percentage)) +
   geom_point(aes(y=HS_PLUS_percentage))+
-  geom_line(aes(y=spline_pred1),color="red", size=1)+
-  geom_line(aes(y=spline_pred2),color="yellow", size=1)
+  geom_line(aes(y=spline_pred1,colour="Blue"), size=1.15)+
+  geom_line(aes(y=spline_pred2,colour="green"), size=1.15)+
+  scale_color_discrete(name = "Number of Knots", labels = c("1", "5"))+
+  theme(
+    legend.position = c(.95, .95),
+    legend.justification = c("right", "top"),
+    legend.box.just = "right",
+    legend.margin = margin(1, 1, 1, 1)
+  )+ ggtitle("Regression Spline") +
+  xlab("Poverty %") + 
+  ylab("Educational Attainment %")
+
 
 #####################################################################
 # Natural Cubic Spline
@@ -225,116 +242,143 @@ predict_df <- cbind(predict_df, ns_pred8)
 
 ggplot(predict_df, aes(x = poverty_percentage)) +
   geom_point(aes(y=HS_PLUS_percentage))+
-  geom_line(aes(y=ns_pred1),color="red", size=1)+
-  geom_line(aes(y=ns_pred8),color="yellow", size=1)
+  geom_line(aes(y=ns_pred1,colour="Blue"), size=1.15)+
+  geom_line(aes(y=ns_pred8,colour="green"), size=1.15)+
+  scale_color_discrete(name = "Number of Knots", labels = c("1", "8"))+
+  theme(
+    legend.position = c(.95, .95),
+    legend.justification = c("right", "top"),
+    legend.box.just = "right",
+    legend.margin = margin(1, 1, 1, 1)
+  )+ ggtitle("Natural Regression Spline") +
+  xlab("Poverty %") + 
+  ylab("Educational Attainment %")
+
 
 #####################################################################
 # Smoothing Spline
 attach(df)
 
-smooth_spline_poverty_cv <- smooth.spline(poverty_percentage, HS_PLUS_percentage, cv=TRUE)
-#smooth_spline_chron_cv <- smooth.spline(mod_model_data$mean_chronic_absenteeism, mod_model_data$HS_PLUS_percentage, cv=TRUE)
+s_spline_1 <- smooth.spline(poverty_percentage, HS_PLUS_percentage, cv=TRUE, lambda = 1)
+s_spline_fit_01 <- smooth.spline(poverty_percentage, HS_PLUS_percentage, cv=TRUE, lambda = 0.01)
+s_spline_fit <- smooth.spline(poverty_percentage, HS_PLUS_percentage, cv=TRUE)
+s_spline_fit_L <- smooth.spline(poverty_percentage, HS_PLUS_percentage, cv=TRUE, lambda = 0.0000001)
 
-# Smooth Spline
-cv.smooth_spline <- rep(0,10)
-for(i in 5:14){
-  smooth_fit <- smooth.spline(poverty_percentage, HS_PLUS_percentage, nknots = i)
-  cv.smooth_spline[i-4] <- smooth_fit$cv.crit
-}
 
-smooth_ <- c(5:14)
+d <- data.frame(
+  x = s_spline_1$x,
+  ss1 = s_spline_1$y,
+  ss01 = s_spline_fit_01$y,
+  ss_fit = s_spline_fit$y,
+  s_spline_fit_L = s_spline_fit_L$y
+)
+
+d <- left_join(d,df, by = c("x" = "poverty_percentage"))
+
+
+ggplot(d, aes(x = x)) +
+  geom_point(aes(y=HS_PLUS_percentage))+
+  geom_line(aes(y=ss1,colour="blue"), size=1.15)+
+  geom_line(aes(y=s_spline_fit_L,colour="yellow"), size=1.15)+
+  scale_color_discrete(name = "Lambda", labels = c("1", "0.0000001"))+
+  ggtitle("Smoothing Splines #1") +
+  xlab("Poverty %") + 
+  ylab("Educational Attainment %")
+
+ggplot(d, aes(x = x)) +
+  geom_point(aes(y=HS_PLUS_percentage))+
+  geom_line(aes(y=ss01,colour="blue"), size=1.15)+
+  geom_line(aes(y=ss_fit,colour="yellow"), size=1.15)+
+  scale_color_discrete(name = "Lambda", labels = c("0.01", "0.0003"))+
+  ggtitle("Smoothing Splines #2") +
+  xlab("Poverty %") + 
+  ylab("Educational Attainment %")
 
 dt_smooth <- data.frame(
-  smooth_knot = smooth_,
-  "Smooth_TMSE" = cv.smooth_spline
+  "TMSE_SS_fit" = s_spline_fit$cv.crit,
+  "TMSE_SS_fit1" = s_spline_1$cv.crit,
+  "TMSE_SS_fit01" = s_spline_fit_01$cv.crit,
+  "TMSE_SS_fitL" = s_spline_fit_L$cv.crit
 )
-
-ggplot(dt_smooth, aes(x=smooth_knot, y=Smooth_TMSE)) + geom_point() + 
-  ggtitle("Smoothing Spline") +
-  xlab("Number of Knots") + 
-  ylab("Test MSE")
-
-foo <- data.frame(
-  "Smooth_TMSE" = cv.smooth_spline
-)
-
-dt_splines <- cbind(dt_splines, foo)
-
-dt.ss <- melt(dt_splines, id.vars = "spline_knot")
-
-ggplot(dt.ss, aes(spline_knot, value, colour = variable)) +
-  geom_point() + 
-  ggtitle("Regression Spline: Natural, Unnatrual, Smooth") +
-  xlab("Number of Knots") + 
-  ylab("Test MSE")
 
 #####################################################################
 # GAMs
 
-#gam1 <- gam(HS_PLUS_percentage~s(poverty_percentage,12), data = mod_model_data, method = 'REML')
- 
-gam_poverty <- gam(HS_PLUS_percentage~s(poverty_percentage), data = mod_model_data, method = 'REML') 
-gam_absenteeism <- gam(HS_PLUS_percentage~s(mean_chronic_absenteeism), data = mod_model_data, method = 'REML') 
-gam_attendance <- gam(HS_PLUS_percentage~s(mean_attendance), data = mod_model_data, method = 'REML') 
-gam_discipline <- gam(HS_PLUS_percentage~s(mean_total_students_discipline), data = mod_model_data, method = 'REML') 
-gam_enrollment <- gam(HS_PLUS_percentage~s(mean_enrollment), data = mod_model_data, method = 'REML') 
+# gam_poverty <- gam(HS_PLUS_percentage~s(poverty_percentage), data = mod_model_data, method = 'REML') 
+# gam_absenteeism <- gam(HS_PLUS_percentage~s(mean_chronic_absenteeism), data = mod_model_data, method = 'REML') 
+# gam_attendance <- gam(HS_PLUS_percentage~s(mean_attendance), data = mod_model_data, method = 'REML') 
+# gam_discipline <- gam(HS_PLUS_percentage~s(mean_total_students_discipline), data = mod_model_data, method = 'REML') 
+# gam_enrollment <- gam(HS_PLUS_percentage~s(mean_enrollment), data = mod_model_data, method = 'REML') 
+# 
+# 
+# plot(gam_poverty,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+# gam.check(gam_poverty)
+# 
+# plot(gam_absenteeism,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+# gam.check(gam_absenteeism)
+# 
+# plot(gam_attendance,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+# gam.check(gam_attendance)
+# 
+# plot(gam_discipline,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+# gam.check(gam_discipline)
+# 
+# plot(gam_enrollment,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+# gam.check(gam_enrollment)
+# 
+# 
+# gam_PAA <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance), data = mod_model_data, method = 'REML') 
+# plot(gam_PAA,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+# 
+# gam_total <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance)+s(mean_total_students_discipline)+s(mean_enrollment), data = mod_model_data, method = 'REML') 
+# plot(gam_total,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
+# 
+# summary(gam_poverty)
+# summary(gam_PAA)
+# summary(gam_total)
+# 
+# gam.check(gam_poverty)
+# 
+# #Randomly shuffle the data
+# df_gam <- mod_model_data[sample(nrow(mod_model_data)),]
+# 
+# #Create 10 equally size folds
+# folds <- cut(seq(1,nrow(df_gam)),breaks=59,labels=FALSE)
+# 
+# cv.gam_poverty <- rep(0,59)
+# cv.gam_PAA <- rep(0,59)
+# cv.gam_total <- rep(0,59)
+# 
+# 
+# #Perform 10 fold cross validation
+# for(i in 1:59){
+#   #Segement your data by fold using the which() function 
+#   testIndexes <- which(folds==i,arr.ind=TRUE)
+#   testData <- df_gam[testIndexes, ]
+#   trainData <- df_gam[-testIndexes, ]
+#   #Use the test and train data partitions however you desire...
+#   
+#   cv_gam_poverty <- gam(HS_PLUS_percentage~s(poverty_percentage), data = trainData, method = 'REML') 
+#   cv_gam_PAA <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance), data = trainData, method = 'REML') 
+#   cv_gam_total <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance)+s(mean_total_students_discipline)+s(mean_enrollment), data = trainData, method = 'REML') 
+#   
+#   pred_poverty <- predict(cv_gam_poverty, testData)
+#   pred_PAA <- predict(cv_gam_PAA, testData)
+#   pred_total <- predict(cv_gam_total, testData)
+#   
+#   cv.gam_poverty[i] <- mean((pred_poverty - testData$HS_PLUS_percentage)^2)
+#   cv.gam_PAA[i] <- mean((pred_PAA - testData$HS_PLUS_percentage)^2)
+#   cv.gam_total[i] <- mean((pred_total - testData$HS_PLUS_percentage)^2)
+# }
+# 
+# dt_gams <- data.frame(
+#   "TMSE_Poverty" = mean(cv.gam_poverty),
+#   "TMSE_PAA" = mean(cv.gam_PAA),
+#   "TMSE_Total" = mean(cv.gam_total)
+# )
 
 
-plot(gam_poverty,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
-plot(gam_absenteeism,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
-plot(gam_attendance,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
-plot(gam_discipline,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
-plot(gam_enrollment,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
-
-gam_PAA <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance), data = mod_model_data, method = 'REML') 
-plot(gam_PAA,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
-
-gam_total <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance)+s(mean_total_students_discipline)+s(mean_enrollment), data = mod_model_data, method = 'REML') 
-plot(gam_total,pages=1,residuals=TRUE,all.terms=TRUE,shade=TRUE,shade.col=2)
-
-summary(gam_poverty)
-summary(gam_PAA)
-summary(gam_total)
-
-gam.check(gam_poverty)
-
-#Randomly shuffle the data
-df_gam <- mod_model_data[sample(nrow(mod_model_data)),]
-
-#Create 10 equally size folds
-folds <- cut(seq(1,nrow(df_gam)),breaks=59,labels=FALSE)
-
-
-cv.gam_poverty <- rep(0,59)
-cv.gam_PAA <- rep(0,59)
-cv.gam_total <- rep(0,59)
-
-
-#Perform 10 fold cross validation
-for(i in 1:59){
-  #Segement your data by fold using the which() function 
-  testIndexes <- which(folds==i,arr.ind=TRUE)
-  testData <- df_gam[testIndexes, ]
-  trainData <- df_gam[-testIndexes, ]
-  #Use the test and train data partitions however you desire...
-  
-  cv_gam_poverty <- gam(HS_PLUS_percentage~s(poverty_percentage), data = trainData, method = 'REML') 
-  cv_gam_PAA <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance), data = trainData, method = 'REML') 
-  cv_gam_total <- gam(HS_PLUS_percentage~s(poverty_percentage)+s(mean_chronic_absenteeism)+s(mean_attendance)+s(mean_total_students_discipline)+s(mean_enrollment), data = trainData, method = 'REML') 
-  
-  pred_poverty <- predict(cv_gam_poverty, testData)
-  pred_PAA <- predict(cv_gam_PAA, testData)
-  pred_total <- predict(cv_gam_total, testData)
-  
-  cv.gam_poverty[i] <- mean((pred_poverty - testData$HS_PLUS_percentage)^2)
-  cv.gam_PAA[i] <- mean((pred_PAA - testData$HS_PLUS_percentage)^2)
-  cv.gam_total[i] <- mean((pred_total - testData$HS_PLUS_percentage)^2)
-}
-
-print(mean(cv.gam_poverty))
-print(mean(cv.gam_PAA))
-print(mean(cv.gam_total))
-
+#####################################################################
 
 
   
